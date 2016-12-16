@@ -12,8 +12,8 @@
 
 //Global variables
 @body-bg: #fbfbfb;
-@primary-color: #222;
-@secondary-color: #7db924;
+@main-color: #222;
+@sub-color: #7db924;
 @inactive-color: #888888;
 @light-foreground: #fff;
 @dark-foreground: #222;
@@ -37,6 +37,8 @@
 
 @magic-number: 10px;
 
+.square-size(@size:80px){width: @size; height: @size};
+
 //Global Styles
 body{
   background: @body-bg;
@@ -48,15 +50,15 @@ body{
 }
 
 h1{
-  color: @primary-color;
+  color: @main-color;
   font-family: @sub-font;
   font-weight: bold;
 }
 
 a{
-  color: @secondary-color;
+  color: @sub-color;
   &:focus, &:hover{
-    color: @secondary-color;
+    color: @sub-color;
   }
 }
 
@@ -75,25 +77,31 @@ img{
   padding: 10px 32px;
   border-radius: 3px;
   border: none;
-}
 
-.btn-default{
-  background: @primary-color;
-  color: @light-foreground;
-  &:hover{
+  &-default{
+    background: @main-color;
     color: @light-foreground;
-    background: black;
+    &:hover{
+      color: @light-foreground;
+      background: black;      
+    }
+  }
+
+  &-main{
+    background: @sub-color;
+  }
+
+  &-ghost{
+    background: transparent;
+    border: 2px @main-color solid;
+  }
+
+  &-primary{
+    background: @sub-color;
   }
 }
 
-.btn-primary{
-  background: @secondary-color;
-}
-
-.btn-ghost{
-  background: transparent;
-  border: 2px @primary-color solid;
-}
+  
 
 .post-misc{
   @button-size: 40px;
@@ -138,7 +146,7 @@ span.label{
 }
 
 span.label-default{
-  background: @primary-color;
+  background: @main-color;
 }
 
 //Company and User Image
@@ -146,7 +154,7 @@ span.label-default{
   border: @box-border;
   display: block;
   position: relative;
-  width: 80px; height: 80px;
+  .square-size();
 
   img{    
     vertical-align: middle;
@@ -231,7 +239,7 @@ span.label-default{
 
 //Tab nav
 .nav-tab-active{
-  border: 1px solid @primary-color;
+  border: 1px solid @main-color;
   border-width: 0px 0px 4px 0px;
   font-weight: bold;
 }
@@ -273,7 +281,7 @@ legend{
   &:focus{
     border-radius: 0;
     border-width: 0 0 2px 0;  
-    border-color: @primary-color; 
+    border-color: @main-color; 
     box-shadow: none;
   }
 }
@@ -366,7 +374,7 @@ legend{
 
 // Navigation Bar
 nav.navbar-fixed-top{
-  background: @primary-color !important;
+  background: @main-color !important;
   border: none;
 }
 .navbar>.container .navbar-brand{
@@ -471,7 +479,7 @@ nav.navbar-fixed-top{
     .navbar-nav li{
       border-bottom: 4px solid transparent;
       &:hover{
-          border-color: @primary-color;
+          border-color: @main-color;
 
       }
       a{
@@ -512,6 +520,9 @@ nav.navbar-fixed-top{
   .user-info{
     display: flex;
     flex-flow: column;
+    h1{
+      color: @light-foreground;
+    }
   }
 
   h1{
@@ -559,8 +570,8 @@ nav.navbar-fixed-top{
     .active, .list-group-item:hover{
       color: @dark-foreground;
       border: none;
-      border-bottom: 2px solid @primary-color;
-      color: @primary-color;
+      border-bottom: 2px solid @main-color;
+      color: @main-color;
     }
 
     .list-parent, .list-parent:hover{
@@ -630,7 +641,7 @@ nav.navbar-fixed-top{
       h4{
         margin-right: @magic-number;
         margin-top:0;
-        color: @primary-color;
+        color: @main-color;
         font-size: 1.1em;
       
       }
@@ -782,7 +793,7 @@ nav.navbar-fixed-top{
         }
 
         &:hover, &.active{
-          color: @primary-color;
+          color: @main-color;
         }
         &:hover:after, &.active:after{
           bottom: 100%;
@@ -819,7 +830,37 @@ nav.navbar-fixed-top{
   }
   
   .side-jobs{
-    
+    ul{
+      list-style: none;
+      padding: 0;
+      
+    li.side-job{
+      .company-img{
+        .square-size(56px);
+        float: left;
+      }
+      .side-job-info{
+        float: left;
+        margin-left: @magic-number;
+        h3,h4,h5{
+          margin-top: @magic-number*0.5;
+          
+        }
+        h3{
+          font-size: 1em;
+          font-weight: 600;
+          color: @main-color;
+        }
+        h4{
+          font-size: 0.8em;
+        }
+        h5{
+          font-size: 0.8em;
+        }
+      }
+    }
+      
+    }
   }
 }
 
@@ -845,7 +886,7 @@ nav.navbar-fixed-top{
       margin-top: 0;
       font-weight: bold;
       font-family: @sub-font;
-      color: @primary-color;
+      color: @main-color;
     }
     h4{
       font-size: @font-size-normaltext;
@@ -876,7 +917,7 @@ nav.navbar-fixed-top{
     margin-left: 90px;
     a{
       h3{
-        color: @primary-color;
+        color: @main-color;
         font-weight: bold;
         margin-top: @magic-number;
         font-size: 1.2em;
@@ -907,7 +948,7 @@ nav.navbar-fixed-top{
   .post-meta{  
     .post-author{
       a{
-        color: @primary-color;
+        color: @main-color;
         // font-weight: bold;
         font-family: @sub-font;
         .user-img{
