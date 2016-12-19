@@ -42,7 +42,7 @@
 //Global Styles
 body{
   background: @body-bg;
-  padding-top: 96px + @magic-number; //Padding for navigation Height
+  padding-top: 94px; //Padding for navigation Height
   font-size: 16px;
   font-family: @font-family-normaltext;
   // line-height: @line-height-normaltext;
@@ -89,6 +89,10 @@ img{
 
   &-main{
     background: @sub-color;
+
+    &:hover{
+      background: darken(@sub-color, 10%);
+    }
   }
 
   &-ghost{
@@ -98,6 +102,13 @@ img{
 
   &-primary{
     background: @sub-color;
+
+    &:hover{
+      background: darken(@sub-color, 10%);
+    }
+    &:focus, &:active:focus, &:active:hover{
+      background: darken(@sub-color, 20%);
+    }
   }
 }
 
@@ -349,6 +360,7 @@ legend{
       font-size: 0.8em;
       color: @inactive-color;
       // font-weight: bold;
+      margin-top: @magic-number/2;
       text-transform: uppercase;
       font-family: @sub-font;
 
@@ -385,6 +397,8 @@ legend{
 
 // Navigation Bar
 nav.navbar-fixed-top{
+  border-bottom: 4px solid transparent;
+  
   background: @main-color !important;
   border: none;
 }
@@ -488,7 +502,6 @@ nav.navbar-fixed-top{
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   .container{
     .navbar-nav li{
-      border-bottom: 4px solid transparent;
       &:hover{
           border-color: @main-color;
 
@@ -547,7 +560,15 @@ nav.navbar-fixed-top{
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.42);
       &:hover, &:active{
 
-      }
+      }      
+    }
+    
+    h2{
+      margin-top: @magic-number;
+      color: @light-foreground;
+      a{ 
+        font-size: 0.6em;
+        color: inherit;}
     }
    }
 
@@ -809,9 +830,10 @@ nav.navbar-fixed-top{
         text-transform: none;
         font-weight: 300;
         line-height: 1.3em;
+        color: inherit;
       }
       .misc-left{
-        color: @light-foreground;
+        color: inherit;
       }
 
 
@@ -923,7 +945,7 @@ nav.navbar-fixed-top{
     padding-left: 0;
     h3{
       margin-top: 0;
-      font-weight: bold;
+      font-weight: 600;
       font-family: @sub-font;
       color: @main-color;
     }
