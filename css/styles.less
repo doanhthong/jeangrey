@@ -42,7 +42,7 @@
 //Global Styles
 body{
   background: @body-bg;
-  padding-top: 106px + @magic-number; //Padding for navigation Height
+  padding-top: 96px + @magic-number; //Padding for navigation Height
   font-size: 16px;
   font-family: @font-family-normaltext;
   // line-height: @line-height-normaltext;
@@ -208,7 +208,7 @@ span.label-default{
   background: @box-bg;
   border: @box-border;
   padding: @magic-number*2;
-  margin-bottom: @magic-number*2;
+  margin-top: @magic-number*2;
 }
 
 .box-view{
@@ -471,10 +471,10 @@ nav.navbar-fixed-top{
 }
 
 
-//Second nav
+// Second Navigation Bar
 #secNav{
   background: @light-foreground;
-
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   .container{
     .navbar-nav li{
       border-bottom: 4px solid transparent;
@@ -489,10 +489,6 @@ nav.navbar-fixed-top{
     }
   }
 }
-
-
-
-
 
 
 ///////////////////////////Profile @page
@@ -663,46 +659,6 @@ nav.navbar-fixed-top{
   }
 }
 
-
-//POST A JOB
-.post-a-job{
-  margin-top: @magic-number*2;
-  h1{
-    text-align: center;
-    margin-bottom: @magic-number*4;
-  }
-
-  form{
-    padding-left: @magic-number*6;
-    padding-right: @magic-number*6;
-
-    .post-a-job-header{
-      .row{
-        margin: 0;
-      }
-      .company-img{
-        float: left;
-      }
-      .form-group{
-      }
-    }
-  }
-
-  .salary-form-group{
-    .dropdown{
-      float: left;
-    }
-    input{
-      width: 80px;
-      float: left;
-      margin-left: @magic-number;
-    }
-    p{
-      float: left;
-      margin-left: @magic-number;
-    }
-  }
-}
 
 
 //** Homepage
@@ -962,5 +918,65 @@ nav.navbar-fixed-top{
       // margin-left: @magic-number;
       font-size: 0.8em;
     }
+  }
+}
+
+
+//** Jobs, Post Job, Job Detail Pages
+//## Post a Job
+//## Jobs Page
+
+
+//POST A JOB
+.job-post{
+  margin-top: @magic-number*2;
+  h1{
+    text-align: center;
+    margin-bottom: @magic-number*4;
+  }
+
+  form{
+    padding-left: @magic-number*6;
+    padding-right: @magic-number*6;
+
+    .job-post-header{
+      .row{
+        margin: 0;
+      }
+      .company-img{
+        float: left;
+      }
+      .form-group{
+      }
+    }
+  }
+
+  .salary-form-group{
+    .dropdown{
+      float: left;
+    }
+    input{
+      width: 80px;
+      float: left;
+      margin-left: @magic-number;
+    }
+    p{
+      float: left;
+      margin-left: @magic-number;
+    }
+  }
+}
+
+
+//JOBS PAGE
+#jobs-page{
+  .jobs-cover{
+    background: url('https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg');
+    background-size: cover;
+    height: 260px;
+    width: 100%;
+    color: @light-foreground;  
+    font-family: @sub-font;
+    margin-bottom: @magic-number*2;
   }
 }

@@ -3,7 +3,7 @@
 @import "fonts/montserrat.css";
 body {
   background: #fbfbfb;
-  padding-top: 116px;
+  padding-top: 106px;
   font-size: 16px;
   font-family: Open Sans;
   color: #696969;
@@ -170,13 +170,13 @@ span.label-default {
   background: #fff;
   border: 1px solid #f2f2f2;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .box-view {
   background: #fff;
   border: 1px solid #f2f2f2;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   margin-bottom: 10px;
   position: relative;
 }
@@ -415,6 +415,7 @@ nav.navbar-fixed-top {
 }
 #secNav {
   background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 #secNav .container .navbar-nav li {
   border-bottom: 4px solid transparent;
@@ -548,35 +549,6 @@ nav.navbar-fixed-top {
 }
 #profile-content #profile-contributions .article i {
   margin-left: 5px;
-}
-.post-a-job {
-  margin-top: 20px;
-}
-.post-a-job h1 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.post-a-job form {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-.post-a-job form .post-a-job-header .row {
-  margin: 0;
-}
-.post-a-job form .post-a-job-header .company-img {
-  float: left;
-}
-.post-a-job .salary-form-group .dropdown {
-  float: left;
-}
-.post-a-job .salary-form-group input {
-  width: 80px;
-  float: left;
-  margin-left: 10px;
-}
-.post-a-job .salary-form-group p {
-  float: left;
-  margin-left: 10px;
 }
 .home .box-view-basic h2 {
   font-size: 1.2em;
@@ -783,4 +755,42 @@ nav.navbar-fixed-top {
 }
 .post-container .post-meta .post-date {
   font-size: 0.8em;
+}
+.job-post {
+  margin-top: 20px;
+}
+.job-post h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.job-post form {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.job-post form .job-post-header .row {
+  margin: 0;
+}
+.job-post form .job-post-header .company-img {
+  float: left;
+}
+.job-post .salary-form-group .dropdown {
+  float: left;
+}
+.job-post .salary-form-group input {
+  width: 80px;
+  float: left;
+  margin-left: 10px;
+}
+.job-post .salary-form-group p {
+  float: left;
+  margin-left: 10px;
+}
+#jobs-page .jobs-cover {
+  background: url('https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg');
+  background-size: cover;
+  height: 260px;
+  width: 100%;
+  color: #fff;
+  font-family: Montserrat;
+  margin-bottom: 20px;
 }
