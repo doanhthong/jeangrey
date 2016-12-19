@@ -442,10 +442,17 @@ nav.navbar-fixed-top {
   border-color: #222;
 }
 #secNav .container .navbar-nav li a {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px 15px;
   color: #222;
 }
 #secNav .container .navbar-nav li a img {
   height: 24px;
+  margin-right: 8px;
+}
+#secNav .container .navbar-nav li a span {
+  vertical-align: middle;
 }
 .big-hero {
   background-size: cover;
