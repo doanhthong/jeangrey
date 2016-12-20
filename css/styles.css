@@ -13,7 +13,7 @@ h2,
 h3 {
   color: #222;
   font-family: Montserrat;
-  font-weight: 500;
+  font-weight: 300;
 }
 a {
   color: #7db924;
@@ -376,6 +376,7 @@ nav.navbar-fixed-top {
 .navbar-default .navbar-nav > li > a {
   color: #fff;
   font-family: Montserrat;
+  font-weight: 300;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
@@ -770,7 +771,7 @@ nav.navbar-fixed-top {
 }
 .side-container .side-jobs ul li.side-job .side-job-info h3 {
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 400;
   color: #222;
 }
 .side-container .side-jobs ul li.side-job .side-job-info h4 {
@@ -796,7 +797,7 @@ nav.navbar-fixed-top {
 }
 .feed-article .content h3 {
   margin-top: 0;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Montserrat;
   color: #222;
 }
@@ -827,7 +828,7 @@ nav.navbar-fixed-top {
 }
 .feed-company .content a h3 {
   color: #222;
-  font-weight: bold;
+  font-weight: 400;
   margin-top: 10px;
   font-size: 1.2em;
 }
