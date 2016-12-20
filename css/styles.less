@@ -890,7 +890,7 @@ nav.navbar-fixed-top{
 
   .side-home-e27{
     a{
-      font-weight: bold;
+      font-weight: 500;
     }
   }
   
@@ -1085,5 +1085,22 @@ nav.navbar-fixed-top{
     .hero-button{
       color: @job-color;
     }
+  }
+
+  .jobs-listing-container{
+      .job-listing{
+        margin-top: @magic-number*2;
+        .job-block{
+          @company-img-size: 60px;
+          .company-img{
+            .square-size(@company-img-size);
+            float:left;
+            
+          }
+          .job-content{
+            margin-left:  @company-img-size;
+          }
+      }
+      }
   }
 }

@@ -749,7 +749,7 @@ nav.navbar-fixed-top {
   padding: 20px;
 }
 .side-container .side-home-e27 a {
-  font-weight: bold;
+  font-weight: 500;
 }
 .side-container .side-jobs ul {
   list-style: none;
@@ -893,4 +893,15 @@ nav.navbar-fixed-top {
 }
 #jobs-page .jobs-hero .hero-button {
   color: #4ca2e2;
+}
+#jobs-page .jobs-listing-container .job-listing {
+  margin-top: 20px;
+}
+#jobs-page .jobs-listing-container .job-listing .job-block .company-img {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+#jobs-page .jobs-listing-container .job-listing .job-block .job-content {
+  margin-left: 60px;
 }
