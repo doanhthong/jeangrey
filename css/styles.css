@@ -897,16 +897,32 @@ nav.navbar-fixed-top {
 #jobs-page .jobs-hero .hero-button {
   color: #4ca2e2;
 }
-#jobs-page .jobs-listing-container .job-listing {
+#jobs-page .jobs-listing-container .jobs-listing {
   margin-top: 20px;
 }
-#jobs-page .jobs-listing-container .job-listing .job-block .company-img {
+#jobs-page .jobs-listing-container .jobs-listing .job-block {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#jobs-page .jobs-listing-container .jobs-listing .job-block .company-img {
   width: 60px;
   height: 60px;
   float: left;
 }
-#jobs-page .jobs-listing-container .job-listing .job-block .job-content {
+#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content {
   margin-left: 60px;
+}
+#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h2,
+#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h2 a {
+  margin-top: 10px;
+  color: #222;
+}
+#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h3,
+#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h3 a {
+  color: #222;
+  font-weight: 400;
+  margin-top: 0;
 }
 .job-detail .job-heading .job-heading-left .company-img {
   width: 100px;
@@ -954,4 +970,7 @@ nav.navbar-fixed-top {
   font-weight: 500;
   color: #222;
   font-size: 1em;
+}
+.search-block button {
+  background: none;
 }

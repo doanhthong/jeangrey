@@ -1091,9 +1091,12 @@ nav.navbar-fixed-top{
   }
 
   .jobs-listing-container{
-      .job-listing{
+      .jobs-listing{
         margin-top: @magic-number*2;
         .job-block{
+          border-bottom: @box-border;
+          padding-bottom: @magic-number;
+          padding-top: @magic-number;
           @company-img-size: 60px;
           .company-img{
             .square-size(@company-img-size);
@@ -1102,6 +1105,17 @@ nav.navbar-fixed-top{
           }
           .job-content{
             margin-left:  @company-img-size;
+
+            h2, h2 a{
+              margin-top: @magic-number*1;
+              color: @main-color;
+            }
+
+            h3, h3 a{
+              color: @main-color;
+              font-weight: 400;
+              margin-top: 0;
+            }
           }
       }
       }
@@ -1168,5 +1182,11 @@ nav.navbar-fixed-top{
         font-size: 1em;
       }
     }
+  }
+}
+
+.search-block{
+  button{
+    background: none;
   }
 }
