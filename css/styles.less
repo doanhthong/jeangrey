@@ -104,11 +104,14 @@ img{
 
   &-primary{
     background: @sub-color;
+    border: @sub-color 2px solid;
 
     &:hover{
+    border: @sub-color 2px solid;
       background: darken(@sub-color, 10%);
     }
     &:focus, &:active:focus, &:active:hover{
+    border: @sub-color 2px solid;
       background: darken(@sub-color, 20%);
     }
   }
@@ -1102,5 +1105,68 @@ nav.navbar-fixed-top{
           }
       }
       }
+  }
+}
+
+.job-detail{
+  .job-heading{
+    .job-heading-left{
+      @company-img-size: 100px;
+      .company-img{
+        .square-size(@company-img-size);
+        float:left;
+      }
+      h1{
+        margin-top: 0;
+      }
+      div{
+        margin-left: @company-img-size + @magic-number*2;
+        .job-info-name{
+          display: inline;
+        }
+        .job-info-country{
+          display: inline;
+        }
+      }
+    }
+    .job-heading-right{
+      text-align: right;
+      button{
+        margin-bottom: @magic-number;
+      }
+      
+      p{
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+    
+  }
+  
+}
+
+.job-company-description{
+  margin-top: @magic-number*2;
+}
+
+.job-description{
+  margin-top: @magic-number*2;
+}
+
+.related-posts{
+  .row{
+    padding-left: -@magic-number;
+    padding-right: -@magic-number;
+    .related-post{
+      padding-left: @magic-number;
+      padding-right: @magic-number;
+
+      h4{
+        font-family: @sub-font;
+        font-weight: 500;
+        color: @main-color;
+        font-size: 1em;
+      }
+    }
   }
 }

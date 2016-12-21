@@ -17,39 +17,94 @@
 
 
     <!-- Content Here-->
-    <div class="container post-container">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box-view col-md-offset-2 col-lg-offset-2 post-article ">
-            <div class="post-misc">
-                <a href="facebook.com/anthong00" target="_blank" class="facebook-btn social-btn"><i class="fa fa-facebook-f"></i></a>
-                <a href="facebook.com/anthong00" target="_blank" class="linkedin-btn social-btn"><i class="fa fa-linkedin"></i></a>
-                <a href="facebook.com/anthong00" target="_blank" class="twitter-btn social-btn"><i class="fa fa-twitter"></i></a>
-                <a href="facebook.com/anthong00" target="_blank" class="googleplus-btn social-btn"><i class="fa fa-google-plus"></i></a>
+    <div class="container post-container job-detail">
+
+        <div class="row">
+            <!-- Job Detail-->
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box-view post-article ">
+                <!-- Social Misc-->
+                <div class="post-misc">
+                    <a href="facebook.com/anthong00" target="_blank" class="facebook-btn social-btn"><i class="fa fa-facebook-f"></i></a>
+                    <a href="facebook.com/anthong00" target="_blank" class="linkedin-btn social-btn"><i class="fa fa-linkedin"></i></a>
+                    <a href="facebook.com/anthong00" target="_blank" class="twitter-btn social-btn"><i class="fa fa-twitter"></i></a>
+                    <a href="facebook.com/anthong00" target="_blank" class="googleplus-btn social-btn"><i class="fa fa-google-plus"></i></a>
+                </div>
+
+                <!-- Job Info-->
+                <div class="row job-heading">
+
+                    <div class="row">
+                        <!-- Basic Job Info-->
+                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 job-heading-left">
+                            <a class="company-img">
+                                <img src="https://e27.co//assets/logo_e27.png" alt="">
+                            </a>
+                            <div>
+                                <h1 class="job-info-title">UX Designer</h1>
+                                <h2 class="job-info-name">e27</h2>
+                                <p class="job-info-country">| Singapore</p>
+                                <p class="job-info-salary">Salary: USD 999 - 9999</p>
+                            </div>                            
+                        </div>
+
+                        <!-- Call to action buttons and Applicants, Posted Day-->                        
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 job-heading-right">
+
+                            <button type="submit" class="btn btn-ghost">Save</button>
+                            <button type="submit" class="btn btn-primary">Apply</button>
+                            <p>0 Applicant(s)</p>
+                            <p>Posted Today</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Company Description -->
+                    <div class="job-company-description">
+                        <h2>About Company</h2>
+                        <!-- //// Sample Data ////-->
+                        <span w3-include-html="sampledata/company-des.html"></span>
+                    </div>
+
+                    <!-- Company Description -->
+                    <div class="job-description">
+                        <h2>Job Description</h2>
+                        <!-- //// Sample Data ////-->
+                        <span w3-include-html="sampledata/job-des.html"></span>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <a class="company-img">
-                    <img src="https://e27.co//assets/logo_e27.png" alt="">
-                </a>
-                <h1>UX Designer</h1>
-                <h2>e27</h2>
-                <p>Singapore</p>
-                <p>Salary: USD 999 - 9999</p>
 
-                <button type="submit" class="btn btn-primary">Comment</button>
-                <button type="submit" class="btn btn-primary">Comment</button>
+            <!-- Related Jobs-->
 
-                <p>0 Applicant(s)</p>
-                <p>Posted Today</p>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                Related Jobs
+            </div>
 
-                <!-- Company Description -->
-                <div class="job-company-description">
-                    <!-- //// Sample Data ////-->
-                    <span w3-include-html="sampledata/company-des"></span>
+
+
+
+            <!-- Related Article (about Jobs or this Startup) -->
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box-view related-posts">
+                <h2>Job Articles</h2>
+
+                <div class="row">
+                    <a class="col-xs-4 col-sm-4 col-md-4 col-lg-4 related-post">
+                        <img src="https://e27.co/wp-content/uploads/2016/12/47501401_m-1.jpg" class="img-responsive" alt="Image">
+                        <h4>1001 Steps to make your CV stand out</h4>
+                    </a>
+
+                    <a class="col-xs-4 col-sm-4 col-md-4 col-lg-4 related-post">
+                        <img src="https://e27.co/wp-content/uploads/2016/12/47501401_m-1.jpg" class="img-responsive" alt="Image">
+                        <h4>1001 Steps to make your CV stand out</h4>
+                    </a>
+
+                    <a class="col-xs-4 col-sm-4 col-md-4 col-lg-4 related-post">
+                        <img src="https://e27.co/wp-content/uploads/2016/12/47501401_m-1.jpg" class="img-responsive" alt="Image">
+                        <h4>1001 Steps to make your CV stand out</h4>
+                    </a>
                 </div>
-                
-                <!-- Company Description -->
-                <div class="job-description">
 
-                </div>
             </div>
         </div>
     </div>

@@ -56,13 +56,16 @@ img {
 }
 .btn-primary {
   background: #7db924;
+  border: #7db924 2px solid;
 }
 .btn-primary:hover {
+  border: #7db924 2px solid;
   background: #608e1c;
 }
 .btn-primary:focus,
 .btn-primary:active:focus,
 .btn-primary:active:hover {
+  border: #7db924 2px solid;
   background: #436413;
 }
 .post-misc {
@@ -904,4 +907,51 @@ nav.navbar-fixed-top {
 }
 #jobs-page .jobs-listing-container .job-listing .job-block .job-content {
   margin-left: 60px;
+}
+.job-detail .job-heading .job-heading-left .company-img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.job-detail .job-heading .job-heading-left h1 {
+  margin-top: 0;
+}
+.job-detail .job-heading .job-heading-left div {
+  margin-left: 120px;
+}
+.job-detail .job-heading .job-heading-left div .job-info-name {
+  display: inline;
+}
+.job-detail .job-heading .job-heading-left div .job-info-country {
+  display: inline;
+}
+.job-detail .job-heading .job-heading-right {
+  text-align: right;
+}
+.job-detail .job-heading .job-heading-right button {
+  margin-bottom: 10px;
+}
+.job-detail .job-heading .job-heading-right p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.job-company-description {
+  margin-top: 20px;
+}
+.job-description {
+  margin-top: 20px;
+}
+.related-posts .row {
+  padding-left: -10px;
+  padding-right: -10px;
+}
+.related-posts .row .related-post {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.related-posts .row .related-post h4 {
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #222;
+  font-size: 1em;
 }
