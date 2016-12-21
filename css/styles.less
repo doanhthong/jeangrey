@@ -55,12 +55,14 @@ h1, h2, h3{
   color: @dark-foreground;
   font-family: @sub-font;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 
 a{
   color: @sub-color;
   &:focus, &:hover{
     color: @sub-color;
+    text-decoration: none;
   }
 }
 
@@ -251,7 +253,7 @@ span.label-default{
 
   h3{
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 
@@ -265,7 +267,9 @@ span.label-default{
 .nav-tabs{
   li{
     font-family: @sub-font;
-    font-weight: 500;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8em;
     
     a, a:hover, a:active, a:focus, a:visited{
       border: none;
@@ -546,7 +550,7 @@ nav.navbar-fixed-top{
 //Big Hero
 .big-hero{
   background-size: cover;
-  height: 400px;
+  height: 480px;
   width: 100%;
   color: @light-foreground;  
   font-family: @sub-font;
@@ -557,7 +561,7 @@ nav.navbar-fixed-top{
     position: relative;
     z-index: 2;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 80px;
     
     h1{
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -1096,8 +1100,9 @@ nav.navbar-fixed-top{
 //JOBS PAGE
 #jobs-page{
   .jobs-hero{
-    background: url('https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg');
+    background: url('http://shuzhong.biz/wp-content/uploads/office_background_wallpaper_135_1920_1080.jpeg');
     background-size: cover;
+    background-position: 50% 80%;
     .hero-button{
       color: @job-color;
     }
@@ -1119,15 +1124,17 @@ nav.navbar-fixed-top{
           .job-content{
             margin-left:  @company-img-size;
 
-            h2, h2 a{
-              margin-top: @magic-number*1;
+            h3, h3 a{
+              margin-top: @magic-number*0.5;
               color: @dark-foreground;
+              font-size: 1.1em;
             }
 
-            h3, h3 a{
-              color: @dark-foreground;
+            h4, h4 a{
+              color: @grey-foreground;
               font-weight: 400;
               margin-top: 0;
+              font-size: 1em;
             }
           }
       }
@@ -1182,8 +1189,8 @@ nav.navbar-fixed-top{
 
 .related-posts{
   .row{
-    padding-left: -@magic-number;
-    padding-right: -@magic-number;
+    padding-left: @magic-number*0.5;
+    padding-right:  @magic-number*0.5;
     .related-post{
       padding-left: @magic-number;
       padding-right: @magic-number;
@@ -1201,8 +1208,21 @@ nav.navbar-fixed-top{
 .search-block{
   margin-top: -60px;
   height: 100px;
-  button{
-    background: none;
+
+  .search-block-main{
+    padding-right: 40px;
+  }
+
+  .input-group-addon{
+    background: transparent;
+    position: absolute;    
+    right: 20px;
+    z-index: 100;
+    button{
+      background: transparent;
+      border: none;
+      
+    }
   }
 }
 

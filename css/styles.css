@@ -14,6 +14,7 @@ h3 {
   color: rgba(0, 0, 0, 0.8);
   font-family: Montserrat;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 a {
   color: #7db924;
@@ -21,6 +22,7 @@ a {
 a:focus,
 a:hover {
   color: #7db924;
+  text-decoration: none;
 }
 img {
   max-width: 100%;
@@ -213,7 +215,7 @@ span.label-default {
 }
 .box-view h3 {
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 500;
 }
 .box-view-transparent {
   background: #fff;
@@ -241,11 +243,13 @@ span.label-default {
 }
 .box-view-transparent h3 {
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 500;
 }
 .nav-tabs li {
   font-family: Montserrat;
-  font-weight: 500;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 .nav-tabs li a,
 .nav-tabs li a:hover,
@@ -503,7 +507,7 @@ nav.navbar-fixed-top {
 }
 .big-hero {
   background-size: cover;
-  height: 400px;
+  height: 480px;
   width: 100%;
   color: #fff;
   font-family: Montserrat;
@@ -514,7 +518,7 @@ nav.navbar-fixed-top {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 .big-hero .container h1 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -927,8 +931,9 @@ nav.navbar-fixed-top {
   margin-left: 10px;
 }
 #jobs-page .jobs-hero {
-  background: url('https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg');
+  background: url('http://shuzhong.biz/wp-content/uploads/office_background_wallpaper_135_1920_1080.jpeg');
   background-size: cover;
+  background-position: 50% 80%;
 }
 #jobs-page .jobs-hero .hero-button {
   color: #4ca2e2;
@@ -949,16 +954,18 @@ nav.navbar-fixed-top {
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content {
   margin-left: 60px;
 }
-#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h2,
-#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h2 a {
-  margin-top: 10px;
-  color: rgba(0, 0, 0, 0.8);
-}
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h3,
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h3 a {
+  margin-top: 5px;
   color: rgba(0, 0, 0, 0.8);
+  font-size: 1.1em;
+}
+#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h4,
+#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h4 a {
+  color: #696969;
   font-weight: 400;
   margin-top: 0;
+  font-size: 1em;
 }
 .job-detail .job-heading .job-heading-left .company-img {
   width: 100px;
@@ -994,8 +1001,8 @@ nav.navbar-fixed-top {
   margin-top: 20px;
 }
 .related-posts .row {
-  padding-left: -10px;
-  padding-right: -10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .related-posts .row .related-post {
   padding-left: 10px;
@@ -1011,8 +1018,18 @@ nav.navbar-fixed-top {
   margin-top: -60px;
   height: 100px;
 }
-.search-block button {
-  background: none;
+.search-block .search-block-main {
+  padding-right: 40px;
+}
+.search-block .input-group-addon {
+  background: transparent;
+  position: absolute;
+  right: 20px;
+  z-index: 100;
+}
+.search-block .input-group-addon button {
+  background: transparent;
+  border: none;
 }
 @media (max-width: 1000px) {
   #secNav {
