@@ -971,6 +971,10 @@ nav.navbar-fixed-top {
   color: #222;
   font-size: 1em;
 }
+.search-block {
+  margin-top: -60px;
+  height: 100px;
+}
 .search-block button {
   background: none;
 }
