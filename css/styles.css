@@ -11,7 +11,7 @@ body {
 h1,
 h2,
 h3 {
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
   font-family: Montserrat;
   font-weight: 300;
 }
@@ -118,6 +118,7 @@ span.label-default {
 }
 .company-img {
   border: 1px solid #f2f2f2;
+  background: white;
   display: block;
   position: relative;
   width: 80px;
@@ -197,11 +198,12 @@ span.label-default {
   position: relative;
 }
 .box-view h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1em;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 .box-view a.btn-edit {
   position: absolute;
@@ -210,6 +212,34 @@ span.label-default {
   font-size: 1em;
 }
 .box-view h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+.box-view-transparent {
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  background: transparent;
+  border: none;
+}
+.box-view-transparent h2 {
+  font-weight: 500;
+  font-size: 1em;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.box-view-transparent a.btn-edit {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 1em;
+}
+.box-view-transparent h3 {
   font-size: 1em;
   font-weight: bold;
 }
@@ -248,7 +278,7 @@ span.label-default {
 .nav-tabs li:active a:visited,
 .nav-tabs li:focus a:visited {
   border: none;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
   background: none;
   border: 1px solid #222;
   border-width: 0px 0px 4px 0px;
@@ -258,7 +288,7 @@ label {
   padding-left: 0 !important;
   font-family: Montserrat;
   font-weight: normal;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
 }
 legend {
   font-size: 1em;
@@ -275,7 +305,7 @@ legend {
 .form-control:focus {
   border-radius: 0;
   border-width: 0 0 2px 0;
-  border-color: #222;
+  border-color: rgba(0, 0, 0, 0.8);
   box-shadow: none;
 }
 .input-group-addon {
@@ -289,7 +319,7 @@ legend {
 .input-group-addon:focus {
   border-radius: 0;
   border-width: 0 0 2px 0;
-  border-color: #222;
+  border-color: rgba(0, 0, 0, 0.8);
   box-shadow: none;
 }
 .input-group {
@@ -305,7 +335,7 @@ legend {
 .form-control-dropdown:focus {
   border-radius: 0;
   border-width: 0 0 2px 0;
-  border-color: #222;
+  border-color: rgba(0, 0, 0, 0.8);
   box-shadow: none;
 }
 .form-group {
@@ -326,7 +356,7 @@ legend {
   margin-bottom: 10px;
 }
 .comment-container .comment-block .comment-username {
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
 }
 .comment-container .comment-block .comment-username .comment-usertitle {
@@ -453,13 +483,13 @@ nav.navbar-fixed-top {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 #secNav .container .navbar-nav li:hover {
-  border-color: #222;
+  border-color: rgba(0, 0, 0, 0.8);
 }
 #secNav .container .navbar-nav li a {
   display: table-cell;
   vertical-align: middle;
   padding: 10px 15px;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
 }
 #secNav .container .navbar-nav li a img {
   height: 24px;
@@ -467,6 +497,9 @@ nav.navbar-fixed-top {
 }
 #secNav .container .navbar-nav li a span {
   vertical-align: middle;
+}
+.nav-down {
+  transform: translateY(-60px);
 }
 .big-hero {
   background-size: cover;
@@ -492,7 +525,7 @@ nav.navbar-fixed-top {
 .big-hero .container .hero-button {
   margin-top: 40px;
   background: white;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
   font-size: 1em;
   font-weight: 700;
   padding: 12px 40px;
@@ -590,7 +623,7 @@ nav.navbar-fixed-top {
 #profile-content .profile-side-nav .list-group-item:hover {
   border: none;
   border-bottom: 2px solid #222;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
 }
 #profile-content .profile-side-nav .list-parent,
 #profile-content .profile-side-nav .list-parent:hover {
@@ -648,7 +681,7 @@ nav.navbar-fixed-top {
 #profile-content #profile-contributions .article h4 {
   margin-right: 10px;
   margin-top: 0;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
   font-size: 1.1em;
 }
 #profile-content #profile-contributions .article i {
@@ -730,7 +763,7 @@ nav.navbar-fixed-top {
 }
 .home .home-slider ul.home-slider-list li:hover,
 .home .home-slider ul.home-slider-list li.active {
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
 }
 .home .home-slider ul.home-slider-list li:hover:after,
 .home .home-slider ul.home-slider-list li.active:after {
@@ -758,24 +791,27 @@ nav.navbar-fixed-top {
   list-style: none;
   padding: 0;
 }
+.side-container .side-jobs ul li.side-job {
+  margin-bottom: 10px;
+}
 .side-container .side-jobs ul li.side-job .company-img {
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   float: left;
 }
 .side-container .side-jobs ul li.side-job .side-job-info {
-  float: left;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 .side-container .side-jobs ul li.side-job .side-job-info h3,
 .side-container .side-jobs ul li.side-job .side-job-info h4,
 .side-container .side-jobs ul li.side-job .side-job-info h5 {
-  margin-top: 5px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .side-container .side-jobs ul li.side-job .side-job-info h3 {
   font-size: 1em;
   font-weight: 400;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
 }
 .side-container .side-jobs ul li.side-job .side-job-info h4 {
   font-size: 0.8em;
@@ -802,7 +838,7 @@ nav.navbar-fixed-top {
   margin-top: 0;
   font-weight: 500;
   font-family: Montserrat;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
 }
 .feed-article .content h4 {
   font-size: 1em;
@@ -830,7 +866,7 @@ nav.navbar-fixed-top {
   margin-left: 90px;
 }
 .feed-company .content a h3 {
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
   margin-top: 10px;
   font-size: 1.2em;
@@ -850,7 +886,7 @@ nav.navbar-fixed-top {
   font-size: 1.2em;
 }
 .post-container .post-meta .post-author a {
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
   font-family: Montserrat;
 }
 .post-container .post-meta .post-author a .user-img {
@@ -916,11 +952,11 @@ nav.navbar-fixed-top {
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h2,
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h2 a {
   margin-top: 10px;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
 }
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h3,
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h3 a {
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
   margin-top: 0;
 }
@@ -968,7 +1004,7 @@ nav.navbar-fixed-top {
 .related-posts .row .related-post h4 {
   font-family: Montserrat;
   font-weight: 500;
-  color: #222;
+  color: rgba(0, 0, 0, 0.8);
   font-size: 1em;
 }
 .search-block {
@@ -977,4 +1013,9 @@ nav.navbar-fixed-top {
 }
 .search-block button {
   background: none;
+}
+@media (max-width: 1000px) {
+  #secNav {
+    display: none;
+  }
 }

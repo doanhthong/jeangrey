@@ -16,7 +16,7 @@
 @sub-color: #7db924;
 @inactive-color: #888888;
 @light-foreground: #fff;
-@dark-foreground: #222;
+@dark-foreground: rgba(0,0,0,.8);
 @grey-foreground: #696969;
 
 @job-color: #4ca2e2;
@@ -52,7 +52,7 @@ body{
 }
 
 h1, h2, h3{
-  color: @main-color;
+  color: @dark-foreground;
   font-family: @sub-font;
   font-weight: 300;
 }
@@ -168,6 +168,7 @@ span.label-default{
 //Company and User Image
 .company-img{
   border: @box-border;
+  background: white;
   display: block;
   position: relative;
   .square-size();
@@ -233,11 +234,12 @@ span.label-default{
   position: relative;
 
   h2{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1em;
     font-family: @sub-font;
     text-transform: uppercase;
     margin-top:0;
+    margin-bottom: @magic-number*2;
   }
 
   a.btn-edit{
@@ -251,6 +253,12 @@ span.label-default{
     font-size: 1em;
     font-weight: bold;
   }
+}
+
+.box-view-transparent{
+  .box-view;
+  background: transparent;
+  border: none;
 }
 
 //Tab nav
@@ -276,7 +284,7 @@ span.label-default{
 
 .nav-tab-active(){
   border: none;
-  color: @main-color;  
+  color: @dark-foreground;  
   background: none;
   border: 1px solid @main-color;
   border-width: 0px 0px 4px 0px;
@@ -308,7 +316,7 @@ legend{
   &:focus{
     border-radius: 0;
     border-width: 0 0 2px 0;  
-    border-color: @main-color; 
+    border-color: @dark-foreground; 
     box-shadow: none;
   }
 }
@@ -509,7 +517,7 @@ nav.navbar-fixed-top{
   .container{
     .navbar-nav li{
       &:hover{
-          border-color: @main-color;
+          border-color: @dark-foreground;
 
       }
       
@@ -529,6 +537,10 @@ nav.navbar-fixed-top{
       }
     }
   }
+}
+
+.nav-down{
+  transform: translateY(-60px);
 }
 
 //Big Hero
@@ -560,7 +572,7 @@ nav.navbar-fixed-top{
         margin-right: @magic-number;
       }
       background: white;
-      color: @main-color;
+      color: @dark-foreground;
       font-size: 1em;
       font-weight:700;
       padding: 12px 40px;
@@ -678,7 +690,7 @@ nav.navbar-fixed-top{
       color: @dark-foreground;
       border: none;
       border-bottom: 2px solid @main-color;
-      color: @main-color;
+      color: @dark-foreground;
     }
 
     .list-parent, .list-parent:hover{
@@ -748,7 +760,7 @@ nav.navbar-fixed-top{
       h4{
         margin-right: @magic-number;
         margin-top:0;
-        color: @main-color;
+        color: @dark-foreground;
         font-size: 1.1em;
       
       }
@@ -861,7 +873,7 @@ nav.navbar-fixed-top{
         }
 
         &:hover, &.active{
-          color: @main-color;
+          color: @dark-foreground;
         }
         &:hover:after, &.active:after{
           bottom: 100%;
@@ -903,21 +915,22 @@ nav.navbar-fixed-top{
       padding: 0;
       
     li.side-job{
+      @company-img-size : 40px;
+      margin-bottom: @magic-number;
       .company-img{
-        .square-size(56px);
+        .square-size(@company-img-size);
         float: left;
       }
       .side-job-info{
-        float: left;
-        margin-left: @magic-number;
+        margin-left: @company-img-size + @magic-number;
         h3,h4,h5{
-          margin-top: @magic-number*0.5;
-          
+          margin-top: 0;
+          margin-bottom: @magic-number;
         }
         h3{
           font-size: 1em;
           font-weight: 400;
-          color: @main-color;
+          color: @dark-foreground;
         }
         h4{
           font-size: 0.8em;
@@ -954,7 +967,7 @@ nav.navbar-fixed-top{
       margin-top: 0;
       font-weight: 500;
       font-family: @sub-font;
-      color: @main-color;
+      color: @dark-foreground;
     }
     h4{
       font-size: @font-size-normaltext;
@@ -985,7 +998,7 @@ nav.navbar-fixed-top{
     margin-left: 90px;
     a{
       h3{
-        color: @main-color;
+        color: @dark-foreground;
         font-weight: 400;
         margin-top: @magic-number;
         font-size: 1.2em;
@@ -1016,7 +1029,7 @@ nav.navbar-fixed-top{
   .post-meta{  
     .post-author{
       a{
-        color: @main-color;
+        color: @dark-foreground;
         // font-weight: bold;
         font-family: @sub-font;
         .user-img{
@@ -1108,11 +1121,11 @@ nav.navbar-fixed-top{
 
             h2, h2 a{
               margin-top: @magic-number*1;
-              color: @main-color;
+              color: @dark-foreground;
             }
 
             h3, h3 a{
-              color: @main-color;
+              color: @dark-foreground;
               font-weight: 400;
               margin-top: 0;
             }
@@ -1178,7 +1191,7 @@ nav.navbar-fixed-top{
       h4{
         font-family: @sub-font;
         font-weight: 500;
-        color: @main-color;
+        color: @dark-foreground;
         font-size: 1em;
       }
     }
@@ -1190,5 +1203,12 @@ nav.navbar-fixed-top{
   height: 100px;
   button{
     background: none;
+  }
+}
+
+//Some Responsive code
+@media (max-width: 1000px) { 
+  #secNav{
+    display: none;
   }
 }
