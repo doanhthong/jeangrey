@@ -28,6 +28,9 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+strong {
+  font-weight: 600;
+}
 .btn {
   font-family: Montserrat;
   font-weight: 500;
@@ -200,7 +203,7 @@ span.label-default {
   position: relative;
 }
 .box-view h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1em;
   font-family: Montserrat;
   text-transform: uppercase;
@@ -228,7 +231,7 @@ span.label-default {
   border: none;
 }
 .box-view-transparent h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1em;
   font-family: Montserrat;
   text-transform: uppercase;
@@ -993,6 +996,9 @@ nav.navbar-fixed-top {
 .job-detail .job-heading .job-heading-right p {
   margin-top: 0;
   margin-bottom: 0;
+}
+.job-detail .job-heading .job-heading-right .job-info-type {
+  font-weight: 600;
 }
 .job-company-description {
   margin-top: 20px;
