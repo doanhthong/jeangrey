@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import "fonts/montserrat.css";
+.sub-upper-font {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.main-bold-font {
+  font-weight: 600;
+  font-family: Open Sans;
+}
 body {
   background: #fbfbfb;
   padding-top: 94px;
-  font-size: 16px;
-  font-family: Open Sans;
+  font-size: 14px;
+  font-family: Open Sans !important;
   color: #696969;
 }
 h1,
@@ -14,7 +23,6 @@ h3 {
   color: rgba(0, 0, 0, 0.8);
   font-family: Montserrat;
   font-weight: 300;
-  letter-spacing: 1px;
 }
 a {
   color: #7db924;
@@ -34,10 +42,10 @@ strong {
 .btn {
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 10px 32px;
+  padding: 8px 28px;
   border-radius: 3px;
   border: none;
 }
@@ -145,7 +153,7 @@ span.label-default {
   max-height: 100%;
 }
 .misc {
-  font-size: 0.75em;
+  font-size: 11px;
   font-family: Montserrat;
   text-transform: uppercase;
   font-weight: 400;
@@ -157,7 +165,7 @@ span.label-default {
   text-decoration: none;
 }
 .misc-left {
-  font-size: 0.75em;
+  font-size: 11px;
   font-family: Montserrat;
   text-transform: uppercase;
   font-weight: 400;
@@ -174,7 +182,7 @@ span.label-default {
   margin-right: 5px;
 }
 .misc-right {
-  font-size: 0.75em;
+  font-size: 11px;
   font-family: Montserrat;
   text-transform: uppercase;
   font-weight: 400;
@@ -196,7 +204,7 @@ span.label-default {
 }
 .box-view-basic h2 {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 15px;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
@@ -212,7 +220,7 @@ span.label-default {
 }
 .box-view h2 {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 15px;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
@@ -240,7 +248,7 @@ span.label-default {
 }
 .box-view-transparent h2 {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 15px;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
@@ -522,12 +530,21 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .navbar-profile i {
   margin-right: 10px;
 }
+.navbar-profile ul.navbar-profile-companies {
+  padding: 10px 30px;
+}
 .navbar-profile ul.navbar-profile-companies li {
   list-style: none;
+  margin-bottom: 10px;
 }
 .navbar-profile ul.navbar-profile-companies li .company-img {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 10px;
+}
+.navbar-profile ul.navbar-profile-companies li .company-name {
+  color: #222;
 }
 .nav-hidden {
   transform: translateY(-60px);
@@ -781,7 +798,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 }
 .home .home-slider ul.home-slider-list li {
   padding: 20px;
-  font-size: 0.9em;
+  font-size: 14px;
   line-height: 1.6em;
   position: relative;
 }
@@ -837,15 +854,17 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   margin-bottom: 10px;
 }
 .side-container .side-jobs ul li.side-job .side-job-info h3 {
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
 }
 .side-container .side-jobs ul li.side-job .side-job-info h4 {
-  font-size: 0.8em;
+  font-size: 12px;
+  color: #696969;
+  font-weight: 600;
 }
 .side-container .side-jobs ul li.side-job .side-job-info h5 {
-  font-size: 0.8em;
+  font-size: 12px;
 }
 .feed {
   padding-top: 20px;

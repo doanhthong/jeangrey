@@ -12,7 +12,7 @@
 
 //Global variables
 @body-bg: #fbfbfb;
-@main-color: #222;
+@main-color:#222;
 @sub-color: #7db924;
 @inactive-color: #888888;
 @light-foreground: #fff;
@@ -29,13 +29,25 @@
 @box-border: 1px solid @box-border-color;
 
 
-
+//Font
 @main-font: Open Sans;
 @sub-font: Montserrat;
 
 @font-size-normaltext: 1em;
 @font-family-normaltext: Open Sans;
 @line-height-normaltext: 1.8em;
+
+//Font Styles
+.sub-upper-font{
+  font-family: @sub-font;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.main-bold-font{
+  font-weight: 600;
+  font-family: @main-font;
+}
 
 @magic-number: 10px;
 
@@ -45,9 +57,8 @@
 body{
   background: @body-bg;
   padding-top: 94px; //Padding for navigation Height
-  font-size: 16px;
-  font-family: @font-family-normaltext;
-  // line-height: @line-height-normaltext;
+  font-size: 14px;
+  font-family: @font-family-normaltext !important;
   color: @grey-foreground;
 }
 
@@ -55,7 +66,6 @@ h1, h2, h3{
   color: @dark-foreground;
   font-family: @sub-font;
   font-weight: 300;
-  letter-spacing: 1px;
 }
 
 a{
@@ -79,10 +89,10 @@ strong{
 .btn{
   font-family: @sub-font;
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 10px 32px;
+  padding: 8px 28px;
   border-radius: 3px;
   border: none;
 
@@ -197,7 +207,7 @@ span.label-default{
 
 //Misc for "Comment, Likes and Time" of a content
 .misc{
-  font-size: 0.75em;
+  font-size: 11px;
   font-family: @sub-font;
   text-transform: uppercase;
   font-weight: 400;
@@ -235,7 +245,7 @@ span.label-default{
 
   h2{
     font-weight: 400;
-    font-size: 1em;
+    font-size: 15px;
     font-family: @sub-font;
     text-transform: uppercase;
     margin-top:0;
@@ -555,10 +565,17 @@ nav.navbar-fixed-top{
   }
 
   ul.navbar-profile-companies{
+    padding:@magic-number @magic-number*3;
     li{
       list-style: none;
+      margin-bottom: @magic-number;
       .company-img{
-        width: 32px; height: 32px;
+        width: 24px; height: 24px;
+        float: left;
+        margin-right: @magic-number;        
+      }
+      .company-name{
+        color: @main-color;
       }
     } 
   }
@@ -896,7 +913,7 @@ nav.navbar-fixed-top{
       margin-bottom: -@magic-number;
       li{
         padding: @magic-number*2;
-        font-size: 0.9em;
+        font-size: 14px;
         line-height: 1.6em;
         position: relative;
         
@@ -961,15 +978,17 @@ nav.navbar-fixed-top{
           margin-bottom: @magic-number;
         }
         h3{
-          font-size: 1em;
+          font-size: 14px;
           font-weight: 400;
           color: @dark-foreground;
         }
         h4{
-          font-size: 0.8em;
+          font-size: 12px;
+          color: @grey-foreground;
+          font-weight: 600;
         }
         h5{
-          font-size: 0.8em;
+          font-size: 12px;
         }
       }
     }
