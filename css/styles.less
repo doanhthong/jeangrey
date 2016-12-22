@@ -232,6 +232,15 @@ span.label-default{
   border: @box-border;
   padding: @magic-number*2;
   margin-top: @magic-number*2;
+
+  h2{
+    font-weight: 400;
+    font-size: 1em;
+    font-family: @sub-font;
+    text-transform: uppercase;
+    margin-top:0;
+    margin-bottom: @magic-number*2;
+  }
 }
 
 .box-view{
@@ -239,14 +248,7 @@ span.label-default{
   margin-bottom: @magic-number; 
   position: relative;
 
-  h2{
-    font-weight: 400;
-    font-size: 14px;
-    font-family: @sub-font;
-    text-transform: uppercase;
-    margin-top:0;
-    margin-bottom: @magic-number*2;
-  }
+  
 
   a.btn-edit{
     position: absolute;
@@ -439,6 +441,7 @@ nav.navbar-fixed-top{
       color: @light-foreground;
       font-family: @sub-font ;
       font-weight: 300;
+      letter-spacing: 0.2px;
 
       &:hover, &:focus, &:active{
         color: @light-foreground;
@@ -819,12 +822,12 @@ nav.navbar-fixed-top{
 
 .home{
   .box-view-basic{
-    h2{
-      font-size: 1.2em;
-      font-family: @sub-font;
-      margin-top: 0;
-      text-transform: uppercase;
-    }
+    // h2{
+    //   font-size: 1.2em;
+    //   font-family: @sub-font;
+    //   margin-top: 0;
+    //   text-transform: uppercase;
+    // }
   }
 
   .home-slider{
@@ -1153,7 +1156,7 @@ nav.navbar-fixed-top{
             h3, h3 a{
               margin-top: @magic-number*0.5;
               color: @dark-foreground;
-              font-size: 1.1em;
+              font-size: 1.05em;
             }
 
             h4, h4 a{

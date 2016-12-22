@@ -194,6 +194,14 @@ span.label-default {
   padding: 20px;
   margin-top: 20px;
 }
+.box-view-basic h2 {
+  font-weight: 400;
+  font-size: 1em;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 .box-view {
   background: #fff;
   border: 1px solid #f2f2f2;
@@ -204,7 +212,7 @@ span.label-default {
 }
 .box-view h2 {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1em;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
@@ -232,7 +240,7 @@ span.label-default {
 }
 .box-view-transparent h2 {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1em;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
@@ -420,6 +428,7 @@ nav.navbar-fixed-top .firstNav ul.navbar-nav > li > a {
   color: #fff;
   font-family: Montserrat;
   font-weight: 300;
+  letter-spacing: 0.2px;
 }
 nav.navbar-fixed-top .firstNav ul.navbar-nav > li > a:hover,
 nav.navbar-fixed-top .firstNav ul.navbar-nav > li > a:focus,
@@ -712,12 +721,6 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #profile-content #profile-contributions .article i {
   margin-left: 5px;
 }
-.home .box-view-basic h2 {
-  font-size: 1.2em;
-  font-family: Montserrat;
-  margin-top: 0;
-  text-transform: uppercase;
-}
 .home .home-slider {
   margin-left: -15px;
   margin-right: -15px;
@@ -979,7 +982,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h3 a {
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 1.1em;
+  font-size: 1.05em;
 }
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h4,
 #jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h4 a {
