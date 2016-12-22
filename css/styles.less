@@ -241,7 +241,7 @@ span.label-default{
 
   h2{
     font-weight: 400;
-    font-size: 1em;
+    font-size: 14px;
     font-family: @sub-font;
     text-transform: uppercase;
     margin-top:0;
@@ -418,57 +418,102 @@ legend{
 
 // Navigation Bar
 nav.navbar-fixed-top{
-  border-bottom: 4px solid transparent;
-  
-  background: @main-color !important;
+  border-bottom: 4px solid transparent;  
   border: none;
-}
-.navbar>.container .navbar-brand{
-  margin-left: 0;
-}
-.navbar-header{
-  .navbar-brand{
-    padding: 6px;
-    img{
-      max-height: 100%;
-    }
-  }
-}
+  background: transparent;
+  .firstNav{
+    background: @main-color !important;  
+    position: relative; z-index: 100;
 
-.navbar-default .navbar-nav>li>a{
-  color: @light-foreground;
-  font-family: @sub-font ;
-  font-weight: 300;
-
-  &:hover, &:focus, &:active{
-    color: @light-foreground;
-  }
-}
-
-#navbar-search{
-  width: 40%; //40% Navbar
-  .form-group{
-    width: 100%;
-      input{
-        width: 100%;
+    .navbar-header{
+      .navbar-brand{
+        margin-left: 0;
+        padding: 6px;
+        img{
+          max-height: 100%;
+        }
       }
-  }
-  .form-control{
-    border-radius: 4px 0px 0px 4px ;
-    border: none;
-  }
+    } 
 
-  .input-group-addon{
-    background: white !important;
-    width: 36px;
-    margin: 0;
-    border-radius: 0px 4px 4px 0px;
-    button{
-        border:0;
-        background:transparent;
+    ul.navbar-nav>li>a{
+      color: @light-foreground;
+      font-family: @sub-font ;
+      font-weight: 300;
+
+      &:hover, &:focus, &:active{
+        color: @light-foreground;
+      }
+    }
+
+    #navbar-search{
+      width: 40%; //40% Navbar
+      .form-group{
+        width: 100%;
+          input{
+            width: 100%;
+          }
+      }
+      .form-control{
+        border-radius: 4px 0px 0px 4px ;
+        border: none;
+      }
+
+      .input-group-addon{
+        background: white !important;
+        width: 36px;
+        margin: 0;
+        border-radius: 0px 4px 4px 0px;
+        button{
+            border:0;
+            background:transparent;
+        }
+      }
     }
   }
+
+  // 2nd Second Navigation Bar
+  .secNav{
+    background: @light-foreground;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.5s;
+    position: relative; z-index: 99;
+    
+    .container{
+      @border-style: 1px solid rgba(128, 128, 128, 0.1);
+      .navbar-nav {
+        border: @border-style;
+        border-width: 0 0 0 1px;
+        li{
+          border: @border-style;
+          border-width: 0 1px 0 0;
+          &:hover{
+            background: rgba(0, 0, 0, 0.03);
+            // border: 2px solid @main-color; 
+            // border-width:  0 0 4px 0;
+          }
+        }
+
+        a{
+          display: table-cell;
+          vertical-align: middle;
+          padding: 10px 15px;
+          color: @dark-foreground;     
+          font-size: 14px;
+          img{
+            height: 20px;
+            margin-right: 8px;
+          }
+          span{
+            vertical-align: middle;
+          }
+
+        }
+      }
+    }
+  }
+  // End 2nd Nav
 }
+
 
 .navbar-noti, .navbar-messages{
   .dropdown-menu{
@@ -518,37 +563,14 @@ nav.navbar-fixed-top{
 }
 
 
-// Second Navigation Bar
-#secNav{
-  background: @light-foreground;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  .container{
-    .navbar-nav li{
-      &:hover{
-          border-color: @dark-foreground;
 
-      }
-      
-      a{
-        display: table-cell;
-        vertical-align: middle;
-        padding: 10px 15px;
-        color: @dark-foreground;     
-        img{
-          height: 24px;
-          margin-right: 8px;
-        }
-        span{
-          vertical-align: middle;
-        }
 
-      }
-    }
-  }
+.nav-hidden{
+  transform: translateY(-60px);
 }
 
-.nav-down{
-  transform: translateY(-60px);
+.nav-visible{
+  transform: translateY(0);
 }
 
 //Big Hero
@@ -571,7 +593,7 @@ nav.navbar-fixed-top{
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
       color: @light-foreground;
       font-weight: 400;
-      font-size: 50px;
+      font-size: 3vw;
     }
 
     .hero-button{
@@ -1216,7 +1238,6 @@ nav.navbar-fixed-top{
 
 .search-block{
   margin-top: -60px;
-  height: 100px;
 
   .search-block-main{
     padding-right: 40px;
@@ -1231,13 +1252,18 @@ nav.navbar-fixed-top{
       background: transparent;
       border: none;
       
-    }
+    }    
+  }
+
+  .search-block-filter{
+    font-family: @sub-font;
+    display: none;
   }
 }
 
 //Some Responsive code
 @media (max-width: 1000px) { 
-  #secNav{
+  .secNav{
     display: none;
   }
 }

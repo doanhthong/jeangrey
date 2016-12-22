@@ -204,7 +204,7 @@ span.label-default {
 }
 .box-view h2 {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 14px;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
@@ -232,7 +232,7 @@ span.label-default {
 }
 .box-view-transparent h2 {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 14px;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
@@ -401,50 +401,85 @@ legend {
 }
 nav.navbar-fixed-top {
   border-bottom: 4px solid transparent;
-  background: #222 !important;
   border: none;
+  background: transparent;
 }
-.navbar > .container .navbar-brand {
+nav.navbar-fixed-top .firstNav {
+  background: #222 !important;
+  position: relative;
+  z-index: 100;
+}
+nav.navbar-fixed-top .firstNav .navbar-header .navbar-brand {
   margin-left: 0;
-}
-.navbar-header .navbar-brand {
   padding: 6px;
 }
-.navbar-header .navbar-brand img {
+nav.navbar-fixed-top .firstNav .navbar-header .navbar-brand img {
   max-height: 100%;
 }
-.navbar-default .navbar-nav > li > a {
+nav.navbar-fixed-top .firstNav ul.navbar-nav > li > a {
   color: #fff;
   font-family: Montserrat;
   font-weight: 300;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:active {
+nav.navbar-fixed-top .firstNav ul.navbar-nav > li > a:hover,
+nav.navbar-fixed-top .firstNav ul.navbar-nav > li > a:focus,
+nav.navbar-fixed-top .firstNav ul.navbar-nav > li > a:active {
   color: #fff;
 }
-#navbar-search {
+nav.navbar-fixed-top .firstNav #navbar-search {
   width: 40%;
 }
-#navbar-search .form-group {
+nav.navbar-fixed-top .firstNav #navbar-search .form-group {
   width: 100%;
 }
-#navbar-search .form-group input {
+nav.navbar-fixed-top .firstNav #navbar-search .form-group input {
   width: 100%;
 }
-#navbar-search .form-control {
+nav.navbar-fixed-top .firstNav #navbar-search .form-control {
   border-radius: 4px 0px 0px 4px ;
   border: none;
 }
-#navbar-search .input-group-addon {
+nav.navbar-fixed-top .firstNav #navbar-search .input-group-addon {
   background: white !important;
   width: 36px;
   margin: 0;
   border-radius: 0px 4px 4px 0px;
 }
-#navbar-search .input-group-addon button {
+nav.navbar-fixed-top .firstNav #navbar-search .input-group-addon button {
   border: 0;
   background: transparent;
+}
+nav.navbar-fixed-top .secNav {
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.5s;
+  position: relative;
+  z-index: 99;
+}
+nav.navbar-fixed-top .secNav .container .navbar-nav {
+  border: 1px solid rgba(128, 128, 128, 0.1);
+  border-width: 0 0 0 1px;
+}
+nav.navbar-fixed-top .secNav .container .navbar-nav li {
+  border: 1px solid rgba(128, 128, 128, 0.1);
+  border-width: 0 1px 0 0;
+}
+nav.navbar-fixed-top .secNav .container .navbar-nav li:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+nav.navbar-fixed-top .secNav .container .navbar-nav a {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px 15px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+nav.navbar-fixed-top .secNav .container .navbar-nav a img {
+  height: 20px;
+  margin-right: 8px;
+}
+nav.navbar-fixed-top .secNav .container .navbar-nav a span {
+  vertical-align: middle;
 }
 .navbar-noti .dropdown-menu,
 .navbar-messages .dropdown-menu {
@@ -485,28 +520,11 @@ nav.navbar-fixed-top {
   width: 32px;
   height: 32px;
 }
-#secNav {
-  background: #fff;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-#secNav .container .navbar-nav li:hover {
-  border-color: rgba(0, 0, 0, 0.8);
-}
-#secNav .container .navbar-nav li a {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 10px 15px;
-  color: rgba(0, 0, 0, 0.8);
-}
-#secNav .container .navbar-nav li a img {
-  height: 24px;
-  margin-right: 8px;
-}
-#secNav .container .navbar-nav li a span {
-  vertical-align: middle;
-}
-.nav-down {
+.nav-hidden {
   transform: translateY(-60px);
+}
+.nav-visible {
+  transform: translateY(0);
 }
 .big-hero {
   background-size: cover;
@@ -527,7 +545,7 @@ nav.navbar-fixed-top {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   color: #fff;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 3vw;
 }
 .big-hero .container .hero-button {
   margin-top: 40px;
@@ -1022,7 +1040,6 @@ nav.navbar-fixed-top {
 }
 .search-block {
   margin-top: -60px;
-  height: 100px;
 }
 .search-block .search-block-main {
   padding-right: 40px;
@@ -1037,8 +1054,12 @@ nav.navbar-fixed-top {
   background: transparent;
   border: none;
 }
+.search-block .search-block-filter {
+  font-family: Montserrat;
+  display: none;
+}
 @media (max-width: 1000px) {
-  #secNav {
+  .secNav {
     display: none;
   }
 }
