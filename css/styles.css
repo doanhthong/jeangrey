@@ -66,6 +66,7 @@ strong {
 .btn-ghost {
   background: transparent;
   border: 2px #222 solid;
+  color: #222;
 }
 .btn-primary {
   background: #7db924;
@@ -985,16 +986,25 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   height: 48px;
   float: left;
 }
-.post-container .post-author-des a .author-name {
-  margin-left: 58px;
+.post-container .post-author-des a .author-info {
+  float: left;
+  margin-left: 10px;
+}
+.post-container .post-author-des a .author-info .author-name {
   color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 0;
 }
-.post-container .post-author-des a .author-title {
-  margin-left: 58px;
+.post-container .post-author-des a .author-info .author-title {
   color: #696969;
+}
+.post-container .post-author-des a .author-cta {
+  float: right;
+}
+.post-container .post-author-des a .author-cta .btn {
+  border-width: 1.5px;
+  padding: 6px 20px;
 }
 .job-post h1 {
   text-align: center;

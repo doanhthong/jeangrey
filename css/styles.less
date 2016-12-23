@@ -123,6 +123,7 @@ strong{
   &-ghost{
     background: transparent;
     border: 2px @main-color solid;
+    color: @main-color;
   }
 
   &-primary{
@@ -1138,18 +1139,28 @@ nav.navbar-fixed-top{
         float: left;
       }
 
-      .author-name{
-        margin-left:  @user-img-size + @magic-number;
-        color: @dark-foreground;
-        font-weight: 700;
-        font-size: 16px;
-        margin-bottom: 0;
+     .author-info{
+        float: left; margin-left: @magic-number;
+        // margin-left:  @user-img-size + @magic-number;       
+        .author-name{
+          color: @dark-foreground;
+          font-weight: 700;
+          font-size: 16px;
+          margin-bottom: 0;
 
-      }
-      .author-title{
-        margin-left:  @user-img-size + @magic-number;
-        color: @grey-foreground
-      }
+        }
+        .author-title{
+          color: @grey-foreground;
+        }
+     }
+
+     .author-cta{
+       float: right;
+       .btn{
+         border-width: 1.5px;
+         padding: 6px 20px;
+       }
+     }
 
       margin-bottom: @magic-number;
     }
