@@ -1252,6 +1252,7 @@ nav.navbar-fixed-top{
           padding-bottom: @magic-number;
           padding-top: @magic-number;
           @company-img-size: 60px;
+          position: relative;
           .company-img{
             .square-size(@company-img-size);
             float:left;
@@ -1272,8 +1273,18 @@ nav.navbar-fixed-top{
               margin-top: 0;
               font-size: 1em;
             }
+
+            button{
+              background: transparent;
+              border: none;
+            }
           }
-      }
+
+          .job-block-save{
+            position: absolute;
+            top: 20px; right: 20px;
+          }
+        }
       }
   }
 }
