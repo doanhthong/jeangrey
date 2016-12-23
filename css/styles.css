@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import "fonts/montserrat.css";
+.bottom-sep {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20px;
+}
+.top-sep {
+  margin-top: 20px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 20px;
+}
 .sub-upper-font {
   font-family: Montserrat;
   text-transform: uppercase;
@@ -16,6 +26,7 @@ body {
   font-size: 14px;
   font-family: Open Sans !important;
   color: #696969;
+  line-height: 24px;
 }
 h1,
 h2,
@@ -65,8 +76,8 @@ strong {
 }
 .btn-ghost {
   background: transparent;
-  border: 2px #222 solid;
-  color: #222;
+  border: 2px rgba(0, 0, 0, 0.8) solid;
+  color: rgba(0, 0, 0, 0.8);
 }
 .btn-primary {
   background: #7db924;
@@ -370,11 +381,10 @@ legend {
 .comment-container {
   margin-top: 20px;
   font-size: 14px;
-  border: 1px solid #f2f2f2;
-  border-width: 1px 0 0 0;
   padding: 10px 0 0 0;
 }
 .comment-container a.comment-view-all {
+  margin-top: 10px;
   margin-bottom: 10px;
   display: block;
 }
@@ -387,13 +397,14 @@ legend {
 }
 .comment-container .comment-block .comment-username .comment-usertitle {
   font-weight: normal;
+  color: #9a9a9a;
 }
 .comment-container .comment-block .comment-text {
   margin: 0;
 }
 .comment-container .comment-block .comment-misc {
   font-size: 0.8em;
-  color: #888888;
+  color: #9a9a9a;
   margin-top: 5px;
   text-transform: uppercase;
   font-family: Montserrat;
@@ -963,20 +974,30 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   text-transform: none;
   font-family: Open Sans;
 }
-.post-container .post-content {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 20px;
+.post-container .post-comments {
+  margin-top: 20px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 20px;
 }
-.post-container .post-companies {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 20px;
+.post-container .post-related-companies {
+  margin-top: 20px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 20px;
+}
+.post-container .post-related-companies .company-img {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.post-container .post-related-companies h3 {
+  overflow: hidden;
+  min-width: 100px;
+  margin-top: 10px;
 }
 .post-container .post-author-des {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 20px;
 }
 .post-container .post-author-des a {
   margin-bottom: 10px;
@@ -1105,19 +1126,12 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .job-description {
   margin-top: 20px;
 }
-.related-posts .row {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.related-posts .row .related-post {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .related-posts .row .related-post h4 {
-  font-family: Montserrat;
-  font-weight: 500;
+  font-family: Open Sans;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.8);
   font-size: 1em;
+  line-height: 18px;
 }
 .search-block {
   margin-top: -60px;
