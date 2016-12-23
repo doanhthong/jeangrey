@@ -28,6 +28,12 @@
 @box-border-color: #f2f2f2;
 @box-border: 1px solid @box-border-color;
 
+.bottom-sep(){
+    margin-bottom: @magic-number*2;
+    border-bottom: @box-border;
+    padding-bottom: @magic-number*2;
+}
+
 
 //Font
 @main-font: Open Sans;
@@ -49,9 +55,10 @@
   font-family: @main-font;
 }
 
+
 @magic-number: 10px;
 
-.square-size(@size:80px){width: @size; height: @size};
+.square-size(@size:60px){width: @size; height: @size};
 
 //Global Styles
 body{
@@ -203,6 +210,7 @@ span.label-default{
   border-radius: 50%;
   max-width: 100%;
   max-height: 100%;
+  height: 32px; width: 32px;
 }
 
 //Misc for "Comment, Likes and Time" of a content
@@ -560,6 +568,9 @@ nav.navbar-fixed-top{
 }
 
 .navbar-profile{
+  .user-img{
+    .square-size(20px);
+  }
   i{
     margin-right: @magic-number;
   }
@@ -1076,7 +1087,10 @@ nav.navbar-fixed-top{
   }
 
   .post-tags{
-    font-size: 1.2em;
+    font-size: 15px;
+    .label{
+      font-weight: normal;
+    }
   }
   .post-meta{  
     .post-author{
@@ -1096,6 +1110,50 @@ nav.navbar-fixed-top{
       font-size: 0.8em;
     }
   }
+
+  .post-heading{
+    font-family: @sub-font;
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .post-subheading{
+    text-transform: none;
+    font-family: @main-font;
+  }
+  .post-content{
+    .bottom-sep;
+  }
+
+  .post-companies{
+    .bottom-sep;
+  }
+
+  .post-author-des{
+    .bottom-sep;
+    a{
+      @user-img-size : 48px;
+
+      .user-img{
+        .square-size(@user-img-size);
+        float: left;
+      }
+
+      .author-name{
+        margin-left:  @user-img-size + @magic-number;
+        color: @dark-foreground;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 0;
+
+      }
+      .author-title{
+        margin-left:  @user-img-size + @magic-number;
+        color: @grey-foreground
+      }
+
+      margin-bottom: @magic-number;
+    }
+  }
 }
 
 
@@ -1106,7 +1164,6 @@ nav.navbar-fixed-top{
 
 //POST A JOB
 .job-post{
-  margin-top: @magic-number*2;
   h1{
     text-align: center;
     margin-bottom: @magic-number*4;
