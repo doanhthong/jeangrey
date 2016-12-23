@@ -22,7 +22,7 @@
 }
 body {
   background: #fbfbfb;
-  padding-top: 94px;
+  padding-top: 80px;
   font-size: 14px;
   font-family: Open Sans !important;
   color: #696969;
@@ -1062,6 +1062,8 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   margin-top: 20px;
 }
 #jobs-page .jobs-listing-container .jobs-listing .job-block {
+  display: block;
+  color: #696969;
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 10px;
   padding-top: 10px;

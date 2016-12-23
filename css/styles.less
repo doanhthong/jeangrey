@@ -1,10 +1,12 @@
+//MARGIN BOTTOM and LEFT
+//MAGIC NUMBER = 10PX
+
 //** Global styles for blocks on site:
 //## Global variables
 //## Global styles
 //## Navigation Bar
 //## Second Navigation Bar
 //## Content Box-view
-
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
@@ -70,7 +72,7 @@
 //Global Styles
 body{
   background: @body-bg;
-  padding-top: 94px; //Padding for navigation Height
+  padding-top: 80px; //Padding for navigation Height
   font-size: 14px;
   font-family: @font-family-normaltext !important;
   color: @grey-foreground;
@@ -1244,6 +1246,8 @@ nav.navbar-fixed-top{
       .jobs-listing{
         margin-top: @magic-number*2;
         .job-block{
+          display: block;
+          color: @grey-foreground;
           border-bottom: @box-border;
           padding-bottom: @magic-number;
           padding-top: @magic-number;
