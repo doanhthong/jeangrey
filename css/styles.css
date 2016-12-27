@@ -1099,10 +1099,10 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #jobs-page .jobs-hero .hero-button {
   color: #4ca2e2;
 }
-#jobs-page .jobs-listing-container .jobs-listing {
+#jobs-page .jobs-list-container .jobs-list {
   margin-top: 20px;
 }
-#jobs-page .jobs-listing-container .jobs-listing .job-block {
+#jobs-page .jobs-list-container .jobs-list .job-block {
   display: block;
   color: #696969;
   border-bottom: 1px solid #f2f2f2;
@@ -1110,32 +1110,32 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   padding-top: 10px;
   position: relative;
 }
-#jobs-page .jobs-listing-container .jobs-listing .job-block .company-img {
+#jobs-page .jobs-list-container .jobs-list .job-block .company-img {
   width: 60px;
   height: 60px;
   float: left;
 }
-#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content {
+#jobs-page .jobs-list-container .jobs-list .job-block .job-content {
   margin-left: 60px;
 }
-#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h3,
-#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h3 a {
+#jobs-page .jobs-list-container .jobs-list .job-block .job-content h3,
+#jobs-page .jobs-list-container .jobs-list .job-block .job-content h3 a {
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.05em;
 }
-#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h4,
-#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content h4 a {
+#jobs-page .jobs-list-container .jobs-list .job-block .job-content h4,
+#jobs-page .jobs-list-container .jobs-list .job-block .job-content h4 a {
   color: #696969;
   font-weight: 400;
   margin-top: 0;
   font-size: 1em;
 }
-#jobs-page .jobs-listing-container .jobs-listing .job-block .job-content button {
+#jobs-page .jobs-list-container .jobs-list .job-block .job-content button {
   background: transparent;
   border: none;
 }
-#jobs-page .jobs-listing-container .jobs-listing .job-block .job-block-save {
+#jobs-page .jobs-list-container .jobs-list .job-block .job-block-save {
   position: absolute;
   top: 20px;
   right: 20px;
