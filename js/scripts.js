@@ -1,14 +1,16 @@
 
-var imported = document.createElement('script');
-imported.src = '/path/to/imported/script';
-document.head.appendChild(imported);
+// var imported = document.createElement('script');
+// imported.src = '/path/to/imported/script';
+// document.head.appendChild(imported);
 
-
+//Include some script
 $.getScript("e27animation.js", function(){
 
    alert("Script loaded but not necessarily executed.");
 
 });
+
+
 
 $(document).ready(function(){
 

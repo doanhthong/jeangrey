@@ -23,6 +23,10 @@
 @lightgrey-foreground: #9a9a9a;
 
 @job-color: #4ca2e2;
+@startup-color: #e74c3c;
+@investor-color: #8e44ad;
+@product-color: #2ecc71;
+@event-color: #f39c12;
 
 // @sep-color: #e5e5e5;
 @sep-color: #e5e5e5 ;
@@ -478,7 +482,7 @@ nav.navbar-fixed-top{
     }
 
     #navbar-search{
-      width: 40%; //40% Navbar
+      width: 35%; //40% Navbar
       .form-group{
         width: 100%;
           input{
@@ -670,13 +674,45 @@ nav.navbar-fixed-top{
 
 
       &-jobs{
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4ca2e2+0,4ca2e2+100&0.9+0,0.7+100 */
-      background: -moz-linear-gradient(top,  rgba(76,162,226,0.9) 0%, rgba(76,162,226,0.7) 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(top,  rgba(76,162,226,0.9) 0%,rgba(76,162,226,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom,  rgba(76,162,226,0.9) 0%,rgba(76,162,226,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64ca2e2', endColorstr='#b34ca2e2',GradientType=0 ); /* IE6-9 */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4ca2e2+0,4ca2e2+100&0.9+0,0.7+100 */
+        background: -moz-linear-gradient(top,  rgba(76,162,226,0.9) 0%, rgba(76,162,226,0.7) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(76,162,226,0.9) 0%,rgba(76,162,226,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(76,162,226,0.9) 0%,rgba(76,162,226,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64ca2e2', endColorstr='#b34ca2e2',GradientType=0 ); /* IE6-9 */
+      }
 
-        }
+      &-startups{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e74c3c+0,e74c3c+100&0.9+0,0.7+100 */
+        background: -moz-linear-gradient(top,  rgba(231,76,60,0.9) 0%, rgba(231,76,60,0.7) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(231,76,60,0.9) 0%,rgba(231,76,60,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(231,76,60,0.9) 0%,rgba(231,76,60,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e74c3c', endColorstr='#b3e74c3c',GradientType=0 ); /* IE6-9 */
+      }
+
+      &-investors{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8e44ad+0,8e44ad+100&0.9+0,0.7+100 */
+        background: -moz-linear-gradient(top,  rgba(142,68,173,0.9) 0%, rgba(142,68,173,0.7) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(142,68,173,0.9) 0%,rgba(142,68,173,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(142,68,173,0.9) 0%,rgba(142,68,173,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e68e44ad', endColorstr='#b38e44ad',GradientType=0 ); /* IE6-9 */
+
+      }
+      &-products{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ecc71+0,2ecc71+100&0.9+0,0.7+100 */
+        background: -moz-linear-gradient(top,  rgba(46,204,113,0.9) 0%, rgba(46,204,113,0.7) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(46,204,113,0.9) 0%,rgba(46,204,113,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(46,204,113,0.9) 0%,rgba(46,204,113,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e62ecc71', endColorstr='#b32ecc71',GradientType=0 ); /* IE6-9 */
+
+      }
+      &-events{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f39c12+0,f39c12+100&0.9+0,0.7+100 */
+        background: -moz-linear-gradient(top,  rgba(243,156,18,0.9) 0%, rgba(243,156,18,0.7) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(243,156,18,0.9) 0%,rgba(243,156,18,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(243,156,18,0.9) 0%,rgba(243,156,18,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f39c12', endColorstr='#b3f39c12',GradientType=0 ); /* IE6-9 */
+
+      }
     }
 
 }
@@ -1188,9 +1224,10 @@ nav.navbar-fixed-top{
 //** Jobs, Post Job, Job Detail Pages
 //## Post a Job
 //## Jobs Page
+//## Job in Detail
 
 
-//POST A JOB
+//Post a Job
 .job-post{
   h1{
     text-align: center;
@@ -1230,7 +1267,7 @@ nav.navbar-fixed-top{
 }
 
 
-//JOBS PAGE
+//Jobs Page
 #jobs-page{
   .jobs-hero{
     background: url('http://shuzhong.biz/wp-content/uploads/office_background_wallpaper_135_1920_1080.jpeg');
@@ -1241,8 +1278,8 @@ nav.navbar-fixed-top{
     }
   }
 
-  .jobs-listing-container{
-      .jobs-listing{
+  .jobs-list-container{
+      .jobs-list{
         margin-top: @magic-number*2;
         .job-block{
           display: block;
@@ -1288,6 +1325,7 @@ nav.navbar-fixed-top{
   }
 }
 
+//Job in detail
 .job-detail{
   .job-heading{
     .job-heading-left{
@@ -1327,20 +1365,41 @@ nav.navbar-fixed-top{
     }
     
   }
-  
+  .job-company-description{
+    margin-top: @magic-number*2;
+  }
+
+  .job-description{
+    margin-top: @magic-number*2;
+  }
 }
 
-.job-company-description{
-  margin-top: @magic-number*2;
+
+//** Company, Startups and Investors
+//## Company Basic
+//## Startups
+//## Investor
+#startups-page{
+  .startups-hero{
+    background: url('https://static.pexels.com/photos/7097/people-coffee-tea-meeting.jpg');
+    background-size: cover;
+    background-position: 50% 80%;
+    .hero-button{
+      color: @startup-color;
+    }
+  }
+
+  .startups-list-container{
+    
+  }
 }
 
-.job-description{
-  margin-top: @magic-number*2;
-}
-
+//Modules
 .related-posts{
   .row{
     .related-post{
+      display: block;
+      margin-bottom: @magic-number*2;
       h4{
         font-family: @main-font;
         font-weight: 600;

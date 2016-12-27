@@ -458,7 +458,7 @@ nav.navbar-fixed-top .firstNav ul.navbar-nav > li > a:active {
   color: #fff;
 }
 nav.navbar-fixed-top .firstNav #navbar-search {
-  width: 40%;
+  width: 35%;
 }
 nav.navbar-fixed-top .firstNav #navbar-search .form-group {
   width: 100%;
@@ -629,6 +629,50 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   background: linear-gradient(to bottom, rgba(76, 162, 226, 0.9) 0%, rgba(76, 162, 226, 0.7) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e64ca2e2', endColorstr='#b34ca2e2', GradientType=0);
+  /* IE6-9 */
+}
+.big-hero .overlay-startups {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e74c3c+0,e74c3c+100&0.9+0,0.7+100 */
+  background: -moz-linear-gradient(top, rgba(231, 76, 60, 0.9) 0%, rgba(231, 76, 60, 0.7) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(231, 76, 60, 0.9) 0%, rgba(231, 76, 60, 0.7) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(231, 76, 60, 0.9) 0%, rgba(231, 76, 60, 0.7) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e74c3c', endColorstr='#b3e74c3c', GradientType=0);
+  /* IE6-9 */
+}
+.big-hero .overlay-investors {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8e44ad+0,8e44ad+100&0.9+0,0.7+100 */
+  background: -moz-linear-gradient(top, rgba(142, 68, 173, 0.9) 0%, rgba(142, 68, 173, 0.7) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(142, 68, 173, 0.9) 0%, rgba(142, 68, 173, 0.7) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(142, 68, 173, 0.9) 0%, rgba(142, 68, 173, 0.7) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e68e44ad', endColorstr='#b38e44ad', GradientType=0);
+  /* IE6-9 */
+}
+.big-hero .overlay-products {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ecc71+0,2ecc71+100&0.9+0,0.7+100 */
+  background: -moz-linear-gradient(top, rgba(46, 204, 113, 0.9) 0%, rgba(46, 204, 113, 0.7) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(46, 204, 113, 0.9) 0%, rgba(46, 204, 113, 0.7) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(46, 204, 113, 0.9) 0%, rgba(46, 204, 113, 0.7) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e62ecc71', endColorstr='#b32ecc71', GradientType=0);
+  /* IE6-9 */
+}
+.big-hero .overlay-events {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f39c12+0,f39c12+100&0.9+0,0.7+100 */
+  background: -moz-linear-gradient(top, rgba(243, 156, 18, 0.9) 0%, rgba(243, 156, 18, 0.7) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(243, 156, 18, 0.9) 0%, rgba(243, 156, 18, 0.7) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(243, 156, 18, 0.9) 0%, rgba(243, 156, 18, 0.7) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6f39c12', endColorstr='#b3f39c12', GradientType=0);
   /* IE6-9 */
 }
 #profile-hero {
@@ -1126,11 +1170,23 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .job-detail .job-heading .job-heading-right .job-info-type {
   font-weight: 600;
 }
-.job-company-description {
+.job-detail .job-company-description {
   margin-top: 20px;
 }
-.job-description {
+.job-detail .job-description {
   margin-top: 20px;
+}
+#startups-page .startups-hero {
+  background: url('https://static.pexels.com/photos/7097/people-coffee-tea-meeting.jpg');
+  background-size: cover;
+  background-position: 50% 80%;
+}
+#startups-page .startups-hero .hero-button {
+  color: #e74c3c;
+}
+.related-posts .row .related-post {
+  display: block;
+  margin-bottom: 20px;
 }
 .related-posts .row .related-post h4 {
   font-family: Open Sans;
