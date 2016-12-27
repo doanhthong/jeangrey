@@ -1139,6 +1139,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
 }
 .job-detail .job-heading .job-heading-left .company-img {
   width: 100px;
@@ -1183,6 +1184,17 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 }
 #startups-page .startups-hero .hero-button {
   color: #e74c3c;
+}
+#startups-page .startups-list-container .startups-list .company-img {
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+#startups-page .startups-list-container .startups-list .compamy-des {
+  overflow: hidden;
+}
+#startups-page .startups-list-container .startups-list .startup-block .desc {
+  display: none;
 }
 .related-posts .row .related-post {
   display: block;
