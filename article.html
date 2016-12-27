@@ -19,9 +19,20 @@
     <!-- Content Here-->
 
     <div class="container post-container">
-        <article class="col-xs-12 col-sm-12 col-md-8 col-lg-8 box-view col-md-offset-2 col-lg-offset-2 post-article ">
+        <!-- Post Social Buttons for smartphones -->
+        <div class="post-misc visible-xs">
+            <a href="facebook.com/anthong00" target="_blank" class="facebook-btn social-btn"><i class="fa fa-facebook-f"></i></a>
+            <a href="facebook.com/anthong00" target="_blank" class="linkedin-btn social-btn"><i class="fa fa-linkedin"></i></a>
+            <a href="facebook.com/anthong00" target="_blank" class="twitter-btn social-btn"><i class="fa fa-twitter"></i></a>
+            <a href="facebook.com/anthong00" target="_blank" class="googleplus-btn social-btn"><i class="fa fa-google-plus"></i></a>
+            <a href="facebook.com/anthong00" target="_blank" class="comments-btn social-btn"><i class="fa fa-comment-o">
+                <span class="label">69</span>
+            </i></a>
+        </div>
+        <div class="article-wrapper col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
             <!-- Right Misc: Post Social Buttons-->
-            <div class="post-misc">
+            <!-- Post Social Buttons for larger devices -->
+            <div class="post-misc hidden-xs">
                 <a href="facebook.com/anthong00" target="_blank" class="facebook-btn social-btn"><i class="fa fa-facebook-f"></i></a>
                 <a href="facebook.com/anthong00" target="_blank" class="linkedin-btn social-btn"><i class="fa fa-linkedin"></i></a>
                 <a href="facebook.com/anthong00" target="_blank" class="twitter-btn social-btn"><i class="fa fa-twitter"></i></a>
@@ -30,114 +41,116 @@
                     <span class="label">69</span>
                 </i></a>
             </div>
+            <article class="box-view post-article">
 
-            <!-- Top Misc: Tags and Author Post Date -->
-            <div class="row">
-                <div class="post-tags col-md-6"> 
-                    <span class="label label-default">Echelon</span>
-                    <span class="label label-default">Events</span>
-                </div>
-                <div class="post-meta col-md-6 text-right">
-                    <div class="post-author" style="display: inline;">
-                        <a>
-                            <!--<img src="img/temp/profile.jpg" alt="" class="user-img">-->
-                            Anthony Do</a>
+                <!-- Top Misc: Tags and Author Post Date -->
+                <div class="row">
+                    <div class="post-tags col-md-6"> 
+                        <span class="label label-default">Echelon</span>
+                        <span class="label label-default">Events</span>
                     </div>
-                    <div class="post-date" style="display: inline;">, 30 Feb 2016</div>
-                    
-                </div>
-            </div>
-            <!-- Post Heading and Sub Heading -->
-            <h1 class="post-heading">
-                Echelon marches on: Continuing our mission of building the startup ecosystem in Southeast Asia
-            </h1>
-            <h2 class="post-subheading">
-                The Echelon roadmap has been updated, read on to find out more
-            </h2>
-
-            <!-- Post Content -->
-            <div class="post-content">
-                <!-- //// Sample Data ////-->
-                <div w3-include-html="sampledata/post-content.html"></div>               
-            </div>
-
-            <!-- Post Related Company -->
-            <div class="post-companies">
-                <div class="company-img">
-                    <img src="https://e27.co//assets/logo_e27.png" alt="">
-                </div>
-            </div>
-
-            <!-- Post's Author: info, short des -->
-            <div class="post-author-info">
-
-            </div>
-
-            <!-- Related Posts -->
-            <div class="post-related-posts">
-
-            </div>
-
-            <!-- Post Discussion -->
-            <div class="post-comments">
-                <div class="comment-container">
-                    <div class="comment-add clearfix">
-                        <form action="" method="POST" role="form">
-                            <a><img src="img/temp/profile.jpg" alt="" class="user-img"></a>
-                            <div class="comment-body form-group">
-                                <textarea name="" id="" class="form-control" rows="1" 
-                                placeholder="say something awesome..." data-toggle="collapse" data-target=#test></textarea>											
-                            </div>
-
-                            <div id="test" class="text-right collapse ">
-                                
-                                
-                                <button  type="submit" class="btn btn-primary">Comment</button>
-                            </div>
-                        </form>									
-                    </div>
-                    <a class="comment-view-all" href="">view all 6969 comments</a>
-                    <div class="comment-block clearfix">
-                        <a><img src="img/temp/profile.jpg" alt="" class="user-img"></a>
-                        <div class="comment-body">
-                            <a href="" class="comment-username">Anthony Thong Do <span class="comment-usertitle">- UX Design of e27</span></a>
-                            <p class="comment-text">ahihi, congratulations!!!</p>
-                            <div class="comment-misc">
-                                2 mins 
-                                <a class="comment-reply-button" href="">reply</a>
-                            </div>
+                    <div class="post-meta col-md-6 text-right">
+                        <div class="post-author" style="display: inline;">
+                            <a>
+                                <!--<img src="img/temp/profile.jpg" alt="" class="user-img">-->
+                                Anthony Do</a>
                         </div>
+                        <div class="post-date" style="display: inline;">, 30 Feb 2016</div>
+                        
+                    </div>
+                </div>
+                <!-- Post Heading and Sub Heading -->
+                <h1 class="post-heading">
+                    Echelon marches on: Continuing our mission of building the startup ecosystem in Southeast Asia
+                </h1>
+                <h2 class="post-subheading">
+                    The Echelon roadmap has been updated, read on to find out more
+                </h2>
 
-                        <div class="comment-block reply-block clearfix">
-                            <a><img src="https://e27.co/img/profiles/3598/profile_pic.png" alt="" class="user-img"></a>
-                            <div class="comment-body">
-                                <a href="" class="comment-username">Daryl Chungster <span class="comment-usertitle">- Venture Partner of e28</span></a>
-                                <p class="comment-text">Let's party</p>
-                                <div class="comment-misc">
-                                    2 mins <a class="comment-reply-button" href="">reply</a>
+                <!-- Post Content -->
+                <div class="post-content">
+                    <!-- //// Sample Data ////-->
+                    <div w3-include-html="sampledata/post-content.html"></div>               
+                </div>
+
+                <!-- Post Related Company -->
+                <div class="post-companies">
+                    <div class="company-img">
+                        <img src="https://e27.co//assets/logo_e27.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Post's Author: info, short des -->
+                <div class="post-author-info">
+
+                </div>
+
+                <!-- Related Posts -->
+                <div class="post-related-posts">
+
+                </div>
+
+                <!-- Post Discussion -->
+                <div class="post-comments">
+                    <div class="comment-container">
+                        <div class="comment-add clearfix">
+                            <form action="" method="POST" role="form">
+                                <a><img src="img/temp/profile.jpg" alt="" class="user-img"></a>
+                                <div class="comment-body form-group">
+                                    <textarea name="" id="" class="form-control" rows="1" 
+                                    placeholder="say something awesome..." data-toggle="collapse" data-target=#test></textarea>											
                                 </div>
-                            </div>
-                            
+
+                                <div id="test" class="text-right collapse ">
+                                    
+                                    
+                                    <button  type="submit" class="btn btn-primary">Comment</button>
+                                </div>
+                            </form>									
                         </div>
-                        <div class="comment-block reply-block clearfix">
-                            <a><img src="https://e27.co/img/profiles/23723/profile_pic-1468477621.png" alt="" class="user-img"></a>
+                        <a class="comment-view-all" href="">view all 6969 comments</a>
+                        <div class="comment-block clearfix">
+                            <a><img src="img/temp/profile.jpg" alt="" class="user-img"></a>
                             <div class="comment-body">
-                                <a href="" class="comment-username">Zwee Dao <span class="comment-usertitle">- Unemployee</span></a>
-                                <p class="comment-text">Oh yeah, could you guys invite me, please!!!</p>
+                                <a href="" class="comment-username">Anthony Thong Do <span class="comment-usertitle">- UX Design of e27</span></a>
+                                <p class="comment-text">ahihi, congratulations!!!</p>
                                 <div class="comment-misc">
                                     2 mins 
                                     <a class="comment-reply-button" href="">reply</a>
                                 </div>
                             </div>
+
+                            <div class="comment-block reply-block clearfix">
+                                <a><img src="https://e27.co/img/profiles/3598/profile_pic.png" alt="" class="user-img"></a>
+                                <div class="comment-body">
+                                    <a href="" class="comment-username">Daryl Chungster <span class="comment-usertitle">- Venture Partner of e28</span></a>
+                                    <p class="comment-text">Let's party</p>
+                                    <div class="comment-misc">
+                                        2 mins <a class="comment-reply-button" href="">reply</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="comment-block reply-block clearfix">
+                                <a><img src="https://e27.co/img/profiles/23723/profile_pic-1468477621.png" alt="" class="user-img"></a>
+                                <div class="comment-body">
+                                    <a href="" class="comment-username">Zwee Dao <span class="comment-usertitle">- Unemployee</span></a>
+                                    <p class="comment-text">Oh yeah, could you guys invite me, please!!!</p>
+                                    <div class="comment-misc">
+                                        2 mins 
+                                        <a class="comment-reply-button" href="">reply</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+
+                        
+
                     </div>
-
-
-                    
-
                 </div>
-            </div>
-        </article>
+            </article>
+        </div>
     </div>
 
     <!-- /container -->

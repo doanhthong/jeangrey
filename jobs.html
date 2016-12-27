@@ -31,7 +31,7 @@
         </header>
 
         <div class="container">
-            <div class="search-block  box-view">
+            <div class="search-block box-view">
                 <h2>Discovery Hottest Jobs</h2>
                 <div class="input-group">
                     <input type="text" class="form-control search-block-main" placeholder="Search for your dream job...">
@@ -42,12 +42,118 @@
                     </span>
                 </div>
                 <div class="search-block-filter">
-                    <span>Search Filter</span>
-                    <span>Location</span>
-                    <span>Role</span>
-                    <span>Job Type</span>      
-                    <span>Compensation</span>                    
-                                  
+                    <span class="filter-label">Search Filter</span>
+                    <span id="filter-location" class="filter-label dropdown">
+                        <a href="javascript:;" data-toggle="dropdown" data-hover="megamenu-dropdown">
+                            Location <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu select-box hold-on-click pull-left">
+                            <select class="form-control select2 select2-offscreen" multiple>
+                                <optgroup label="Regions">
+                                    <option value="Atlantic Ocean">Atlantic Ocean</option>
+                                    <option value="Central Africa">Central Africa</option>
+                                    <option value="Central America">Central America</option>
+                                    <option value="Central Asia">Central Asia</option>
+                                    <option value="Central Europe">Central Europe</option>
+                                    <option value="East Asia">East Asia</option>
+                                </optgroup>
+                                <optgroup label="Countries">						 
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Anguilla">Anguilla</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </span>
+                    <span class="dropdown filter-label" id="filter-role">
+                        <a href="javascript:;" data-toggle="dropdown" data-hover="megamenu-dropdown">
+                            Role <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu select-box hold-on-click pull-left">
+                            <select class="form-control select2 select2-offscreen" multiple>
+                                <option value="Software Engineer">Software Engineer</option>
+                                <option value="Mobile Developer">Mobile Developer</option>
+                                <option value="Hardware Engineer">Hardware Engineer</option>
+                                <option value="UI/UX Designer">UI/UX Designer</option>
+                                <option value="Product Manager">Product Manager</option>
+                                <option value="Sales">Sales</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Attorney">Attorney</option>
+                                <option value="Operations">Operations</option>
+                                <option value="Finance/Accounting">Finance/Accounting</option>
+                                <option value="H.R">H.R</option>
+                                <option value="Office Manager">Office Manager</option>
+                                <option value="DevOps">DevOps</option>
+                                <option value="Backend Developer">Backend Developer</option>
+                                <option value="Frontend Developer">Frontend Developer</option>
+                                <option value="Data Scientist">Data Scientist</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </span>
+                    <span class="dropdown filter-label" id="filter-job-type">
+                        <a href="javascript:;" data-toggle="dropdown" data-hover="megamenu-dropdown">
+                            Job Type <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu select-box hold-on-click pull-left">
+                            <select class="form-control select2 select2-offscreen" multiple>
+                                <option value="Full Time">Full Time</option>
+                                <option value="Part Time">Part Time</option>
+                                <option value="Contract">Contract</option>
+                                <option value="Co-founder">Co-founder</option>
+                                <option value="Internship">Internship</option>
+                            </select>
+                        </div>
+                    </span>      
+                    <span class="dropdown filter-label" id="filter-compensation">
+                        <a href="javascript:;" data-toggle="dropdown" data-hover="megamenu-dropdown">
+                            Compensation <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu select-multidata">
+                            <div class="filter-currency filter-row">
+                                <label for="currency_list">Currency</label>
+                                <select class="form-control" id="currency_list">
+                                    <option value="USD">USD US Dollar</option>
+                                    <option value="">All Currency</option>
+                                    <option value="AUD">AUD Australian Dollar </option>
+                                    <option value="CNY">CNY Chinese Yuan Renminbi (RMB)</option>
+                                    <option value="EUR">EUR Euro</option>
+                                    <option value="HKD">HKD Hong Kong Dollar</option>
+                                    <option value="IDR">IDR Indonesian Rupiah</option>
+                                    <option value="INR">INR Indian Rupee</option>
+                                    <option value="JPY">JPY Japanese Yen</option>
+                                    <option value="KRW">KRW South Korean Won</option>
+                                    <option value="MYR">MYR Malaysian Ringgit</option>
+                                    <option value="PHP">PHP Philippine Peso</option>
+                                    <option value="SGD">SGD Singapore Dollar</option>
+                                    <option value="THB">THB Thai Baht</option>
+                                    <option value="TWD">TWD New Taiwan Dollar</option>
+                                    <option value="USD">USD US Dollar</option>
+                                    <option value="VND">VND Vietnamese Dong</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-range row filter-row">
+                                <div class="filter-range-min col-xs-12 col-md-6">
+                                    <label for="salary_min">Min</label>
+                                    <input type="text" name="salary_min" id="salary_min" class="form-control input-small" />
+                                </div>
+                                <div class="filter-range-max col-xs-12 col-md-6">
+                                    <label for="salary_max">Max</label>
+                                    <input type="text" name="salary_max" id="salary_max" class="form-control input-small" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 text-right">
+                                    <a href="javascript:void(0);" class="btn btn-success salary-filter">Add filter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
                 </div>
 
             </div>
@@ -165,16 +271,19 @@
     <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="https://use.fontawesome.com/ab5d40828d.js"></script>
-<script src="js/scripts.js"></script>
+    <!-- Select2 core JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
-<script>
-    w3IncludeHTML();
-</script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://use.fontawesome.com/ab5d40828d.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        w3IncludeHTML();
+    </script>
 
 
 
