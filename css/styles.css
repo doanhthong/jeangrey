@@ -893,9 +893,6 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   border: 1px #e5e5e5 solid;
   border-width: 0 0 1px 0;
 }
-.feed-article .content {
-  padding-left: 0;
-}
 .feed-article .content h3 {
   margin-top: 0;
   font-weight: 500;
