@@ -49,7 +49,6 @@
 @box-border: 1px solid @box-border-color;
 
 .bottom-sep{
-    margin-bottom: @magic-number*2;
     border-bottom: @box-border;
     padding-bottom: @magic-number*2;
 }
@@ -1454,6 +1453,7 @@ nav.navbar-fixed-top{
         padding: @magic-number*2 ;
         font-size: 12px;
         display: block;
+        .bottom-sep;
         .desc{
           font-weight: 700;
           display: none;          

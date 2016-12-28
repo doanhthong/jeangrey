@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import "fonts/montserrat.css";
 .bottom-sep {
-  margin-bottom: 20px;
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 20px;
 }
@@ -1232,6 +1231,8 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   padding: 20px;
   font-size: 12px;
   display: block;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20px;
 }
 #startups-page .startups-list-container .startups-list .startup-block .desc {
   font-weight: 700;
