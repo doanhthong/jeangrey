@@ -12,6 +12,19 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import "fonts/montserrat.css";
 
+//Media Size
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-min: (@screen-md-min - 1);
+
+
 //Global variables
 @body-bg: #fbfbfb;
 @main-color:#222;
@@ -80,7 +93,7 @@ body{
   font-size: 14px;
   font-family: @font-family-normaltext !important;
   color: @grey-foreground;
-  line-height: 24px;
+  line-height: 2;
 }
 
 h1, h2, h3{
@@ -89,11 +102,16 @@ h1, h2, h3{
   font-weight: 300;
 }
 
+
 a{
   color: @sub-color;
   &:focus, &:hover{
     color: @sub-color;
     text-decoration: none;
+  }
+
+  h1, h2, h3, h4, h5{
+    color: @main-color;
   }
 }
 
@@ -264,7 +282,7 @@ span.label-default{
   background: @box-bg;
   border: @box-border;
   padding: @magic-number*2;
-  margin-top: @magic-number*2;
+  margin-bottom: @magic-number*2;
 
   h2{
     font-weight: 400;
@@ -278,7 +296,7 @@ span.label-default{
 
 .box-view{
   .box-view-basic;
-  margin-bottom: @magic-number; 
+  margin-bottom: @magic-number*2; 
   position: relative;
 
   
@@ -304,11 +322,13 @@ span.label-default{
 
 //Tab nav
 .nav-tabs{
+  margin-bottom: @magic-number;
+
   li{
     font-family: @sub-font;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.8em;   
     
     a, a:hover, a:active, a:focus, a:visited{
       border: none;
@@ -332,6 +352,21 @@ span.label-default{
   border: 1px solid @main-color;
   border-width: 0px 0px 4px 0px;
   font-family: @sub-font;
+}
+
+//Table Styles
+.table-headers-block{
+  font-weight: 400;
+  font-family: @sub-font;
+  border-bottom: @box-border;
+  padding-top:@magic-number;
+  font-size: 12px;
+}
+
+@media (max-width: @screen-md) {
+  .table-headers-block{
+    display: none;
+  }
 }
 
 
@@ -745,15 +780,17 @@ nav.navbar-fixed-top{
   .user-info{
     display: flex;
     flex-flow: column;
+    color: @light-foreground;
     h1{
       font-weight: 500;
-      color: @light-foreground;
+      color: inherit;
     }
 
     h2{
       margin-top: @magic-number*0;
       font-weight: 300;
       font-size: 1.4em;
+      color: inherit;
     }
   }
 
@@ -1395,14 +1432,44 @@ nav.navbar-fixed-top{
       .company-img{
         .square-size(48px);
         float: left;
+        margin-right: @magic-number;
+        margin-bottom: @magic-number;
       }
-      .compamy-des{
+      .company-des{
         overflow: hidden;
+        h3{
+          margin-top:0;
+          margin-bottom: @magic-number*0.5;
+          font-size: 14px;
+        }
+        h4{
+          line-height: normal;
+          margin-top: 0;
+          font-size: 12px;
+        } 
       }
       
       .startup-block{
+        margin: 0px -@magic-number*2;
+        padding: @magic-number*2 ;
+        font-size: 12px;
+        display: block;
         .desc{
-          display: none;
+          font-weight: 700;
+          display: none;          
+        }
+        @media(max-width: @screen-md){
+          .desc{
+          display: inline-block;            
+          }
+        }
+        .value{
+          line-height: normal;
+          display: inline-block;          
+        }
+
+        &:hover{
+          background: rgba(0, 0, 0, 0.02);
         }
       }
     }

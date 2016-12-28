@@ -26,7 +26,7 @@ body {
   font-size: 14px;
   font-family: Open Sans !important;
   color: #696969;
-  line-height: 24px;
+  line-height: 2;
 }
 h1,
 h2,
@@ -42,6 +42,13 @@ a:focus,
 a:hover {
   color: #7db924;
   text-decoration: none;
+}
+a h1,
+a h2,
+a h3,
+a h4,
+a h5 {
+  color: #222;
 }
 img {
   max-width: 100%;
@@ -214,7 +221,7 @@ span.label-default {
   background: #fff;
   border: 1px solid #f2f2f2;
   padding: 20px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .box-view-basic h2 {
   font-weight: 400;
@@ -228,8 +235,7 @@ span.label-default {
   background: #fff;
   border: 1px solid #f2f2f2;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   position: relative;
 }
 .box-view h2 {
@@ -254,8 +260,7 @@ span.label-default {
   background: #fff;
   border: 1px solid #f2f2f2;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   position: relative;
   background: transparent;
   border: none;
@@ -277,6 +282,9 @@ span.label-default {
 .box-view-transparent h3 {
   font-size: 1em;
   font-weight: 500;
+}
+.nav-tabs {
+  margin-bottom: 10px;
 }
 .nav-tabs li {
   font-family: Montserrat;
@@ -320,6 +328,18 @@ span.label-default {
   border: 1px solid #222;
   border-width: 0px 0px 4px 0px;
   font-family: Montserrat;
+}
+.table-headers-block {
+  font-weight: 400;
+  font-family: Montserrat;
+  border-bottom: 1px solid #f2f2f2;
+  padding-top: 10px;
+  font-size: 12px;
+}
+@media (max-width: 992px) {
+  .table-headers-block {
+    display: none;
+  }
 }
 label {
   padding-left: 0 !important;
@@ -697,15 +717,17 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #profile-hero .user-info {
   display: flex;
   flex-flow: column;
+  color: #fff;
 }
 #profile-hero .user-info h1 {
   font-weight: 500;
-  color: #fff;
+  color: inherit;
 }
 #profile-hero .user-info h2 {
   margin-top: 0px;
   font-weight: 300;
   font-size: 1.4em;
+  color: inherit;
 }
 #profile-hero .profile-social-list a {
   font-size: 1.6em;
@@ -1189,12 +1211,43 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   width: 48px;
   height: 48px;
   float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
-#startups-page .startups-list-container .startups-list .compamy-des {
+#startups-page .startups-list-container .startups-list .company-des {
   overflow: hidden;
 }
+#startups-page .startups-list-container .startups-list .company-des h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+#startups-page .startups-list-container .startups-list .company-des h4 {
+  line-height: normal;
+  margin-top: 0;
+  font-size: 12px;
+}
+#startups-page .startups-list-container .startups-list .startup-block {
+  margin: 0px -20px;
+  padding: 20px;
+  font-size: 12px;
+  display: block;
+}
 #startups-page .startups-list-container .startups-list .startup-block .desc {
+  font-weight: 700;
   display: none;
+}
+@media (max-width: 992px) {
+  #startups-page .startups-list-container .startups-list .startup-block .desc {
+    display: inline-block;
+  }
+}
+#startups-page .startups-list-container .startups-list .startup-block .value {
+  line-height: normal;
+  display: inline-block;
+}
+#startups-page .startups-list-container .startups-list .startup-block:hover {
+  background: rgba(0, 0, 0, 0.02);
 }
 .related-posts .row .related-post {
   display: block;
