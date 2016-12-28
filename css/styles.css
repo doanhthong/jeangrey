@@ -221,6 +221,7 @@ span.label-default {
   border: 1px solid #f2f2f2;
   padding: 20px;
   margin-bottom: 20px;
+  display: block;
 }
 .box-view-basic h2 {
   font-weight: 400;
@@ -234,6 +235,7 @@ span.label-default {
   background: #fff;
   border: 1px solid #f2f2f2;
   padding: 20px;
+  display: block;
   margin-bottom: 20px;
   position: relative;
 }
@@ -259,6 +261,7 @@ span.label-default {
   background: #fff;
   border: 1px solid #f2f2f2;
   padding: 20px;
+  display: block;
   margin-bottom: 20px;
   position: relative;
   background: transparent;
@@ -1254,6 +1257,33 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #startups-page .startups-list-container .startups-list .startup-block:hover {
   background: rgba(0, 0, 0, 0.02);
 }
+#events-page .events-hero {
+  background: url('https://e27.co/dist/img/echelon_index/v2/connections.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#events-page .events-hero .hero-button {
+  color: #f39c12;
+}
+#events-page .events-list-container .events-list .event-block {
+  position: relative;
+}
+#events-page .events-list-container .events-list .event-block .event-date {
+  color: #fff;
+  background: #222;
+  padding: 5px 20px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-weight: 600;
+}
+#events-page .events-list-container .events-list .event-block .event-img {
+  margin: -20px;
+  margin-bottom: 0;
+}
+#events-page .events-list-container .events-list .event-block h3 {
+  font-size: 18px;
+}
 .related-posts .row .related-post {
   display: block;
   margin-bottom: 20px;
@@ -1266,7 +1296,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   line-height: 18px;
 }
 .search-block {
-  margin-top: -60px;
+  margin-top: -70px;
 }
 .search-block .search-block-main {
   padding-right: 40px;
