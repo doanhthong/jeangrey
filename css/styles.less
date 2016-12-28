@@ -1321,8 +1321,8 @@ nav.navbar-fixed-top{
           display: block;
           color: @grey-foreground;
           border-bottom: @box-border;
-          padding-bottom: @magic-number;
-          padding-top: @magic-number;
+          padding-bottom: @magic-number*2;
+          padding-top: @magic-number*2;
           @company-img-size: 60px;
           position: relative;
           .company-img{
@@ -1349,6 +1349,11 @@ nav.navbar-fixed-top{
             button{
               background: transparent;
               border: none;
+            }
+
+            p{
+              margin: 0;
+              color: @grey-foreground;
             }
           }
 
