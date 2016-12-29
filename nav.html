@@ -2,27 +2,21 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="firstNav">
 			<div class="container">
-
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-						aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand navbar-logo" href="#">
-						<img src="img/logo_e27.png" alt="">
-					</a>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
+				<div id="navbar" class="navbar-collapse">
+					<a class="navbar-brand navbar-logo hidden-xs" href="#"><img src="img/logo_e27.png" alt=""></a>
 					<!-- Home and Partner -->
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav hidden-xs">
 						<li><a href="/">Home</a></li>
 						<li><a href="#">Partner with us</a></li>
 					</ul>
 
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav navbar-right row">
+						<li class="visible-xs">
+							<a class="navbar-brand navbar-logo" href="#"><img src="img/logo_e27.png" alt=""></a>
+						</li>
+						<li class="visible-xs">
+							<a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+						</li>
 						<!-- Notification -->
 						<li class="dropdown navbar-noti">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -56,13 +50,11 @@
 						<!-- Messages -->
 						<li class="dropdown navbar-messages">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							</a>
 							<ul class="dropdown-menu">
 								<li>
 									<a href="#">
-
 										<img class="user-img" src="img/temp/profile.jpg" alt="">
 										<p><b>Zwee Dao</b> has replied to your comment. </p>
 										<p class="time">24 hours</p>
@@ -70,7 +62,6 @@
 								</li>
 								<li>
 									<a href="#">
-
 										<img class="user-img" src="img/temp/profile.jpg" alt="">
 										<p><b>Zwee Dao</b> has replied to your comment. </p>
 										<p class="time">24 hours</p>
@@ -78,7 +69,6 @@
 								</li>
 								<li>
 									<a href="#">
-
 										<img class="user-img" src="img/temp/profile.jpg" alt="">
 										<p><b>Zwee Dao</b> has replied to your comment. </p>
 										<p class="time">24 hours</p>
@@ -87,10 +77,36 @@
 							</ul>
 						</li>
 
-						<!-- Profile Button -->
-						<li class="dropdown navbar-profile">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<li class="visible-xs dropdown navbar-search">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-search" aria-hidden="true"></i></a>
+							<form id="navbar-search" class="dropdown-menu">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search for everything on e27...">
+									<span class="input-group-addon">
+										<button type="submit">
+											<span class="glyphicon glyphicon-search"></span>
+									</button>
+									</span>
+								</div>
+							</form>
+						</li>
 
+						<li class="visible-xs dropdown" id="navbar-secnav">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><img src="img/nav/news.png" alt=""><span>News</span></a></li>
+								<li><a href="#"><img src="img/nav/echelon.png" alt=""><span>Echelon</span></a></li>
+								<li><a href="#"><img src="img/nav/events.png" alt=""><span>Events</span></a></li>
+								<li><a href="#"><img src="img/nav/startups.png" alt=""><span>Startups</span></a></li>
+								<li><a href="#"><img src="img/nav/investors.png" alt=""><span>Investor</span></a></li>
+								<li><a href="#"><img src="img/nav/jobs.png" alt=""><span>Jobs</span></a></li>
+								<li><a href="#"><img src="img/nav/products.png" alt=""><span>Booths</span></a></li>
+							</ul>
+						</li>
+
+						<!-- Profile Button -->
+						<li class="dropdown navbar-profile hidden-xs">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 								<img src="img/temp/profile.jpg" width="20" class="user-img" alt="">
 								<span class="caret"></span>
 							</a>
@@ -124,7 +140,7 @@
 					</ul>
 
 					<!--Search Bar-->
-					<form id="navbar-search" class="navbar-form navbar-right">
+					<form id="navbar-search" class="navbar-form navbar-right hidden-xs">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Search for everything on e27...">
 							<span class="input-group-addon">

@@ -1,15 +1,8 @@
-
-// var imported = document.createElement('script');
-// imported.src = '/path/to/imported/script';
-// document.head.appendChild(imported);
-
-//Include some script
-$.getScript("e27animation.js", function(){
-
-   alert("Script loaded but not necessarily executed.");
-
-});
-
+/** ===========================================
+                File Included
+============================================ */
+$.getScript("js/e27animation.js");
+$.getScript("js/jobs_script.js");
 
 
 $(document).ready(function(){

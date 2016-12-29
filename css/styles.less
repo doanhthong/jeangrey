@@ -48,6 +48,10 @@
 @box-border-color: #f2f2f2;
 @box-border: 1px solid @box-border-color;
 
+
+@dropdown-height: 400px;
+@selectbox-color: #f7f7f7;
+
 .bottom-sep{
     border-bottom: @box-border;
     padding-bottom: @magic-number*2;
@@ -176,7 +180,7 @@ strong{
   
 
 .post-misc{
-  @button-size: 40px;
+	@button-size: 40px;
   position: absolute;
   left: -@button-size;
 
@@ -204,11 +208,38 @@ strong{
       z-index: 5;
       top: 20px; right: @button-size/2;
       font-weight: normal;
-      border-radius: 50%;
+      border-radius: 50%; 
     }    
-  }
+	}
 }
 
+//Misc for Desktop
+@media (min-width: 768px){
+	.post-misc{
+		top: 40px;
+		.social-btn{
+			margin-bottom: @magic-number;
+			display: block;
+		}
+	}
+}
+
+//Misc for Mobile/ Tablet
+@media (max-width: 768px){
+	.post-misc{
+		bottom: 0;
+		background-color: @light-foreground;
+		box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .0785);
+		width: 100%;
+		padding: @magic-number;
+		text-align: center;
+
+		.social-btn{
+			display: inline-block;
+			margin: 0 @magic-number;
+		}
+	}
+}
 //Tags and Labels style
 span.label, a.label{
   border-radius: 0;
@@ -492,19 +523,78 @@ nav.navbar-fixed-top{
   border-bottom: 4px solid transparent;  
   border: none;
   background: transparent;
-  .firstNav{
-    background: @main-color !important;  
-    position: relative; z-index: 100;
+	.firstNav{
+		background: @main-color !important;
+		position: relative; z-index: 100;
 
-    .navbar-header{
-      .navbar-brand{
-        margin-left: 0;
-        padding: @magic-number;
-        img{
-          max-height: 100%;
-        }
-      }
-    } 
+		.navbar-header{
+			.navbar-brand{
+				margin-left: 0;
+				padding: @magic-number;
+				img{
+					max-height: 100%;
+				}
+			}
+		} 
+
+		#navbar {
+			background: @main-color !important;
+			
+			.navbar-right {
+				.dropdown-menu {
+					background-color: @light-foreground !important;
+				}
+			}
+
+			@media (max-width: 768px) {
+				.navbar-right {
+					> li {
+						float: left;
+						width: calc(100% / 6);
+						position: relative;
+						text-align: center;
+						font-size: 1.3em;
+
+						&:not(:first-child) { 
+							a { padding: calc(@magic-number * 1.5); }
+						}
+
+						> a { color: @light-foreground; }
+					}
+					.dropdown:not(.navbar-search) {
+						position: static;
+
+						.dropdown-menu {
+							position: absolute;
+							left: 0;
+							right: 0;
+							height: 100vh;
+						}
+					}
+
+					.navbar-search {
+						position: static;
+
+						.dropdown-menu {
+							position: absolute;
+							width: 100%;
+							border: 1px solid @box-border-color;
+						}
+					}
+
+					#navbar-secnav {
+						li {
+							border-bottom: 1px solid @sep-color;
+							img {
+								height: calc(@magic-number * 2);
+								margin-right: @magic-number;
+							}
+						}
+						
+					}
+				}
+			}
+		}
 
     .navbar-nav{
       > li{
@@ -612,7 +702,7 @@ nav.navbar-fixed-top{
   .dropdown-menu{
     min-width: 320px;
     max-width: 100%;
-    height: 400px;
+    height: @dropdown-height;
   }
   .dropdown-menu>li{    
 
@@ -1179,37 +1269,32 @@ nav.navbar-fixed-top{
 
 // Post: article
 .post-container{
-  .post-article{
-    padding: @magic-number*4;
-    position: relative;
-    
-    .post-misc{
-      position: absolute;
-    }
-  }
-
-  .post-tags{
-    font-size: 15px;
+	.post-article{
+		padding: @magic-number*4;
+		position: relative;
+	}
+	.post-tags{
+		font-size: 15px;
     .label{
       font-weight: normal;
     }
-  }
-  .post-meta{  
-    .post-author{
-      a{
-        color: @dark-foreground;
-        // font-weight: bold;
-        font-family: @sub-font;
-        .user-img{
-          width: 32px; height: 32px;
-          margin-right: @magic-number;
-        }
-      }      
-    }
-    .post-date{
-      // display: 
-      // margin-left: @magic-number;
-      font-size: 0.8em;
+	}
+	.post-meta{  
+		.post-author{
+			a{
+				color: @dark-foreground;
+				// font-weight: bold;
+				font-family: @sub-font;
+				.user-img{
+					width: 32px; height: 32px;
+					margin-right: @magic-number;
+				}
+			}
+		}
+		.post-date{
+			// display: 
+			// margin-left: @magic-number;
+			font-size: 0.8em;
     }
   }
 
