@@ -499,26 +499,43 @@ nav.navbar-fixed-top{
     .navbar-header{
       .navbar-brand{
         margin-left: 0;
-        padding: 6px;
+        padding: @magic-number;
         img{
           max-height: 100%;
         }
       }
     } 
 
-    ul.navbar-nav>li>a{
-      color: @light-foreground;
-      font-family: @sub-font ;
-      font-weight: 300;
-      letter-spacing: 0.2px;
+    .navbar-nav{
+      > li{
+        > a{
+          color: #f1f1f1;
+          font-family: @sub-font ;
+          font-weight: 300;
+          letter-spacing: 0.2px;
+          
+          &:hover, &:focus, &:active{
+            color: @light-foreground;
+          }
 
-      &:hover, &:focus, &:active{
-        color: @light-foreground;
+        }
+      }
+
+      > li.open, > .open{
+        > a, > a:hover, > a:focus{
+          background: #000;
+        }
       }
     }
 
+    ul.navbar-nav>li>a{
+      
+    }
+
     #navbar-search{
-      width: 35%; //40% Navbar
+      @height: 28px; margin-top: 8px;
+      width: 30%; //40% Navbar
+      font-size: 12px;
       .form-group{
         width: 100%;
           input{
@@ -526,15 +543,19 @@ nav.navbar-fixed-top{
           }
       }
       .form-control{
-        border-radius: 4px 0px 0px 4px ;
+        height: @height;
+        border-radius: 3px 0px 0px 3px ;
         border: none;
+        font-size: inherit;
       }
 
       .input-group-addon{
+        height: @height;
         background: white !important;
         width: 36px;
         margin: 0;
-        border-radius: 0px 4px 4px 0px;
+        font-size: inherit;
+        border-radius: 0px 3px 3px 0px;
         button{
             border:0;
             background:transparent;
@@ -568,9 +589,9 @@ nav.navbar-fixed-top{
         a{
           display: table-cell;
           vertical-align: middle;
-          padding: 10px 15px;
+          padding: 9px 15px;
           color: @dark-foreground;     
-          font-size: 14px;
+          font-size: 13px;
           img{
             height: 20px;
             margin-right: 8px;
@@ -589,7 +610,7 @@ nav.navbar-fixed-top{
 
 .navbar-noti, .navbar-messages{
   .dropdown-menu{
-    min-width: 360px;
+    min-width: 320px;
     max-width: 100%;
     height: 400px;
   }
@@ -620,7 +641,7 @@ nav.navbar-fixed-top{
 
 .navbar-profile{
   .user-img{
-    .square-size(20px);
+    .square-size(17px);
   }
   i{
     margin-right: @magic-number;
