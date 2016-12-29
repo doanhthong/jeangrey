@@ -107,6 +107,7 @@ a{
   &:focus, &:hover{
     color: @sub-color;
     text-decoration: none;
+    -moz-text-decoration-color: inherit;
   }
 
   h1, h2, h3, h4, h5{
@@ -209,14 +210,14 @@ strong{
 }
 
 //Tags and Labels style
-span.label{
+span.label, a.label{
   border-radius: 0;
   font-family: @sub-font;
   // font-weight: bold;
   text-transform: uppercase;
 }
 
-span.label-default{
+span.label-default, a.label-default{
   background: @main-color;
 }
 

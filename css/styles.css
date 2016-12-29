@@ -41,6 +41,7 @@ a:focus,
 a:hover {
   color: #7db924;
   text-decoration: none;
+  -moz-text-decoration-color: inherit;
 }
 a h1,
 a h2,
@@ -139,12 +140,14 @@ strong {
   font-weight: normal;
   border-radius: 50%;
 }
-span.label {
+span.label,
+a.label {
   border-radius: 0;
   font-family: Montserrat;
   text-transform: uppercase;
 }
-span.label-default {
+span.label-default,
+a.label-default {
   background: #222;
 }
 .company-img {
