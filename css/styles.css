@@ -501,15 +501,18 @@ nav.navbar-fixed-top .firstNav #navbar .navbar-right .dropdown-menu {
   background-color: #fff !important;
 }
 @media (max-width: 768px) {
+  nav.navbar-fixed-top .firstNav #navbar .navbar-right {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  nav.navbar-fixed-top .firstNav #navbar .navbar-right .navbar-logo img {
+    height: 80%;
+  }
   nav.navbar-fixed-top .firstNav #navbar .navbar-right > li {
     float: left;
     width: calc(16.66666667%);
     position: relative;
     text-align: center;
-    font-size: 1.3em;
-  }
-  nav.navbar-fixed-top .firstNav #navbar .navbar-right > li:not(:first-child) a {
-    padding: calc(15px);
   }
   nav.navbar-fixed-top .firstNav #navbar .navbar-right > li > a {
     color: #fff;

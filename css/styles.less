@@ -545,18 +545,21 @@ nav.navbar-fixed-top{
 					background-color: @light-foreground !important;
 				}
 			}
-
+      
 			@media (max-width: 768px) {
 				.navbar-right {
+          margin-top: 0; margin-bottom: 0;
+          .navbar-logo img{
+            height: 80%;
+          }
 					> li {
 						float: left;
 						width: calc(100% / 6);
 						position: relative;
 						text-align: center;
-						font-size: 1.3em;
 
 						&:not(:first-child) { 
-							a { padding: calc(@magic-number * 1.5); }
+							a {  }
 						}
 
 						> a { color: @light-foreground; }
@@ -616,10 +619,6 @@ nav.navbar-fixed-top{
           background: #000;
         }
       }
-    }
-
-    ul.navbar-nav>li>a{
-      
     }
 
     #navbar-search{
