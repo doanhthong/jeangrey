@@ -611,9 +611,9 @@ nav.navbar-fixed-top .secNav .container .navbar-nav li:hover {
 nav.navbar-fixed-top .secNav .container .navbar-nav a {
   display: table-cell;
   vertical-align: middle;
-  padding: 9px 15px;
+  padding: 8px 15px;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 13px;
+  font-size: 12px;
 }
 nav.navbar-fixed-top .secNav .container .navbar-nav a img {
   height: 20px;
