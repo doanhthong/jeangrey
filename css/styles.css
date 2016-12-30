@@ -251,11 +251,12 @@ a.label-default {
 }
 .box-view-basic h2 {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 .box-view {
   background: #fff;
@@ -267,11 +268,12 @@ a.label-default {
 }
 .box-view h2 {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 .box-view a.btn-edit {
   position: absolute;
@@ -295,11 +297,12 @@ a.label-default {
 }
 .box-view-transparent h2 {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   font-family: Montserrat;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 .box-view-transparent a.btn-edit {
   position: absolute;
