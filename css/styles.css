@@ -26,6 +26,7 @@ body {
   font-family: Open Sans !important;
   color: #696969;
   line-height: 2;
+  position: relative;
 }
 h1,
 h2,
@@ -482,6 +483,48 @@ nav.navbar-fixed-top {
   border: none;
   background: transparent;
 }
+nav.navbar-fixed-top .navbar-hover {
+  position: relative;
+}
+nav.navbar-fixed-top .navbar-hover ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(85, 97, 111, 0.5);
+}
+nav.navbar-fixed-top .navbar-hover ul li {
+  padding: 5px 10px;
+}
+nav.navbar-fixed-top .navbar-hover ul li a {
+  color: #222;
+  padding: 0 !important;
+}
+nav.navbar-fixed-top .navbar-hover ul li:hover {
+  background-color: #F3F3F3;
+}
+nav.navbar-fixed-top .navbar-hover:hover ul {
+  display: block;
+  position: absolute;
+}
+nav.navbar-fixed-top .navbar-click ul {
+  display: none;
+  list-style: none;
+  margin-left: 10px;
+}
+nav.navbar-fixed-top .navbar-click ul li a {
+  color: #222;
+}
+nav.navbar-fixed-top .navbar-click ul li:last-child {
+  border-bottom: none !important;
+}
+nav.navbar-fixed-top .navbar-click .navbar-close {
+  display: none;
+}
+nav.navbar-fixed-top .navbar-click .navbar-open {
+  display: block;
+}
 nav.navbar-fixed-top .firstNav {
   background: #222 !important;
   position: relative;
@@ -499,6 +542,13 @@ nav.navbar-fixed-top .firstNav #navbar {
 }
 nav.navbar-fixed-top .firstNav #navbar .navbar-right .dropdown-menu {
   background-color: #fff !important;
+}
+nav.navbar-fixed-top .firstNav #navbar .has-badge .badge {
+  position: absolute;
+  font-size: 0.6em;
+  padding: 3px 5px !important;
+  top: 5px;
+  right: 5px;
 }
 @media (max-width: 768px) {
   nav.navbar-fixed-top .firstNav #navbar .navbar-right {
@@ -525,6 +575,9 @@ nav.navbar-fixed-top .firstNav #navbar .navbar-right .dropdown-menu {
     left: 0;
     right: 0;
     height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 999;
   }
   nav.navbar-fixed-top .firstNav #navbar .navbar-right .navbar-search {
     position: static;
@@ -562,7 +615,6 @@ nav.navbar-fixed-top .firstNav .navbar-nav > .open > a:focus {
   background: #000;
 }
 nav.navbar-fixed-top .firstNav #navbar-search {
-  margin-top: 8px;
   width: 30%;
   font-size: 12px;
 }

@@ -9,10 +9,18 @@
 					<!-- Home and Partner -->
 					<ul class="nav navbar-nav hidden-xs">
 						<li><a href="/">Home</a></li>
-						<li><a href="#">Partner with us</a></li>
+						<li class="navbar-partner navbar-hover">
+							<a href="#">Partner with us</a>
+							<ul>
+								<li><a href="#">e27 Echelon Conferences</a></li>
+								<li><a href="#">Echelon Asia Commit 2016</a></li>
+								<li><a href="#">Echelon Vietnam 2016</a></li>
+								<li><a href="#">Echelon Thailand 2017</a></li>
+							</ul>
+						</li>
 					</ul>
 
-					<ul class="nav navbar-nav navbar-right row">
+					<ul class="nav navbar-nav navbar-right row navbar-mobile">
 
 						<!-- Smartphone only: Logo-->
 						<li class="visible-xs">
@@ -25,8 +33,8 @@
 
 						<!-- Notification -->
 						<li class="dropdown navbar-noti">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-								<i class="fa fa-bell-o" aria-hidden="true"></i>
+							<a href="#" class="dropdown-toggle has-badge" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-bell-o" aria-hidden="true"></i><span class="badge">4</span>
 							</a>
 							<ul class="dropdown-menu">
 								<li>
@@ -100,10 +108,18 @@
 
 						<!-- Smartphone only: Menu-->
 						<li class="visible-xs dropdown" id="navbar-secnav">
-							<a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+							<a href="javscript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars" aria-hidden="true"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="#"><img src="img/nav/news.png" alt=""><span>News</span></a></li>
-								<li><a href="#"><img src="img/nav/echelon.png" alt=""><span>Echelon</span></a></li>
+								<li class="navbar-click">
+									<a href="#"><img src="img/nav/echelon.png" alt=""><span>Echelon</span></a>
+									<ul class="navbar-close">
+										<li><a href="#">e27 Echelon Conferences</a></li>
+										<li><a href="#">Echelon Asia Commit 2016</a></li>
+										<li><a href="#">Echelon Vietnam 2016</a></li>
+										<li><a href="#">Echelon Thailand 2017</a></li>
+									</ul>
+								</li>
 								<li><a href="#"><img src="img/nav/events.png" alt=""><span>Events</span></a></li>
 								<li><a href="#"><img src="img/nav/startups.png" alt=""><span>Startups</span></a></li>
 								<li><a href="#"><img src="img/nav/investors.png" alt=""><span>Investor</span></a></li>
@@ -168,11 +184,16 @@
 		<div class="secNav">
 			<div class="container">
 				<ul class="nav navbar-nav">
-					<li>
-						<a href="#"><img src="img/nav/news.png" alt=""><span>News</span></a>
-						
+					<li><a href="#"><img src="img/nav/news.png" alt=""><span>News</span></a></li>
+					<li class="navbar-hover">
+						<a href="#"><img src="img/nav/echelon.png" alt=""><span>Echelon</span></a>
+						<ul>
+							<li><a href="#">e27 Echelon Conferences</a></li>
+							<li><a href="#">Echelon Asia Commit 2016</a></li>
+							<li><a href="#">Echelon Vietnam 2016</a></li>
+							<li><a href="#">Echelon Thailand 2017</a></li>
+						</ul>
 					</li>
-					<li><a href="#"><img src="img/nav/echelon.png" alt=""><span>Echelon</span></a></li>
 					<li><a href="#"><img src="img/nav/events.png" alt=""><span>Events</span></a></li>
 					<li><a href="#"><img src="img/nav/startups.png" alt=""><span>Startups</span></a></li>
 					<li><a href="#"><img src="img/nav/investors.png" alt=""><span>Investor</span></a></li>
