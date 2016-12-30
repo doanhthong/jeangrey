@@ -637,7 +637,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .navbar-noti .dropdown-menu > li a p,
 .navbar-messages .dropdown-menu > li a p {
   margin-left: 42px;
-  margin-top: 5px;
+  margin-top: 0;
 }
 .navbar-noti .dropdown-menu > li a img,
 .navbar-messages .dropdown-menu > li a img,
@@ -1290,6 +1290,77 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .job-detail .job-description {
   margin-top: 20px;
 }
+#investors-page .investors-hero {
+  background: url('https://static.pexels.com/photos/29642/pexels-photo-29642.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#investors-page .investors-hero .hero-button {
+  color: #8e44ad;
+}
+#investors-page .investors-list-container .startups-list .company-img,
+#investors-page .investors-list-container .investors-list .company-img {
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#investors-page .investors-list-container .startups-list .company-des,
+#investors-page .investors-list-container .investors-list .company-des {
+  overflow: hidden;
+}
+#investors-page .investors-list-container .startups-list .company-des h3,
+#investors-page .investors-list-container .investors-list .company-des h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+#investors-page .investors-list-container .startups-list .company-des h4,
+#investors-page .investors-list-container .investors-list .company-des h4 {
+  line-height: normal;
+  margin-top: 0;
+  font-size: 12px;
+}
+#investors-page .investors-list-container .startups-list .startup-block,
+#investors-page .investors-list-container .investors-list .startup-block,
+#investors-page .investors-list-container .startups-list .investor-block,
+#investors-page .investors-list-container .investors-list .investor-block {
+  margin: 0px -20px;
+  padding: 20px;
+  font-size: 12px;
+  display: block;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20px;
+}
+#investors-page .investors-list-container .startups-list .startup-block .desc,
+#investors-page .investors-list-container .investors-list .startup-block .desc,
+#investors-page .investors-list-container .startups-list .investor-block .desc,
+#investors-page .investors-list-container .investors-list .investor-block .desc {
+  font-weight: 700;
+  display: none;
+}
+@media (max-width: 992px) {
+  #investors-page .investors-list-container .startups-list .startup-block .desc,
+  #investors-page .investors-list-container .investors-list .startup-block .desc,
+  #investors-page .investors-list-container .startups-list .investor-block .desc,
+  #investors-page .investors-list-container .investors-list .investor-block .desc {
+    display: inline-block;
+  }
+}
+#investors-page .investors-list-container .startups-list .startup-block .value,
+#investors-page .investors-list-container .investors-list .startup-block .value,
+#investors-page .investors-list-container .startups-list .investor-block .value,
+#investors-page .investors-list-container .investors-list .investor-block .value {
+  line-height: normal;
+  display: inline-block;
+}
+#investors-page .investors-list-container .startups-list .startup-block:hover,
+#investors-page .investors-list-container .investors-list .startup-block:hover,
+#investors-page .investors-list-container .startups-list .investor-block:hover,
+#investors-page .investors-list-container .investors-list .investor-block:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
 #startups-page .startups-hero {
   background: url('https://static.pexels.com/photos/7097/people-coffee-tea-meeting.jpg');
   background-size: cover;
@@ -1298,27 +1369,34 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #startups-page .startups-hero .hero-button {
   color: #e74c3c;
 }
-#startups-page .startups-list-container .startups-list .company-img {
+#startups-page .startups-list-container .startups-list .company-img,
+#startups-page .startups-list-container .investors-list .company-img {
   width: 48px;
   height: 48px;
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-#startups-page .startups-list-container .startups-list .company-des {
+#startups-page .startups-list-container .startups-list .company-des,
+#startups-page .startups-list-container .investors-list .company-des {
   overflow: hidden;
 }
-#startups-page .startups-list-container .startups-list .company-des h3 {
+#startups-page .startups-list-container .startups-list .company-des h3,
+#startups-page .startups-list-container .investors-list .company-des h3 {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 14px;
 }
-#startups-page .startups-list-container .startups-list .company-des h4 {
+#startups-page .startups-list-container .startups-list .company-des h4,
+#startups-page .startups-list-container .investors-list .company-des h4 {
   line-height: normal;
   margin-top: 0;
   font-size: 12px;
 }
-#startups-page .startups-list-container .startups-list .startup-block {
+#startups-page .startups-list-container .startups-list .startup-block,
+#startups-page .startups-list-container .investors-list .startup-block,
+#startups-page .startups-list-container .startups-list .investor-block,
+#startups-page .startups-list-container .investors-list .investor-block {
   margin: 0px -20px;
   padding: 20px;
   font-size: 12px;
@@ -1326,20 +1404,32 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 20px;
 }
-#startups-page .startups-list-container .startups-list .startup-block .desc {
+#startups-page .startups-list-container .startups-list .startup-block .desc,
+#startups-page .startups-list-container .investors-list .startup-block .desc,
+#startups-page .startups-list-container .startups-list .investor-block .desc,
+#startups-page .startups-list-container .investors-list .investor-block .desc {
   font-weight: 700;
   display: none;
 }
 @media (max-width: 992px) {
-  #startups-page .startups-list-container .startups-list .startup-block .desc {
+  #startups-page .startups-list-container .startups-list .startup-block .desc,
+  #startups-page .startups-list-container .investors-list .startup-block .desc,
+  #startups-page .startups-list-container .startups-list .investor-block .desc,
+  #startups-page .startups-list-container .investors-list .investor-block .desc {
     display: inline-block;
   }
 }
-#startups-page .startups-list-container .startups-list .startup-block .value {
+#startups-page .startups-list-container .startups-list .startup-block .value,
+#startups-page .startups-list-container .investors-list .startup-block .value,
+#startups-page .startups-list-container .startups-list .investor-block .value,
+#startups-page .startups-list-container .investors-list .investor-block .value {
   line-height: normal;
   display: inline-block;
 }
-#startups-page .startups-list-container .startups-list .startup-block:hover {
+#startups-page .startups-list-container .startups-list .startup-block:hover,
+#startups-page .startups-list-container .investors-list .startup-block:hover,
+#startups-page .startups-list-container .startups-list .investor-block:hover,
+#startups-page .startups-list-container .investors-list .investor-block:hover {
   background: rgba(0, 0, 0, 0.02);
 }
 #events-page .events-hero {
@@ -1356,11 +1446,12 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #events-page .events-list-container .events-list .event-block .event-date {
   color: #fff;
   background: #222;
-  padding: 5px 20px;
+  padding: 2px 12px;
   position: absolute;
   top: 10px;
   left: 0;
   font-weight: 600;
+  font-size: 12px;
 }
 #events-page .events-list-container .events-list .event-block .event-img {
   margin: -20px;

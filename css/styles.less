@@ -696,7 +696,7 @@ nav.navbar-fixed-top{
   // End 2nd Nav
 }
 
-
+//Message and Notification
 .navbar-noti, .navbar-messages{
   .dropdown-menu{
     min-width: 320px;
@@ -712,7 +712,7 @@ nav.navbar-fixed-top{
       
       p{
         margin-left: 42px;
-        margin-top: @magic-number/2;
+        margin-top: 0;
       }
 
       img, .user-img{
@@ -1528,6 +1528,69 @@ nav.navbar-fixed-top{
 //## Company Basic
 //## Startups
 //## Investor
+.table-list-container(){
+  .startups-list, .investors-list{
+    .company-img{
+        .square-size(48px);
+        float: left;
+        margin-right: @magic-number;
+        margin-bottom: @magic-number;
+    }
+    
+    .company-des{
+      overflow: hidden;
+      h3{
+        margin-top:0;
+        margin-bottom: @magic-number*0.5;
+        font-size: 14px;
+      }
+      h4{
+        line-height: normal;
+        margin-top: 0;
+        font-size: 12px;
+      } 
+    }
+    
+    .startup-block, .investor-block{
+      margin: 0px -@magic-number*2;
+      padding: @magic-number*2 ;
+      font-size: 12px;
+      display: block;
+      .bottom-sep;
+      .desc{
+        font-weight: 700;
+        display: none;          
+      }
+      @media(max-width: @screen-md){
+        .desc{
+        display: inline-block;            
+        }
+      }
+      .value{
+        line-height: normal;
+        display: inline-block;          
+      }
+
+      &:hover{
+        background: rgba(0, 0, 0, 0.02);
+      }
+    }
+  }
+}
+
+#investors-page{
+  .investors-hero{
+    background: url('https://static.pexels.com/photos/29642/pexels-photo-29642.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    .hero-button{
+      color: @investor-color;
+    }
+  }
+  .investors-list-container{
+    .table-list-container;    
+  }
+}
 #startups-page{
   .startups-hero{
     background: url('https://static.pexels.com/photos/7097/people-coffee-tea-meeting.jpg');
@@ -1539,52 +1602,7 @@ nav.navbar-fixed-top{
   }
 
   .startups-list-container{
-    .startups-list{
-      .company-img{
-        .square-size(48px);
-        float: left;
-        margin-right: @magic-number;
-        margin-bottom: @magic-number;
-      }
-      .company-des{
-        overflow: hidden;
-        h3{
-          margin-top:0;
-          margin-bottom: @magic-number*0.5;
-          font-size: 14px;
-        }
-        h4{
-          line-height: normal;
-          margin-top: 0;
-          font-size: 12px;
-        } 
-      }
-      
-      .startup-block{
-        margin: 0px -@magic-number*2;
-        padding: @magic-number*2 ;
-        font-size: 12px;
-        display: block;
-        .bottom-sep;
-        .desc{
-          font-weight: 700;
-          display: none;          
-        }
-        @media(max-width: @screen-md){
-          .desc{
-          display: inline-block;            
-          }
-        }
-        .value{
-          line-height: normal;
-          display: inline-block;          
-        }
-
-        &:hover{
-          background: rgba(0, 0, 0, 0.02);
-        }
-      }
-    }
+    .table-list-container;
   }
 }
 
@@ -1608,9 +1626,10 @@ nav.navbar-fixed-top{
         .event-date{
           color: @light-foreground;
           background: @main-color;
-          padding: @magic-number*0.5 @magic-number*2;
+          padding: 2px 12px;
           position: absolute; top: @magic-number; left: 0;
           font-weight: 600;
+          font-size: 12px;
         }
         .event-img{
           margin: -@magic-number*2;
