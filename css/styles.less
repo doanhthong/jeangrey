@@ -34,6 +34,7 @@
 @dark-foreground: rgba(0,0,0,.8);
 @grey-foreground: #696969;
 @lightgrey-foreground: #9a9a9a;
+@hoveritem-foreground: #F3F3F3;
 
 @job-color: #4ca2e2;
 @startup-color: #e74c3c;
@@ -50,6 +51,7 @@
 
 
 @dropdown-height: 400px;
+@dropdown-width: 250px;
 @selectbox-color: #f7f7f7;
 
 .bottom-sep{
@@ -97,6 +99,7 @@ body{
   font-family: @font-family-normaltext !important;
   color: @grey-foreground;
   line-height: 2;
+  position: relative;
 }
 
 h1, h2, h3{
@@ -181,35 +184,35 @@ strong{
 
 .post-misc{
 	@button-size: 40px;
-  position: absolute;
-  left: -@button-size;
+	position: absolute;
+	left: -@button-size;
 
-  .social-btn{
-    width: @button-size; height: @button-size;
-    display: block;
-    text-align: center;
-    margin-bottom: @magic-number;
+	.social-btn{
+		width: @button-size; height: @button-size;
+		display: block;
+		text-align: center;
+		margin-bottom: @magic-number;
 
-    i{
-      line-height: @button-size;
-      vertical-align: middle;
-      color: white;
-    }
-  }
-  .facebook-btn{background: #3b5999;}
-  .linkedin-btn{background:#0077B5}
-  .twitter-btn{background:#55acee}
-  .googleplus-btn{background:#dd4b39}
-  .comments-btn{
-    position: relative;
-    background: @grey-foreground;
-    .label{
-      position: absolute;
-      z-index: 5;
-      top: 20px; right: @button-size/2;
-      font-weight: normal;
-      border-radius: 50%; 
-    }    
+		i{
+			line-height: @button-size;
+			vertical-align: middle;
+			color: white;
+		}
+	}
+	.facebook-btn{background: #3b5999;}
+	.linkedin-btn{background:#0077B5}
+	.twitter-btn{background:#55acee}
+	.googleplus-btn{background:#dd4b39}
+	.comments-btn{
+		position: relative;
+		background: @grey-foreground;
+		.label{
+			position: absolute;
+			z-index: 5;
+			top: 20px; right: @button-size/2;
+			font-weight: normal;
+			border-radius: 50%;
+		}
 	}
 }
 
@@ -524,9 +527,61 @@ nav.navbar-fixed-top{
   border-bottom: 4px solid transparent;  
   border: none;
   background: transparent;
+
+  .navbar-hover{
+		position: relative;
+		ul{
+			display: none;
+			list-style: none;
+			padding: 0;
+			width: @dropdown-width;
+			background-color: @light-foreground;
+			box-shadow: 1px 1px 4px rgba(85,97,111,0.5);
+
+			li{
+				padding: @magic-number*0.5 @magic-number;
+				a{
+					color: @main-color;
+					padding: 0 !important;
+				}
+
+				&:hover{
+					background-color: @hoveritem-foreground;
+				}
+			}
+		}
+
+		&:hover{
+			ul{
+				display: block;
+				position: absolute;
+			}
+		}
+	}
+
+	.navbar-click{
+		ul{
+			display: none;
+			list-style: none;
+			margin-left: @magic-number;
+			li{
+				a{
+					color: @main-color;
+				}
+				&:last-child{
+					border-bottom: none !important;
+				}
+			}
+		}
+		.navbar-close{display: none;}
+		.navbar-open{display: block;}
+	}
+
 	.firstNav{
 		background: @main-color !important;
 		position: relative; z-index: 100;
+
+		
 
 		.navbar-header{
 			.navbar-brand{
@@ -546,13 +601,25 @@ nav.navbar-fixed-top{
 					background-color: @light-foreground !important;
 				}
 			}
+
+			// Badges
+			@badge-position: 5px;
+			.has-badge{
+				.badge{
+					position: absolute;
+					font-size: 0.6em;
+					padding: 3px 5px !important;
+					top: @badge-position;
+					right: @badge-position;
+				}
+			}
       
-			@media (max-width: 768px) {
+			@media (max-width: @screen-sm) {
 				.navbar-right {
-          margin-top: 0; margin-bottom: 0;
-          .navbar-logo img{
-            height: 80%;
-          }
+					margin-top: 0; margin-bottom: 0;
+					.navbar-logo img{
+						height: 80%;
+					}
 					> li {
 						float: left;
 						width: calc(100% / 6);
@@ -573,6 +640,9 @@ nav.navbar-fixed-top{
 							left: 0;
 							right: 0;
 							height: 100vh;
+							overflow-y: scroll;
+							-webkit-overflow-scrolling:touch; // mobile safari
+							z-index: 999;
 						}
 					}
 
@@ -623,7 +693,7 @@ nav.navbar-fixed-top{
     }
 
     #navbar-search{
-      @height: 28px; margin-top: 8px;
+      @height: 28px;
       width: 30%; //40% Navbar
       font-size: 12px;
       .form-group{
