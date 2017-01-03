@@ -2,10 +2,11 @@
                 File Included
 ============================================ */
 $.getScript("js/e27animation.js");
+$.getScript("js/scrolling-nav.js");
+
 //$.getScript("js/jobs_script.js");
 
 $(document).ready(function(){
-	
 
 /** ===========================================
     Hide / show the master navigation menu
@@ -43,8 +44,6 @@ $(document).ready(function(){
 
 	});
 
-	
-
 	function hideNav() {
 		$(".secNav").removeClass("nav-visible").addClass("nav-hidden");
 	}
@@ -53,7 +52,6 @@ $(document).ready(function(){
 	}
 
 	// This will prevent dropdown list's event when click
-	
 
 	setTimeout(function() {
 		$('.navbar-mobile > .dropdown > .dropdown-menu').click(function(e){
