@@ -613,8 +613,6 @@ nav.navbar-fixed-top .firstNav #navbar .navbar-search .input-group-addon button 
     left: 0;
     right: 0;
     height: 100vh;
-    max-height: 100vh;
-    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     z-index: 999;
   }
@@ -691,6 +689,10 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   font-size: 12px;
   font-weight: 600;
   background: #fbfbfb;
+  padding: 5px 20px;
+}
+.navbar-noti div.dropdown-menu .dropdown-sticky-viewall,
+.navbar-messages div.dropdown-menu .dropdown-sticky-viewall {
   padding: 5px 20px;
 }
 .navbar-noti ul.dropdown-menu,

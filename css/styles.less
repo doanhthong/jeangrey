@@ -652,6 +652,7 @@ nav.navbar-fixed-top{
         }
       }
       
+      //Mobile Nav
 			@media (max-width: @screen-sm) {
         //Stretch Right Nav Bar to full width for mobile Menu
 				.navbar-right {
@@ -679,9 +680,9 @@ nav.navbar-fixed-top{
 						div.dropdown-menu, ul.dropdown-menu{
 							position: absolute;	left: 0; right: 0;
 							height: 100vh;
-              max-height: 100vh;
-							overflow-y: scroll;
-							-webkit-overflow-scrolling:touch; // mobile safari
+              // max-height: 100vh;
+							// overflow-y: scroll;
+							-webkit-overflow-scrolling: touch; // mobile safari
 							z-index: 999;
 
               > ul.dropdown-menu{
@@ -770,7 +771,7 @@ nav.navbar-fixed-top{
 
 //Message and Notification (Desktop Nav)
 .navbar-noti, .navbar-messages{
-  //For dDropdown menu thas has a sticky header
+  //For Dropdown menu thas has a sticky header
   div.dropdown-menu{   
     
     > ul.dropdown-menu{
@@ -787,6 +788,10 @@ nav.navbar-fixed-top{
       font-weight: 600;
       background: @body-bg;
       padding: @magic-number*0.5 @magic-number*2;
+    }
+
+    .dropdown-sticky-viewall{
+      padding: @magic-number*0.5 @magic-number*2;      
     }
   }
 
