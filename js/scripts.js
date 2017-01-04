@@ -6,7 +6,109 @@ $.getScript("js/scrolling-nav.js");
 
 //$.getScript("js/jobs_script.js");
 
+/** ===========================================
+    Slider for Homepage *** Only apply for 3
+============================================ */
+	$(function(){
+		//init first
+
+		var pause = false;
+
+		var i = 1;
+		
+		function fadeToDestinationSlide(			
+			destinationItem,
+			currentItem = {
+				li : $('.home-slider-list li.active'),
+				img : $('.home-slider-images img.home-slider-image-active'),
+				title : $('.home-slider-title-active')
+			}){
+				currentItem.li.removeClass('active');
+				destinationItem.li.addClass('active');
+
+				//Show next image
+				destinationItem.img.fadeIn("slow",function(){
+					
+					//Hide Current image
+					currentItem.img.removeClass('home-slider-image-active').hide();	
+
+					//Show next Title
+					destinationItem.title.fadeIn("fast").addClass('home-slider-title-active');		
+								
+				}).addClass('home-slider-image-active');
+
+				//Hide Title
+				currentItem.title.fadeOut("fast", function(){
+					currentItem.title.removeClass('home-slider-title-active').hide();				
+				});
+
+		}
+
+		function fadeNext() {
+			var currentSlide = {
+				li : $('.home-slider-list li.active'),
+				img : $('.home-slider-images img.home-slider-image-active'),
+				title : $('.home-slider-title-active')
+			}
+			var nextSlide = {
+				li : currentSlide.li.next(),
+				img : currentSlide.img.next(),
+				title : currentSlide.title.next()
+			}
+
+			var firstSlide = {
+				li : $('.home-slider-list li:first-child'),
+				img : $('.home-slider-images img:first-child'),
+				title : $('.home-slider-title-container > div:first-child')
+			}
+
+			if( !currentSlide.li.is(':last-child') ){
+				fadeToDestinationSlide( nextSlide);
+			} else{
+				fadeToDestinationSlide( firstSlide);			
+			}
+		}
+
+		//Pause on Hover
+		$('.home-slider').hover(function() {
+			pause = true;
+		},function() {
+			pause = false;
+		});
+
+		$('.home-slider-list li').hover(
+			function(){				
+				var hoverIndex = $(this).index() + 1;
+				var indexSlide = {
+					li : $('.home-slider-list li:nth-child(' + hoverIndex + ')'),
+					img : $('.home-slider-images img:nth-child(' + hoverIndex + ')'),
+					title : $('.home-slider-title-container > div:nth-child(' + hoverIndex + ')')
+				}
+				
+				if(indexSlide.li.hasClass('active') == false){
+					fadeToDestinationSlide(indexSlide);
+				}
+								
+				
+			},function(){
+			})
+
+		//Rotate
+		function doRotate() {
+			if(!pause) {
+				fadeNext();
+			}    
+		}
+		
+		//Rotate image after 2sec
+		var rotate = setInterval(doRotate, 5000);
+	});
+
 $(document).ready(function(){
+
+
+	
+
 
 /** ===========================================
     Hide / show the master navigation menu
