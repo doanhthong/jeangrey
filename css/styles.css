@@ -1021,10 +1021,9 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none;
 }
 .home .home-slider .home-slider-images img.home-slider-image-active {
-  display: block;
+  z-index: 10;
 }
 .home .home-slider .home-slider-overlay {
   width: 100%;
@@ -1032,6 +1031,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 11;
   background: rgba(76, 76, 76, 0);
   background: -moz-linear-gradient(top, rgba(76, 76, 76, 0) 0%, rgba(24, 24, 24, 0.9) 92%, rgba(19, 19, 19, 0.9) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76, 76, 76, 0)), color-stop(92%, rgba(24, 24, 24, 0.9)), color-stop(100%, rgba(19, 19, 19, 0.9)));
@@ -1067,6 +1067,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 }
 .home .home-slider .home-slider-title-active {
   display: block;
+  z-index: 11;
 }
 .home .home-slider ul.home-slider-list {
   list-style: none;
@@ -1099,6 +1100,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   border-bottom-color: #ffffff;
   border-width: 10px;
   margin-left: -10px;
+  z-index: 20;
 }
 .home .home-feeds {
   padding: 20px;

@@ -1193,11 +1193,10 @@ nav.navbar-fixed-top{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        display: none;
       }
 
       img.home-slider-image-active{
-        display: block;
+        z-index: 10;
       }
     }
     
@@ -1206,6 +1205,7 @@ nav.navbar-fixed-top{
     .home-slider-overlay{
       width: 100%; height: 100%;
       position: absolute; top:0; left:0;
+      z-index: 11;
       
       background: rgba(76,76,76,0);
       background: -moz-linear-gradient(top, rgba(76,76,76,0) 0%, rgba(24,24,24,0.9) 92%, rgba(19,19,19,0.9) 100%);
@@ -1248,6 +1248,7 @@ nav.navbar-fixed-top{
     }
     .home-slider-title-active{
       display: block;
+      z-index: 11;
     }
    
     
@@ -1282,6 +1283,7 @@ nav.navbar-fixed-top{
           border-bottom-color: #ffffff;
           border-width: 10px;
           margin-left: -10px;
+          z-index: 20;
         }
       }
     }
