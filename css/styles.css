@@ -659,6 +659,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav li {
 }
 nav.navbar-fixed-top .secNav .container .navbar-nav li:hover {
   background: rgba(0, 0, 0, 0.03);
+  transition: background-color 300ms ease;
 }
 nav.navbar-fixed-top .secNav .container .navbar-nav a {
   display: table-cell;
