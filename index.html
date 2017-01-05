@@ -19,7 +19,7 @@
 	<!-- Content Here-->
 	<div class="container home">
 
-		<div class="row">
+		<div class="row" id="test">
 			<!-- Main Side Content-->
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9  col">
 				<!-- Slider for Featured News -->
@@ -74,6 +74,8 @@
 					</ul>
 				</div>
 
+				<!-- Ads Banner -->
+				<img class="center-block" style="margin-bottom: 20px; width: 100%" src="img/temp/ads.jpg" alt="">
 				<!-- Home News Feed -->
 				<div class="home-feeds box-view-basic">
 					<h2>Never Missed Latest Startup News</h2>
@@ -194,9 +196,9 @@
 			</div>
 
 			<!-- Right Side Content-->
-			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col">
-				<div class="side-container ">
-					<div class="box-view-basic side-home-e27">
+			<div id="home-side-container" class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col">
+				<div class="side-container">
+					<div class="box-view-basic side-home-e27 inner static">
 						<h2>Startup is a Journey <br> Build and Grow with e27</h2>
 						<hr>
 						<p>
@@ -218,19 +220,20 @@
 						
 					</div>
 
+
 					<div class="box-view-basic">
 						<h2>Startup Jobs</h2>
 						<div w3-include-html="modules/side-job.html"></div>
 						
 					</div>
 
-					<div class="box-view-basic">
+					<!--<div  class="box-view-basic inner">
 						<div style="margin: -20px; position: relative; background: url('img/temp/profile.jpg'); height: 280px; background-position: 50% 50%; background-size:cover">
 							<div style="background: black; width: 100%; height: 100%; position: absolute; top:0; left:0; opacity: 0.2"></div>
 							<h2 style="font-size: 1.2em; position: absolute; z-index: 2; color: white; padding: 20px; margin: 0; bottom:0">[Ads Here] <br> Get a Free Random Handsome Guy</h2>
 						</div>
-					</div>
-
+					</div>-->
+					<img src="img/temp/ads-square.jpg" alt="">
 					
 					
 				</div>
@@ -260,9 +263,14 @@
 	
 	<script src="js/scripts.js"></script>
 
+	<script src="js/jquery.sticky-kit.min.js"></script>
+
 
 	<script>
 		w3IncludeHTML();
+		$("#home-side-container").stick_in_parent("offset_top: -110px");
+		//$("#sticky-part").stick_in_parent("test");
+		// $(".wtwtf").stick_in_parent("#test");
 	</script>
 
 

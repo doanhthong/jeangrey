@@ -21,7 +21,7 @@
 }
 body {
   background: #fbfbfb;
-  padding-top: 80px;
+  padding-top: 100px;
   font-size: 14px;
   font-family: Open Sans !important;
   color: #696969;
@@ -783,6 +783,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   font-family: Montserrat;
   margin-bottom: 20px;
   position: relative;
+  margin-top: -54px;
 }
 .big-hero .container {
   position: relative;

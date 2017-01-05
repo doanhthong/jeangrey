@@ -17,6 +17,9 @@
 @firstnav-height: 42px;
 @secnav-height: 38px;
 
+
+@body-padding-top: @firstnav-height + @secnav-height + @magic-number*2;
+
 //Media Size
 @screen-xs: 480px;
 @screen-xs-min: @screen-xs;
@@ -102,7 +105,7 @@
 //Global Styles
 body{
   background: @body-bg;
-  padding-top: 80px; //Padding for navigation Height
+  padding-top: @body-padding-top; // 96px; //Padding for navigation Height
   font-size: 14px;
   font-family: @font-family-normaltext !important;
   color: @grey-foreground;
@@ -900,6 +903,7 @@ nav.navbar-fixed-top{
   font-family: @sub-font;
   margin-bottom: @magic-number*2;
   position: relative;
+  margin-top: -54px;
 
    .container{
     position: relative;
