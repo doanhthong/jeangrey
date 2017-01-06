@@ -108,7 +108,7 @@ $.getScript("js/scrolling-nav.js");
 		var rotate = setInterval(doRotate, 5000);
 	});
 
-$(document).ready(function(){
+
 
 
 	
@@ -117,7 +117,7 @@ $(document).ready(function(){
 /** ===========================================
     Hide / show the master navigation menu
 ============================================ */
-
+$(document).ready(function(){
 	// console.log('Window Height is: ' + $(window).height());
 	// console.log('Document Height is: ' + $(document).height());
 
@@ -152,9 +152,13 @@ $(document).ready(function(){
 
 	function hideNav() {
 		$(".secNav").removeClass("nav-visible").addClass("nav-hidden");
+		$(".post-misc-mobile").removeClass("post-misc-visible").addClass("post-misc-hidden");
+		
 	}
 	function showNav() {
 		$(".secNav").removeClass("nav-hidden").addClass("nav-visible");
+		$(".post-misc-mobile").removeClass("post-misc-hidden").addClass("post-misc-visible");
+		
 	}
 
 	// This will prevent dropdown list's event when click

@@ -32,6 +32,14 @@
 @screen-xs-max: (@screen-sm-min - 1);
 @screen-sm-min: (@screen-md-min - 1);
 
+.hidden-xxs{
+
+  @media(max-width: 640px){
+    display: none;
+  }
+}
+
+
 //Global variables
 @body-bg: #fbfbfb;
 @main-color:#222;
@@ -211,9 +219,9 @@ strong{
 		display: block;
 		text-align: center;
 		margin-bottom: @magic-number;
-
+    line-height: @button-size;
+    
 		i{
-			line-height: @button-size;
 			vertical-align: middle;
 			color: white;
 		}
@@ -235,41 +243,65 @@ strong{
 	}
 }
 
+//Social Bar for mobile and tablet version
 .post-misc-mobile{
+  @btn-height: 40px;
   .post-misc;
-  
-  .social-btn{
-    width: 20px; height: 20px;
-    i{
-      
-    }
-  }
+  height: @btn-height;  
+  padding: 0;
   position: fixed;
   left: 0;
   bottom: 0;
-  .social-btn{
-    margin-bottom: @magic-number;
-    display: block;
-  }
+  box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, .0785);
+  width: 100%;
+  background-color: @light-foreground;    
   z-index: 1000;  
+  transition: all 0.3s ease;
+
+  .post-misc-socialbtns{
+    float: left;
+    
+    .social-btn{
+      display: inline-block;
+      line-height: @btn-height;
+      background: transparent;
+      width: @btn-height;
+      height: 100%;
+      margin: 0;
+      i{
+        font-size: 12px;      
+      }
+    }
+
+    .facebook-btn i{color: #3b5999;}
+    .linkedin-btn i{color:#0077B5}
+    .twitter-btn i{color:#55acee}
+    .googleplus-btn i{color:#dd4b39}
+  }
+  
+  .post-misc-nextpost{
+    float: right;
+    line-height: @btn-height;
+    .next{
+      color: @grey-foreground;
+    }
+    i{
+      margin-left: @magic-number;
+      color: @grey-foreground;      
+      margin-right: @magic-number;
+    }
+  }
+  
 }
 
-//Misc for Mobile/ Tablet
-@media (max-width: 768px){
-	.post-misc{
-		bottom: 0;
-		background-color: @light-foreground;
-		box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .0785);
-		width: 100%;
-		padding: @magic-number;
-		text-align: center;
-
-		.social-btn{
-			display: inline-block;
-			margin: 0 @magic-number;
-		}
-	}
+.post-misc-hidden{
+  transform: translateY(50px);
 }
+
+.post-misc-visible{
+  transform: translateY(0);
+}
+
 //Tags and Labels style
 span.label, a.label{
   border-radius: 0;
@@ -1567,6 +1599,8 @@ nav.navbar-fixed-top{
       .btn{
         border-width: 1.5px;
         padding: 6px 20px;
+        margin-bottom: @magic-number;
+        
       }
     }
 
