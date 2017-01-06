@@ -25,8 +25,10 @@ body {
   font-size: 14px;
   font-family: Open Sans !important;
   color: #696969;
-  line-height: 2;
   position: relative;
+}
+body .container {
+  line-height: 1.8;
 }
 @media (max-width: 992px) {
   body {
@@ -146,14 +148,57 @@ strong {
   font-weight: normal;
   border-radius: 50%;
 }
-@media (min-width: 768px) {
-  .post-misc {
-    top: 40px;
-  }
-  .post-misc .social-btn {
-    margin-bottom: 10px;
-    display: block;
-  }
+.post-misc-mobile {
+  position: absolute;
+  left: -40px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.post-misc-mobile .social-btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.post-misc-mobile .social-btn i {
+  line-height: 40px;
+  vertical-align: middle;
+  color: white;
+}
+.post-misc-mobile .facebook-btn {
+  background: #3b5999;
+}
+.post-misc-mobile .linkedin-btn {
+  background: #0077B5;
+}
+.post-misc-mobile .twitter-btn {
+  background: #55acee;
+}
+.post-misc-mobile .googleplus-btn {
+  background: #dd4b39;
+}
+.post-misc-mobile .comments-btn {
+  position: relative;
+  background: #696969;
+}
+.post-misc-mobile .comments-btn .label {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 20px;
+  font-weight: normal;
+  border-radius: 50%;
+}
+.post-misc-mobile .social-btn {
+  width: 20px;
+  height: 20px;
+}
+.post-misc-mobile .social-btn {
+  margin-bottom: 10px;
+  display: block;
 }
 @media (max-width: 768px) {
   .post-misc {
@@ -1169,6 +1214,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   font-weight: 500;
   font-family: Montserrat;
   color: rgba(0, 0, 0, 0.8);
+  line-height: 1.3;
 }
 .feed-article .content h4 {
   font-size: 1em;
@@ -1245,12 +1291,18 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .post-container .post-article {
   padding: 40px;
   position: relative;
+  line-height: 2;
 }
 .post-container .post-tags {
   font-size: 15px;
 }
 .post-container .post-tags .label {
   font-weight: normal;
+}
+@media (max-width: 768px) {
+  .post-container .post-meta {
+    text-align: left;
+  }
 }
 .post-container .post-meta .post-author a {
   color: rgba(0, 0, 0, 0.8);
@@ -1272,6 +1324,7 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .post-container .post-subheading {
   text-transform: none;
   font-family: Open Sans;
+  letter-spacing: 0px;
 }
 .post-container .post-comments {
   margin-top: 20px;
@@ -1297,32 +1350,36 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   margin-top: 20px;
   border-top: 1px solid #f2f2f2;
   padding-top: 20px;
-}
-.post-container .post-author-des a {
   margin-bottom: 10px;
 }
-.post-container .post-author-des a .user-img {
+.post-container .post-author-des .user-img {
   width: 48px;
   height: 48px;
   float: left;
 }
-.post-container .post-author-des a .author-info {
+.post-container .post-author-des .author-info {
   float: left;
   margin-left: 10px;
 }
-.post-container .post-author-des a .author-info .author-name {
+.post-container .post-author-des .author-info .author-name {
   color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 0;
 }
-.post-container .post-author-des a .author-info .author-title {
+.post-container .post-author-des .author-info .author-title {
   color: #696969;
 }
-.post-container .post-author-des a .author-cta {
-  float: right;
+.post-container .post-author-des .author-cta {
+  margin-bottom: 10px;
+  text-align: right;
 }
-.post-container .post-author-des a .author-cta .btn {
+@media (max-width: 768px) {
+  .post-container .post-author-des .author-cta {
+    text-align: left;
+  }
+}
+.post-container .post-author-des .author-cta .btn {
   border-width: 1.5px;
   padding: 6px 20px;
 }
