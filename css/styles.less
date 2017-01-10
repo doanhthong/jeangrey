@@ -1422,19 +1422,27 @@ nav.navbar-fixed-top{
             font-size: 12px;
           }
         }
-      }
+      }      
+    }
+  }
+
+  .side-events {
+    ul{
+      list-style: none;
+      padding: 0;
       li.side-event {
         @event-img-size: 60px;
         border-top: 1px #e1dede solid;
         padding-top: 10px;
         margin-top: 10px;
-        .event-img{
-          position: absolute;
-          .square-size(@event-img-size);
-          float: left;
+        .event-img {
+          display: inline-block;
+          width: @event-img-size;
+          height: auto;
         }
         .side-event-info{
-          margin-left: @event-img-size + @magic-number;
+          padding-left: 10px;
+          display: inline-block;
           line-height: 1.4;
           a {
             color: black;
@@ -1446,6 +1454,16 @@ nav.navbar-fixed-top{
           }
         }
       } 
+    }
+  }
+
+  .side-attendee {
+    img {
+      width: 23%;
+      border-radius: 50%;
+    }
+    .row {
+      margin-top: 15px;
     }
   }
 }
