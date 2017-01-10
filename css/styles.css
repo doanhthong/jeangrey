@@ -1248,6 +1248,29 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .side-container .side-jobs ul li.side-job .side-job-info h5 {
   font-size: 12px;
 }
+.side-container .side-jobs ul li.side-event {
+  border-top: 1px #e1dede solid;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.side-container .side-jobs ul li.side-event .event-img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.side-container .side-jobs ul li.side-event .side-event-info {
+  margin-left: 70px;
+  line-height: 1.4;
+}
+.side-container .side-jobs ul li.side-event .side-event-info a {
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+}
+.side-container .side-jobs ul li.side-event .side-event-info small {
+  margin-top: 8px;
+}
 .feed {
   padding-top: 20px;
   padding-bottom: 20px;
