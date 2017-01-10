@@ -1,0 +1,25 @@
+{
+  "name": "jeangrey-lamphan",
+  "version": "1.0.0",
+  "description": "Jeangrey Frontend",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "less": "^2.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doanhthong/jeangrey.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doanhthong/jeangrey/issues"
+  },
+  "homepage": "https://github.com/doanhthong/jeangrey#readme"
+}

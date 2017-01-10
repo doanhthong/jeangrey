@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 
 gulp.task('less', function() {
-    gulp.src('*.less')
+    gulp.src('./css/*.less')
         .pipe(less())
         .pipe(gulp.dest(function(f) {
             return f.base;
