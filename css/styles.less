@@ -1,4 +1,5 @@
-//MARGIN BOTTOM and LEFT
+//STYLE RULES
+//MARGIN, PADDING BOTTOM and LEFT
 //MAGIC NUMBER = 10PX
 
 //** Global styles for blocks on site:
@@ -333,7 +334,7 @@ span.label-default, a.label-default{
 }
 
 .user-img{
-  border-radius: 50%;
+  border-radius: 50% !important;
   max-width: 100%;
   max-height: 100%;
   height: 32px; width: 32px;
@@ -1094,10 +1095,35 @@ nav.navbar-fixed-top{
     }
   }
 }
+.profile2{
+  #profile-hero{
+    margin-bottom: 0;
+  }
+}
+
+.profile-navbar{
+  background: white;
+  margin-bottom: @magic-number;
+  ul{
+    padding-left: 0;
+    list-style: none;
+    float: left;
+    margin:0;
+
+    li{
+      float: left;
+
+      a{
+        display: block;
+        padding: 10px 20px;
+        color: @main-color;
+      }
+    }
+  }
+}
 
 #profile-content{
   .box-view{
-    width: 640px;
   }
 
   .profile-side-nav{
@@ -1568,6 +1594,9 @@ nav.navbar-fixed-top{
     letter-spacing: 0px;
   }
   
+  .post-content{
+    font-size: 16px;
+  }
   .post-comments{
     .top-sep;
   }
@@ -1911,6 +1940,34 @@ nav.navbar-fixed-top{
   }
 }
 
+.event-detail-page{
+  .event-detail{
+    padding: @magic-number*4;
+		position: relative;
+   
+
+    .event-image{
+      margin-right: -40px;
+      margin-left: -40px;
+      margin-top: -40px;
+      margin-bottom: 40px;
+    }
+    .event-meta{
+      .top-sep;
+      p{
+        margin:0;
+      }
+      span{
+        font-weight: 600;
+      }
+    }
+
+    .event-description{
+      .top-sep;
+    }
+  }
+}
+
 //Modules
 .related-posts{
   .row{
@@ -1951,6 +2008,11 @@ nav.navbar-fixed-top{
     font-family: @sub-font;
     display: none;
   }
+}
+
+//SignInModal
+.signin-modal{
+  height: 50%; width: 80%
 }
 
 //Some Responsive code

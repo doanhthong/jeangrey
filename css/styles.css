@@ -276,7 +276,7 @@ a.label-default {
   transform: translate(-50%, -50%);
 }
 .user-img {
-  border-radius: 50%;
+  border-radius: 50% !important;
   max-width: 100%;
   max-height: 100%;
   height: 32px;
@@ -1000,8 +1000,26 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   margin-right: 20px;
   margin-top: 20px;
 }
-#profile-content .box-view {
-  width: 640px;
+.profile2 #profile-hero {
+  margin-bottom: 0;
+}
+.profile-navbar {
+  background: white;
+  margin-bottom: 10px;
+}
+.profile-navbar ul {
+  padding-left: 0;
+  list-style: none;
+  float: left;
+  margin: 0;
+}
+.profile-navbar ul li {
+  float: left;
+}
+.profile-navbar ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #222;
 }
 #profile-content .profile-side-nav {
   font-family: Montserrat;
@@ -1359,6 +1377,9 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   font-family: Open Sans;
   letter-spacing: 0px;
 }
+.post-container .post-content {
+  font-size: 16px;
+}
 .post-container .post-comments {
   margin-top: 20px;
   border-top: 1px solid #f2f2f2;
@@ -1703,6 +1724,32 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #events-page .events-list-container .events-list .event-block h3 {
   font-size: 18px;
 }
+.event-detail-page .event-detail {
+  padding: 40px;
+  position: relative;
+}
+.event-detail-page .event-detail .event-image {
+  margin-right: -40px;
+  margin-left: -40px;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+.event-detail-page .event-detail .event-meta {
+  margin-top: 20px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 20px;
+}
+.event-detail-page .event-detail .event-meta p {
+  margin: 0;
+}
+.event-detail-page .event-detail .event-meta span {
+  font-weight: 600;
+}
+.event-detail-page .event-detail .event-description {
+  margin-top: 20px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 20px;
+}
 .related-posts .row .related-post {
   display: block;
   margin-bottom: 20px;
@@ -1733,6 +1780,10 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .search-block .search-block-filter {
   font-family: Montserrat;
   display: none;
+}
+.signin-modal {
+  height: 50%;
+  width: 80%;
 }
 @media (max-width: 1000px) {
   .secNav {
