@@ -1276,7 +1276,9 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   margin-top: 8px;
 }
 .side-container .side-attendee img {
-  width: 23%;
+  width: 20%;
+  margin-left: 10px;
+  margin-top: 10px;
   border-radius: 50%;
 }
 .side-container .side-attendee .row {
