@@ -1211,6 +1211,10 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 .home .home-feeds {
   padding: 20px;
 }
+.side-see-all {
+  display: block;
+  margin-bottom: 10px;
+}
 .side-container .side-home-e27 a {
   font-weight: 500;
 }
@@ -1253,11 +1257,10 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   padding: 0;
 }
 .side-container .side-events ul li.side-event {
-  border-top: 1px #e1dede solid;
   padding-top: 10px;
   margin-top: 10px;
 }
-.side-container .side-events ul li.side-event .event-img {
+.side-container .side-events ul li.side-event .side-event-img {
   display: inline-block;
   width: 60px;
   height: auto;
@@ -1266,23 +1269,23 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
   padding-left: 10px;
   display: inline-block;
   line-height: 1.4;
+  vertical-align: top;
 }
 .side-container .side-events ul li.side-event .side-event-info a {
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
   font-size: 13px;
 }
 .side-container .side-events ul li.side-event .side-event-info small {
-  margin-top: 8px;
-}
-.side-container .side-attendee img {
-  width: 20%;
-  margin-left: 10px;
   margin-top: 10px;
-  border-radius: 50%;
 }
-.side-container .side-attendee .row {
-  margin-top: 15px;
+.side-container .side-attendees .attendee {
+  display: block;
+  margin-bottom: 20px;
+}
+.side-container .side-attendees .attendee .user-img {
+  width: 100%;
+  height: 100%;
 }
 .feed {
   padding-top: 20px;
