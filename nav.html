@@ -162,11 +162,11 @@
 					</li>
 
 					<!-- Smartphone Only: Login Button - FOR GUEST visible-xs/hidden -->
-					<!-- *** FOR GUEST
-					<li class="visible-xs dropdown navbar-search-mobile">
-						<a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-lock" aria-hidden="true"></i></a>
+					 <!--*** FOR GUEST-->
+					<li class="dropdown navbar-search-mobile">
+						<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-lock" aria-hidden="true"></i></a>
 					</li>
-					-->
+					
 					
 
 					<!-- Smartphone only: Menu-->
@@ -298,3 +298,30 @@
 
 	</div>
 </nav>
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="row">
+					<div class="col-xs-12 col-sm-7">
+						<img src="./img/login.jpg"/>>
+					</div>
+					<div class="col-xs-12 col-sm-5">
+						<h2><b>LOGIN TO E27</b></h2>
+						<span>Orem ipsum dolor sit amet, id nusquarm incorrupte pri. Cu eum virtute partiendo.</span>
+						<br/>
+						<br/>
+						<div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="User Name">
+                        </div>
+						<div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="Password">
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
