@@ -1846,16 +1846,19 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #login-page .form-group-login-button .login-btn {
   background-color: #222;
   border-color: #222;
+  width: 100%;
 }
 #login-page .facebook-btn {
   font-weight: bold;
   background: #3b5999;
   border: #3b5999;
+  width: 100%;
 }
 #login-page .linkedin-btn {
   font-weight: bold;
   background: #0077B5;
   border: #0077B5;
+  width: 100%;
 }
 #login-page .signup-btn {
   color: #7db924;
