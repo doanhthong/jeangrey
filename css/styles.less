@@ -2046,13 +2046,24 @@ nav.navbar-fixed-top{
 }
 
 #login-page {
+  .modal-body{
+    padding: 0;
+  }
   border-radius: 0;
+
+  button.close{
+    margin-right: 10px;
+    margin-top: 5px;
+  }
   img.logo {
     height: 580px;
     object-fit: cover;
   }
   .panel-right {
     text-align: justify;
+    margin: @magic-number*5;
+    margin-left: @magic-number*5-20px;
+
   }
   .form-group-login-button {
     margin-bottom: @magic-number;

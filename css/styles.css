@@ -1832,12 +1832,21 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
 #login-page {
   border-radius: 0;
 }
+#login-page .modal-body {
+  padding: 0;
+}
+#login-page button.close {
+  margin-right: 10px;
+  margin-top: 5px;
+}
 #login-page img.logo {
   height: 580px;
   object-fit: cover;
 }
 #login-page .panel-right {
   text-align: justify;
+  margin: 50px;
+  margin-left: 30px;
 }
 #login-page .form-group-login-button {
   margin-bottom: 10px;
