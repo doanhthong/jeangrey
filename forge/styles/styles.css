@@ -1,0 +1,11 @@
+#forge-page .fill {
+  height: 100%;
+  min-height: 100%; }
+
+#forge-page section {
+  width: 100%; }
+
+#forge-page .section-blue, #forge-page .concept {
+  background: #0b5394; }
+  #forge-page .section-blue h1, #forge-page .concept h1 {
+    color: white; }
