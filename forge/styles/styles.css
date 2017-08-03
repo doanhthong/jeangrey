@@ -6,9 +6,9 @@
 
 #forge-page section {
   width: 100%;
-  padding: 40px 0; }
+  padding: 60px 0; }
   #forge-page section .section-header {
-    padding: 40px 0;
+    padding: 20px 0 40px;
     text-align: center;
     margin: 0 auto; }
     #forge-page section .section-header h1 {
@@ -35,6 +35,28 @@
         #forge-page section.forge-header .container .forge-header-content .partners {
           margin-top: 40px;
           height: 36px; }
+  #forge-page section.concept p {
+    text-align: center; }
   #forge-page section.concept .forge-card {
     text-align: center;
     max-width: 320px; }
+  #forge-page section.benefits .section-content .forge-benefit {
+    margin-bottom: 40px;
+    padding-left: 50px;
+    padding-top: 50px;
+    min-height: 150px; }
+    #forge-page section.benefits .section-content .forge-benefit-1 {
+      background: url("../img/counts/1.png"); }
+    #forge-page section.benefits .section-content .forge-benefit-2 {
+      background: url("../img/counts/2.png"); }
+    #forge-page section.benefits .section-content .forge-benefit-3 {
+      background: url("../img/counts/3.png"); }
+    #forge-page section.benefits .section-content .forge-benefit-4 {
+      background: url("../img/counts/4.png"); }
+    #forge-page section.benefits .section-content .forge-benefit-5 {
+      background: url("../img/counts/5.png"); }
+    #forge-page section.benefits .section-content .forge-benefit-6 {
+      background: url("../img/counts/6.png"); }
+    #forge-page section.benefits .section-content .forge-benefit-1, #forge-page section.benefits .section-content .forge-benefit-2, #forge-page section.benefits .section-content .forge-benefit-3, #forge-page section.benefits .section-content .forge-benefit-4, #forge-page section.benefits .section-content .forge-benefit-5, #forge-page section.benefits .section-content .forge-benefit-6 {
+      background-repeat: no-repeat;
+      background-size: 70px; }

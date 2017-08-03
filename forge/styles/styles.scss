@@ -1,6 +1,7 @@
 //Forge Landing Page Styles
 #forge-page{
     //General Styles
+    $magic-number: 10px;
 
     .section-blue{
         color: white;
@@ -12,7 +13,7 @@
 
     section{
         width: 100%;
-        padding: 40px 0;
+        padding: 60px 0;
 
         //Blue Section
         &.concept, &.timeline, &.contact{
@@ -20,7 +21,7 @@
         }
 
         .section-header{
-            padding: 40px 0;
+            padding: 20px 0 40px;
             text-align: center;
             margin: 0 auto;
             h1{
@@ -64,7 +65,10 @@
         }
 
         &.concept{
-             .forge-card{
+            p{
+                text-align: center;
+            }
+            .forge-card{
                 text-align: center;
                 max-width: 320px;
                 .forge-card-img{
@@ -74,6 +78,31 @@
                 .forge-card-text{
 
                 }
+            }
+        }
+
+        &.benefits{
+            .section-content{
+                .forge-benefit{
+                    margin-bottom: $magic-number*4;
+                    $var: $magic-number*5;
+                    padding-left: $var;
+                    padding-top: $var;
+                    min-height: 150px;
+
+                    &-1{ background: url('../img/counts/1.png');}                    
+                    &-2{ background: url('../img/counts/2.png');}
+                    &-3{ background: url('../img/counts/3.png');}
+                    &-4{ background: url('../img/counts/4.png');}
+                    &-5{ background: url('../img/counts/5.png');}
+                    &-6{ background: url('../img/counts/6.png');}
+                    &-1, &-2, &-3, &-4, &-5, &-6{
+                        background-repeat: no-repeat;   
+                        background-size: 70px; 
+                    }
+                }
+
+            
             }
         }
         
