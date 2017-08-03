@@ -30,7 +30,7 @@
     padding: 20px 0;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 60px; }
+    margin-bottom: 40px; }
     #forge-page section .section-header h1 {
       font-weight: 600;
       text-align: center; }
@@ -118,16 +118,21 @@
               height: 60%; }
           #forge-page section.forge-header .container .forge-header-content .partners .partner-pwc img {
             height: 100%; }
+  #forge-page section.concept .section-content {
+    max-width: 800px;
+    margin: 0 auto; }
   #forge-page section.concept p {
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto 30px; }
   #forge-page section.concept .forge-card {
     text-align: center;
-    max-width: 320px; }
+    max-width: 320px;
+    margin: 0 auto; }
     #forge-page section.concept .forge-card .forge-card-img {
       max-width: 128px;
       margin: 0 auto; }
   #forge-page section.focus .section-content {
-    width: 80%;
+    max-width: 800px;
     margin: 0 auto; }
     #forge-page section.focus .section-content .forge-focus {
       text-align: center;
