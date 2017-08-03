@@ -6,11 +6,12 @@
 
 #forge-page section {
   width: 100%;
-  padding: 60px 0; }
+  padding: 60px 0 100px; }
   #forge-page section .section-header {
-    padding: 20px 0 40px;
+    padding: 20px 0;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 60px; }
     #forge-page section .section-header h1 {
       font-weight: 600;
       text-align: center; }
@@ -40,6 +41,21 @@
   #forge-page section.concept .forge-card {
     text-align: center;
     max-width: 320px; }
+    #forge-page section.concept .forge-card .forge-card-img {
+      max-width: 128px;
+      margin: 0 auto; }
+  #forge-page section.focus .section-content {
+    width: 80%;
+    margin: 0 auto; }
+    #forge-page section.focus .section-content .forge-focus {
+      text-align: center;
+      margin-bottom: 30px; }
+      #forge-page section.focus .section-content .forge-focus img {
+        width: 160px;
+        margin-bottom: 10px; }
+      #forge-page section.focus .section-content .forge-focus div {
+        font-weight: 600;
+        font-size: 16px; }
   #forge-page section.benefits .section-content .forge-benefit {
     margin-bottom: 40px;
     padding-left: 50px;
@@ -60,3 +76,16 @@
     #forge-page section.benefits .section-content .forge-benefit-1, #forge-page section.benefits .section-content .forge-benefit-2, #forge-page section.benefits .section-content .forge-benefit-3, #forge-page section.benefits .section-content .forge-benefit-4, #forge-page section.benefits .section-content .forge-benefit-5, #forge-page section.benefits .section-content .forge-benefit-6 {
       background-repeat: no-repeat;
       background-size: 70px; }
+  #forge-page section.coordinators .forge-coordinator {
+    padding: 20px; }
+    #forge-page section.coordinators .forge-coordinator .header h2 {
+      font-size: 18px;
+      text-align: center;
+      font-weight: 600; }
+    #forge-page section.coordinators .forge-coordinator .content a {
+      text-align: center;
+      width: 100%;
+      display: block; }
+      #forge-page section.coordinators .forge-coordinator .content a img {
+        max-height: 64px;
+        margin: 10px; }

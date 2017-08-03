@@ -13,7 +13,7 @@
 
     section{
         width: 100%;
-        padding: 60px 0;
+        padding: 60px 0 100px;
 
         //Blue Section
         &.concept, &.timeline, &.contact{
@@ -21,9 +21,10 @@
         }
 
         .section-header{
-            padding: 20px 0 40px;
+            padding: 20px 0;
             text-align: center;
             margin: 0 auto;
+            margin-bottom: 60px;
             h1{
                 font-weight: 600;
                 text-align: center;
@@ -72,11 +73,32 @@
                 text-align: center;
                 max-width: 320px;
                 .forge-card-img{
-
+                    max-width: 128px;
+                    margin: 0 auto;
                 }
 
                 .forge-card-text{
 
+                }
+            }
+        }
+
+        &.focus{
+            .section-content{
+                width: 80%;
+                margin: 0 auto;
+                .forge-focus{
+                    text-align: center;
+                    margin-bottom: $magic-number*3;
+
+                    img{
+                        width: 160px;
+                        margin-bottom: $magic-number;
+                    }
+                    div{
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
                 }
             }
         }
@@ -103,6 +125,31 @@
                 }
 
             
+            }
+        }
+
+        &.coordinators{
+            .forge-coordinator{
+                padding: $magic-number*2;
+                .header{
+                    h2{
+                        font-size: 18px;
+                        text-align: center;
+                        font-weight: 600;
+                    }
+                }
+                .content{
+                    a{
+                        text-align: center;
+                        width: 100%;
+                        display: block;
+                        img{
+                            max-height: 64px;
+                            margin: $magic-number;
+                        }
+                    }
+                }
+
             }
         }
         
