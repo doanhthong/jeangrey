@@ -35,7 +35,11 @@
             width: 480px; }
         #forge-page section.forge-header .container .forge-header-content .partners {
           margin-top: 40px;
-          height: 36px; }
+          height: 56px; }
+          #forge-page section.forge-header .container .forge-header-content .partners a img {
+            height: 50%; }
+          #forge-page section.forge-header .container .forge-header-content .partners .partner-pwc img {
+            height: 100%; }
   #forge-page section.concept p {
     text-align: center; }
   #forge-page section.concept .forge-card {
