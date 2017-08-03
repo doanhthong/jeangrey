@@ -1,8 +1,10 @@
 <html>
 <head>
+        <script src="https://e27.co/dist/js/GlobalJS.js?v=1501745850" type="text/javascript"></script>
     	<script src="https://e27.co/dist/js/header/header-580273afbe.js" type="text/javascript"></script>
 
-    <link rel="shortcut icon" href="https://e27.co/favicon.png"/>
+
+<link rel="shortcut icon" href="https://e27.co/favicon.png"/>
 	<link href="https://e27.co/dist/css/app-5b1ad5df8d.css" rel="stylesheet" type="text/css" />
 	<link href="https://e27.co/dist/css/about-style.css?v=1.2" rel="stylesheet">
     <link href="https://e27.co/dist/css/jeangrey-styles.css?v=1501608987" rel="stylesheet" type="text/css" />
@@ -32,8 +34,9 @@
                     </div>
                 </div>
             </div>  
+            <a class="btn-plz-scrolldown" href="#forge-concept"><span></span><span></span><span></span></a>
         </section>
-        <section class="concept">
+        <section class="concept" id="forge-concept">
             <div class="container">
                 <div class="section-header">
                     <h1>A one-stop shop for corporate innovation needs</h1>
@@ -263,5 +266,14 @@
 
         </section>
     </div>
+
+    <script>
+        $(function() {
+            $('a[href*=#]').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+            });
+        });
+    </script>
 </body>
 </html>

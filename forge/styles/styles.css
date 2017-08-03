@@ -42,6 +42,60 @@
     background: url("../img/bg.png") no-repeat;
     background-size: 100% auto;
     background-position: 50% 60%; }
+    #forge-page section.forge-header a.btn-plz-scrolldown {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      z-index: 2;
+      display: inline-block;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #333;
+      transition: opacity .3s; }
+    #forge-page section.forge-header a.btn-plz-scrolldown {
+      padding-top: 80px; }
+    #forge-page section.forge-header a.btn-plz-scrolldown span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      margin-left: -12px;
+      border-left: 1px solid #333;
+      border-bottom: 1px solid #333;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb07 2s infinite;
+      animation: sdb07 2s infinite;
+      opacity: 0;
+      box-sizing: border-box; }
+    #forge-page section.forge-header a.btn-plz-scrolldown span:nth-of-type(1) {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s; }
+    #forge-page section.forge-header a.btn-plz-scrolldown span:nth-of-type(2) {
+      top: 16px;
+      -webkit-animation-delay: .15s;
+      animation-delay: .15s; }
+    #forge-page section.forge-header a.btn-plz-scrolldown span:nth-of-type(3) {
+      top: 32px;
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s; }
+
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes sdb07 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
     #forge-page section.forge-header .container {
       height: 100%; }
       #forge-page section.forge-header .container .forge-header-content {
@@ -51,7 +105,7 @@
         #forge-page section.forge-header .container .forge-header-content .forge-logo {
           display: block; }
           #forge-page section.forge-header .container .forge-header-content .forge-logo img {
-            width: 480px; }
+            max-width: 480px; }
         #forge-page section.forge-header .container .forge-header-content .partners {
           margin-top: 40px;
           height: 56px;
