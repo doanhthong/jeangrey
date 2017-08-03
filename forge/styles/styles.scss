@@ -9,7 +9,7 @@
     .btn-black-line{
         white-space: normal;
         // background-color: transparent !important;
-        color: #000;
+        color: #081945;
         font-size: 15px !important;
         letter-spacing: 2px;
         border: 2px solid black;
@@ -34,7 +34,7 @@
         h1{
             color: white;
         }  
-        background: #0b5394;
+        background: #081945;
     }
 
     section{
@@ -55,6 +55,9 @@
                 font-weight: 600;
                 text-align: center;
             }
+        }
+        .section-content{
+            margin: 0 auto;
         }
 
         //Forge Header Section
@@ -265,6 +268,18 @@
                     }
                 }
 
+            }
+        }
+
+        &.contact{
+            .section-content{
+                max-width: 640px;
+
+                .forge-contactform{
+                    background: white;
+                    padding:  $magic-number*8 $magic-number*6;
+                    border-radius: 4px;
+                }
             }
         }
         
