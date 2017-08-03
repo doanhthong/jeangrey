@@ -184,3 +184,48 @@
       background: white;
       padding: 80px 60px;
       border-radius: 4px; }
+  #forge-page section.timeline .forge-timeline {
+    margin: 0 auto; }
+    #forge-page section.timeline .forge-timeline .timeline-block {
+      height: 120px;
+      max-width: 480px;
+      margin: 0 auto; }
+      #forge-page section.timeline .forge-timeline .timeline-block .left {
+        float: left;
+        padding-right: 10px;
+        padding-top: 10px;
+        width: 120px;
+        text-align: right;
+        height: 100%;
+        display: block;
+        font-style: italic;
+        position: relative; }
+      #forge-page section.timeline .forge-timeline .timeline-block .right {
+        border-left: 2px solid rgba(255, 255, 255, 0.5);
+        padding-left: 20px;
+        float: left;
+        height: 100%;
+        display: block; }
+        #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .header {
+          display: block;
+          background: #fff;
+          color: #081945;
+          padding: 10px 40px;
+          font-family: "Montserrat";
+          font-weight: 600;
+          font-size: 18px;
+          text-transform: uppercase;
+          position: relative; }
+          #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .header:after {
+            right: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: #fff;
+            border-width: 10px;
+            margin-top: -10px; }
