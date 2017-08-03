@@ -189,11 +189,19 @@
             }
             .forge-card{
                 text-align: center;
-                max-width: 320px;
                 margin: 0 auto;
+                padding: 20px;
                 .forge-card-img{
-                    max-width: 128px;
-                    margin: 0 auto;
+                    border-radius: 50%;
+                    width: 128px;
+                    height: 128px;
+                    display: block;
+                    background: white;
+                    margin: 0 auto $magic-number*2;
+                    img{
+                        margin-top: 32px;
+                        max-height: 64px;
+                    }
                 }
 
                 .forge-card-text{
@@ -208,10 +216,10 @@
                 margin: 0 auto;
                 .forge-focus{
                     text-align: center;
-                    margin-bottom: $magic-number*3;
+                    margin-bottom: $magic-number*6;
 
                     img{
-                        width: 160px;
+                        max-height: 80px;
                         margin-bottom: $magic-number;
                     }
                     div{
@@ -273,7 +281,10 @@
         }
 
         &.contact{
+            
             .section-content{
+                position: relative;
+                z-index: 10;
                 max-width: 640px;
 
                 .forge-contactform{
@@ -281,6 +292,21 @@
                     padding:  $magic-number*8 $magic-number*6;
                     border-radius: 4px;
                 }
+            }
+        }
+
+        &.timeline, &.contact{
+            position: relative;
+            &:before{
+                content:" ";
+                display: block;
+                position: absolute;
+                top:0;
+                width: 100%;
+                height: 100%;
+                background: url("../img/bg.png") no-repeat;
+                background-position: 50% 90%;
+                background-size: 100% auto;
             }
         }
 
@@ -308,7 +334,13 @@
                         float: left;
                         height: 100%;
                         display: block;
-                        .right-content{
+                        .right-content{ 
+                            transition: all ease-in-out 200ms;
+                            cursor: pointer;
+                            &:hover{
+                                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+                                transform: translateX(-10px);
+                            }
                             .header{
                                 display: block;
                                 background: #fff;

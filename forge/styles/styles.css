@@ -128,19 +128,26 @@
     margin: 0 auto 30px; }
   #forge-page section.concept .forge-card {
     text-align: center;
-    max-width: 320px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 20px; }
     #forge-page section.concept .forge-card .forge-card-img {
-      max-width: 128px;
-      margin: 0 auto; }
+      border-radius: 50%;
+      width: 128px;
+      height: 128px;
+      display: block;
+      background: white;
+      margin: 0 auto 20px; }
+      #forge-page section.concept .forge-card .forge-card-img img {
+        margin-top: 32px;
+        max-height: 64px; }
   #forge-page section.focus .section-content {
     max-width: 800px;
     margin: 0 auto; }
     #forge-page section.focus .section-content .forge-focus {
       text-align: center;
-      margin-bottom: 30px; }
+      margin-bottom: 60px; }
       #forge-page section.focus .section-content .forge-focus img {
-        width: 160px;
+        max-height: 80px;
         margin-bottom: 10px; }
       #forge-page section.focus .section-content .forge-focus div {
         font-weight: 600;
@@ -179,11 +186,25 @@
         max-height: 64px;
         margin: 10px; }
   #forge-page section.contact .section-content {
+    position: relative;
+    z-index: 10;
     max-width: 640px; }
     #forge-page section.contact .section-content .forge-contactform {
       background: white;
       padding: 80px 60px;
       border-radius: 4px; }
+  #forge-page section.timeline, #forge-page section.contact {
+    position: relative; }
+    #forge-page section.timeline:before, #forge-page section.contact:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/bg.png") no-repeat;
+      background-position: 50% 90%;
+      background-size: 100% auto; }
   #forge-page section.timeline .forge-timeline {
     margin: 0 auto; }
     #forge-page section.timeline .forge-timeline .timeline-block {
@@ -206,26 +227,32 @@
         float: left;
         height: 100%;
         display: block; }
-        #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .header {
-          display: block;
-          background: #fff;
-          color: #081945;
-          padding: 10px 40px;
-          font-family: "Montserrat";
-          font-weight: 600;
-          font-size: 18px;
-          text-transform: uppercase;
-          position: relative; }
-          #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .header:after {
-            right: 100%;
-            top: 50%;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
-            border-color: rgba(255, 255, 255, 0);
-            border-right-color: #fff;
-            border-width: 10px;
-            margin-top: -10px; }
+        #forge-page section.timeline .forge-timeline .timeline-block .right .right-content {
+          transition: all ease-in-out 200ms;
+          cursor: pointer; }
+          #forge-page section.timeline .forge-timeline .timeline-block .right .right-content:hover {
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            transform: translateX(-10px); }
+          #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .header {
+            display: block;
+            background: #fff;
+            color: #081945;
+            padding: 10px 40px;
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
+            position: relative; }
+            #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .header:after {
+              right: 100%;
+              top: 50%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: rgba(255, 255, 255, 0);
+              border-right-color: #fff;
+              border-width: 10px;
+              margin-top: -10px; }
