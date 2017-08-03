@@ -3,6 +3,29 @@
     //General Styles
     $magic-number: 10px;
 
+    .btn-black-line{
+        white-space: normal;
+        // background-color: transparent !important;
+        color: #000;
+        font-size: 15px !important;
+        letter-spacing: 2px;
+        border: 2px solid black;
+        width: auto;
+        padding: 10px 48px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        transition: all 200ms ease-in-out;
+        background: #fff;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+        &:hover{
+            color: #fff;
+            border-color:  #081945;
+            background: #081945 !important;
+        }
+    }
+
     .section-blue{
         color: white;
         h1{
@@ -63,7 +86,7 @@
                         a {
                             display: inline-block;
                             vertical-align: bottom;
-                            padding: 0 $magic-number;
+                            padding: $magic-number;
                             img{
                                 height: 60%;
                             }

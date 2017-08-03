@@ -1,3 +1,22 @@
+#forge-page .btn-black-line {
+  white-space: normal;
+  color: #000;
+  font-size: 15px !important;
+  letter-spacing: 2px;
+  border: 2px solid black;
+  width: auto;
+  padding: 10px 48px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  transition: all 200ms ease-in-out;
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); }
+  #forge-page .btn-black-line:hover {
+    color: #fff;
+    border-color: #081945;
+    background: #081945 !important; }
+
 #forge-page .section-blue, #forge-page section.concept, #forge-page section.timeline, #forge-page section.contact {
   color: white;
   background: #0b5394; }
@@ -40,7 +59,7 @@
           #forge-page section.forge-header .container .forge-header-content .partners a {
             display: inline-block;
             vertical-align: bottom;
-            padding: 0 10px; }
+            padding: 10px; }
             #forge-page section.forge-header .container .forge-header-content .partners a img {
               height: 60%; }
           #forge-page section.forge-header .container .forge-header-content .partners .partner-pwc img {
