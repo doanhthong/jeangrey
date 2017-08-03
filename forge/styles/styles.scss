@@ -59,9 +59,13 @@
                     .partners{
                         margin-top: 40px;
                         height: 56px;
+                        display: block;
                         a {
+                            display: inline-block;
+                            vertical-align: bottom;
+                            padding: 0 $magic-number;
                             img{
-                                height: 50%;
+                                height: 60%;
                             }
                         }
 
