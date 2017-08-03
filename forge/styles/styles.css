@@ -107,10 +107,11 @@
         #forge-page section.forge-header .container .forge-header-content .forge-logo {
           display: block; }
           #forge-page section.forge-header .container .forge-header-content .forge-logo img {
-            max-width: 480px; }
+            width: 480px;
+            max-width: 80%; }
         #forge-page section.forge-header .container .forge-header-content .partners {
           margin-top: 40px;
-          height: 56px;
+          height: 48px;
           display: block; }
           #forge-page section.forge-header .container .forge-header-content .partners a {
             display: inline-block;
@@ -191,8 +192,11 @@
     max-width: 640px; }
     #forge-page section.contact .section-content .forge-contactform {
       background: white;
-      padding: 80px 60px;
-      border-radius: 4px; }
+      border-radius: 4px;
+      padding: 60px 20px; }
+      @media screen and (min-width: 480px) {
+        #forge-page section.contact .section-content .forge-contactform {
+          padding: 80px 60px; } }
   #forge-page section.timeline, #forge-page section.contact {
     position: relative; }
     #forge-page section.timeline:before, #forge-page section.contact:before {

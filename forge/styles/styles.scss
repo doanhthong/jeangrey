@@ -150,13 +150,15 @@
                     .forge-logo{
                         display: block;
                         img{
-                            max-width: 480px;
+                            width: 480px;
+                            max-width: 80%;
                         }
                     }
 
                     .partners{
                         margin-top: 40px;
-                        height: 56px;
+                        height: 48px;
+
                         display: block;
                         a {
                             display: inline-block;
@@ -286,11 +288,15 @@
                 position: relative;
                 z-index: 10;
                 max-width: 640px;
-
+                
                 .forge-contactform{
                     background: white;
-                    padding:  $magic-number*8 $magic-number*6;
                     border-radius: 4px;
+                    padding: $magic-number*6 $magic-number*2;
+                    @media screen and (min-width: 480px){
+                        padding:  $magic-number*8 $magic-number*6;
+                        
+                    }
                 }
             }
         }
