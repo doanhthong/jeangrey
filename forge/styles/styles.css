@@ -152,7 +152,7 @@
         margin-bottom: 10px; }
       #forge-page section.focus .section-content .forge-focus div {
         font-weight: 600;
-        font-size: 16px; }
+        font-size: 14px; }
   #forge-page section.benefits .section-content .forge-benefit {
     margin-bottom: 40px;
     padding-left: 50px;
@@ -218,8 +218,8 @@
   #forge-page section.timeline .forge-timeline {
     margin: 0 auto; }
     #forge-page section.timeline .forge-timeline .timeline-block {
-      height: 120px;
-      max-width: 480px;
+      height: 300px;
+      max-width: 640px;
       margin: 0 auto; }
       #forge-page section.timeline .forge-timeline .timeline-block .left {
         float: left;
@@ -235,7 +235,7 @@
         border-left: 2px solid rgba(255, 255, 255, 0.5);
         padding-left: 20px;
         float: left;
-        height: 100%;
+        height: auto;
         display: block; }
         #forge-page section.timeline .forge-timeline .timeline-block .right .right-content {
           transition: all ease-in-out 200ms;
