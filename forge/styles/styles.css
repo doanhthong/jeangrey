@@ -178,12 +178,18 @@
     #forge-page section.coordinators .forge-coordinator .header h2 {
       font-size: 18px;
       text-align: center;
-      font-weight: 600; }
-    #forge-page section.coordinators .forge-coordinator .content a {
+      font-weight: 600;
+      border-bottom: 1px solid #ececec;
+      padding-bottom: 20px; }
+    #forge-page section.coordinators .forge-coordinator .content a.partner-logo {
       text-align: center;
       width: 100%;
-      display: block; }
-      #forge-page section.coordinators .forge-coordinator .content a img {
+      height: 128px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #forge-page section.coordinators .forge-coordinator .content a.partner-logo img {
         max-height: 64px;
         margin: 10px; }
   #forge-page section.contact .section-content {

@@ -265,13 +265,16 @@
                         font-size: 18px;
                         text-align: center;
                         font-weight: 600;
+                        border-bottom: 1px solid #ececec;
+                        padding-bottom: $magic-number*2;
                     }
                 }
                 .content{
-                    a{
+                    a.partner-logo{
                         text-align: center;
                         width: 100%;
-                        display: block;
+                        height: 128px;
+                        display: flex; flex-direction: column; justify-content: center; align-items: center;
                         img{
                             max-height: 64px;
                             margin: $magic-number;
