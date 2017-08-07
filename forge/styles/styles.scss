@@ -323,7 +323,7 @@
             .forge-timeline{
                 margin: 0 auto;
                 .timeline-block{
-                    height: 300px;
+                    height: auto;
                     max-width: 640px;
                     margin: 0 auto;
                     .left{
@@ -332,7 +332,6 @@
                         padding-top: 10px;
                         width: 120px;
                         text-align: right;
-                        height: 100%;
                         display: block;
                         font-style: italic;
                         position: relative;
@@ -343,7 +342,11 @@
                         float: left;
                         height: auto;
                         display: block;
+                        padding-bottom: $magic-number*3;
+                        
+                        
                         .right-content{ 
+                            max-width: 420px;
                             transition: all ease-in-out 200ms;
                             cursor: pointer;
                             &:hover{
@@ -375,6 +378,9 @@
                                     border-width: 10px;
                                     margin-top: -10px;
                                 }
+                            }
+                            .content{
+                                padding-top: 10px;
                             }
                            
                         }

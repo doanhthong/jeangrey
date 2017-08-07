@@ -218,7 +218,7 @@
   #forge-page section.timeline .forge-timeline {
     margin: 0 auto; }
     #forge-page section.timeline .forge-timeline .timeline-block {
-      height: 300px;
+      height: auto;
       max-width: 640px;
       margin: 0 auto; }
       #forge-page section.timeline .forge-timeline .timeline-block .left {
@@ -227,7 +227,6 @@
         padding-top: 10px;
         width: 120px;
         text-align: right;
-        height: 100%;
         display: block;
         font-style: italic;
         position: relative; }
@@ -236,8 +235,10 @@
         padding-left: 20px;
         float: left;
         height: auto;
-        display: block; }
+        display: block;
+        padding-bottom: 30px; }
         #forge-page section.timeline .forge-timeline .timeline-block .right .right-content {
+          max-width: 420px;
           transition: all ease-in-out 200ms;
           cursor: pointer; }
           #forge-page section.timeline .forge-timeline .timeline-block .right .right-content:hover {
@@ -266,3 +267,5 @@
               border-right-color: #fff;
               border-width: 10px;
               margin-top: -10px; }
+          #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .content {
+            padding-top: 10px; }
