@@ -13,6 +13,9 @@
 	<link href="https://e27.co/dist/css/jeangrey-header.css?v=1501608987" rel="stylesheet" type="text/css" />
 	<link href="https://e27.co/dist/css/jeangrey-overide.css?v=1501608987" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="forge-page">
@@ -152,38 +155,40 @@
                     <h1>Timeline</h1>
                 </div>
                 <div class="section-content">
-                    <div class="forge-timeline">
+                    <div class="forge-timeline" id="accordion" >
                         <div class="timeline-block clearfix">
                             <div class="left hidden-xs">
                                 preliminary
                             </div>
                             <div class="right">
-                                <div class="right-content">
-                                    <div class="header">
+                                <div class="right-content panel panel-default">
+                                    <div class="header panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                                         Access and define
                                     </div>
-                                    <div class="content">
-                                        <ul>
-                                            <li>Targeted head hunting</li>
-                                            <li>Drawing from e27’s comprehensive database</li>
-                                            <li>Leveraging extensive startup ecosystem</li>
-                                            <li>Leveraging investor networks across Asia and globally</li>                                            
-                                        </ul>
+                                    <div id="collapse1" class="content panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Targeted head hunting</li>
+                                                <li>Drawing from e27’s comprehensive database</li>
+                                                <li>Leveraging extensive startup ecosystem</li>
+                                                <li>Leveraging investor networks across Asia and globally</li>                                            
+                                            </ul>
 
-                                        <p>Objectives</p>
-                                        <ul>
-                                            <li>Goal setting within the business context</li>
-                                            <li>Understanding of emerging technologies and industry trends</li>
-                                            <li>Project scope in place</li>
-                                        </ul>           
+                                            <p>Objectives</p>
+                                            <ul>
+                                                <li>Goal setting within the business context</li>
+                                                <li>Understanding of emerging technologies and industry trends</li>
+                                                <li>Project scope in place</li>
+                                            </ul>           
 
-                                        <p>Includes</p>
-                                        <ul>
-                                            <li>Programme scope meeting (kick-off)</li>
-                                            <li>Management workshops</li>
-                                            <li>Industry trend reports</li>
-                                            <li>Startup showcases </li>
-                                        </ul>   
+                                            <p>Includes</p>
+                                            <ul>
+                                                <li>Programme scope meeting (kick-off)</li>
+                                                <li>Management workshops</li>
+                                                <li>Industry trend reports</li>
+                                                <li>Startup showcases </li>
+                                            </ul>   
+                                        </div>
 
                                     </div>
                                 </div>
@@ -194,33 +199,35 @@
                                 next 3 months
                             </div>
                             <div class="right">
-                                <div class="right-content">
-                                    <div class="header">
+                                <div class="right-content panel panel-default">
+                                    <div class="header panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                                         Recruit and Vet
                                     </div>
-                                    <div class="content">
-                                        <ul>
-                                            <li>Thorough analysis of market and relevant corporate-ready emerging startups</li>
-                                            <li>Interviewing and assessment of fit for corporate problems</li>
-                                            <li>Selection of high-impact and corporate ready companies </li>
-                                        </ul>
+                                    <div id="collapse2" class="content panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Thorough analysis of market and relevant corporate-ready emerging startups</li>
+                                                <li>Interviewing and assessment of fit for corporate problems</li>
+                                                <li>Selection of high-impact and corporate ready companies </li>
+                                            </ul>
 
-                                        <p>Objectives</p>
-                                        <ul>
-                                            <li>Build pipeline of collaborators for pilot implementation</li>
-                                            <li>Gain comprehensive understanding of specific industry sector developments</li>
-                                            <li>Identify startups that can help</li>
-                                            <li>Create awareness & public positioning as innovative brand</li>
+                                            <p>Objectives</p>
+                                            <ul>
+                                                <li>Build pipeline of collaborators for pilot implementation</li>
+                                                <li>Gain comprehensive understanding of specific industry sector developments</li>
+                                                <li>Identify startups that can help</li>
+                                                <li>Create awareness & public positioning as innovative brand</li>
 
-                                        </ul>
+                                            </ul>
 
-                                        <p>Includes</p>
-                                        <ul>
-                                            <li>e27 segmented startup database, media platform and coordinated community and social media outreach for recruitment and announcement</li>
-                                            <li>Customised Events</li>
-                                            <li>Startup submissions: vetted, interviewed and qualified</li>
+                                            <p>Includes</p>
+                                            <ul>
+                                                <li>e27 segmented startup database, media platform and coordinated community and social media outreach for recruitment and announcement</li>
+                                                <li>Customised Events</li>
+                                                <li>Startup submissions: vetted, interviewed and qualified</li>
 
-                                        </ul>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -229,11 +236,11 @@
                             <div class="left hidden-xs">
                             </div>
                             <div class="right">
-                                <div class="right-content">
-                                    <div class="header">
+                                <div class="right-content panel panel-default">
+                                    <div class="header panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
                                         Craft Solution
                                     </div>
-                                    <div class="content">
+                                    <div id="collapse3" class="content panel-collapse collapse">
                                         <ul>
                                             <li>Intensive project scoping for POC/pilot implementation</li>
                                             <li>Collaborative workshops including all project stakeholders</li>
@@ -265,11 +272,11 @@
                                 until completion
                             </div>
                             <div class="right">
-                                <div class="right-content">
-                                    <div class="header">
+                                <div class="right-content panel panel-default">
+                                    <div class="header panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                                         Showcase
                                     </div>
-                                    <div class="content">
+                                    <div id="collapse4" class="content panel-collapse collapse">
                                         <ul>
                                             <li>Celebrate project successes</li>
                                             <li>Expand reach of programme across organisation</li>
@@ -285,32 +292,48 @@
                             <div class="left hidden-xs">
                             </div>
                             <div class="right">
-                                <div class="right-content">
-                                    <div class="header">
+                                <div class="right-content panel panel-default">
+                                    <div class="header panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
                                         Implement
                                     </div>
-                                    <div class="content">
-                                        <ul>
-                                            <li>Follow through with supported tech implementation or system integration with PwC</li>
-                                        </ul>
-                                        <p>Objectives</p>
-                                        <ul>
-                                            <li>Manifest improvements to internal processes or external offering</li>
-                                            <li>Cultural evolution</li>
-                                            <li>Impact on bottom line</li>
-                                        </ul>
-                                        <p>Includes</p>
-                                        <ul>
-                                            <li>Technology integration consulting</li>
-                                            <li>Strategy consulting</li>
-                                            <li>Legal and administrative project management</li>
-                                            <li>Programme review</li>
-                                        </ul>
+                                    <div id="collapse5" class="content panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Follow through with supported tech implementation or system integration with PwC</li>
+                                            </ul>
+                                            <p>Objectives</p>
+                                            <ul>
+                                                <li>Manifest improvements to internal processes or external offering</li>
+                                                <li>Cultural evolution</li>
+                                                <li>Impact on bottom line</li>
+                                            </ul>
+                                            <p>Includes</p>
+                                            <ul>
+                                                <li>Technology integration consulting</li>
+                                                <li>Strategy consulting</li>
+                                                <li>Legal and administrative project management</li>
+                                                <li>Programme review</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <script>
+                        $(".collapse").on('shown.bs.collapse',function(){
+                            // change background when expanded
+                            $(this).parent().addClass("active");		
+                            $(this).parent().find(".toggle-expand-button").text("-");		
+            
+                        });
+                        $(".collapse").on('hidden.bs.collapse',function(){
+                            // change background when hide
+                            $(this).parent().removeClass("active");
+                            $(this).parent().find(".toggle-expand-button").text("+");		
+                            
+                        });
+                    </script>
                 </div>
             </div>
         </section>

@@ -381,6 +381,12 @@
                             }
                             .content{
                                 padding-top: 10px;
+                                color: #333;
+                                p{
+                                    font-weight: 600;
+                                    margin-left: $magic-number*2;;
+                                    margin-top: $magic-number*2;
+                                }
                             }
                            
                         }

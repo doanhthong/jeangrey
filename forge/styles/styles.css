@@ -268,4 +268,9 @@
               border-width: 10px;
               margin-top: -10px; }
           #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .content {
-            padding-top: 10px; }
+            padding-top: 10px;
+            color: #333; }
+            #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .content p {
+              font-weight: 600;
+              margin-left: 20px;
+              margin-top: 20px; }
