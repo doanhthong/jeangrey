@@ -25,7 +25,7 @@
                     <a href="#" class="forge-logo">
                         <img src="img/logo.png" alt="">
                     </a>
-                    <button type="button" class="btn btn-default btn-black-line">Get in Touch</button>
+                    <a type="button" class="btn btn-default btn-black-line" href="#forge-contact-form">Get in Touch</a>
                     <div class="partners">
                         <a href="https://e27.co" target="_blank" class="partner-pwc">
                             <img src="img/pwc.png" alt="">
@@ -241,28 +241,31 @@
                                         Craft Solution
                                     </div>
                                     <div id="collapse3" class="content panel-collapse collapse">
-                                        <ul>
-                                            <li>Intensive project scoping for POC/pilot implementation</li>
-                                            <li>Collaborative workshops including all project stakeholders</li>
-                                            <li>Review multiple startups & solutions</li>
-                                            <li>Design sprint - establishing scope of implementation</li>
-                                        </ul>
-                                        <p>
-                                            Objectives
-                                        </p>
-                                        <ul>
-                                            <li>Review multiple potential collaborators</li>
-                                            <li>Define scope of implementation project</li>
-                                            <li>Learn about working with startups</li>
-                                            <li>Agree POC</li>
-                                        </ul>
-                                        <p>Includes</p>
-                                        <ul>
-                                            <li>Design sprint</li>
-                                            <li>Collaborative project scoping workshops</li>
-                                            <li>Business model deep dives</li>
-                                            <li>Technology deep dives</li>
-                                        </ul>
+                                        <div class="panel-body">
+                                            
+                                            <ul>
+                                                <li>Intensive project scoping for POC/pilot implementation</li>
+                                                <li>Collaborative workshops including all project stakeholders</li>
+                                                <li>Review multiple startups & solutions</li>
+                                                <li>Design sprint - establishing scope of implementation</li>
+                                            </ul>
+                                            <p>
+                                                Objectives
+                                            </p>
+                                            <ul>
+                                                <li>Review multiple potential collaborators</li>
+                                                <li>Define scope of implementation project</li>
+                                                <li>Learn about working with startups</li>
+                                                <li>Agree POC</li>
+                                            </ul>
+                                            <p>Includes</p>
+                                            <ul>
+                                                <li>Design sprint</li>
+                                                <li>Collaborative project scoping workshops</li>
+                                                <li>Business model deep dives</li>
+                                                <li>Technology deep dives</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -277,13 +280,16 @@
                                         Showcase
                                     </div>
                                     <div id="collapse4" class="content panel-collapse collapse">
-                                        <ul>
-                                            <li>Celebrate project successes</li>
-                                            <li>Expand reach of programme across organisation</li>
-                                            <li>Position as thought leader and brand as innovator</li>
-                                            <li>Startup showcase or demo day type event</li>
-                                        
-                                        </ul>
+                                            <div class="panel-body">
+                                                    
+                                                <ul>
+                                                    <li>Celebrate project successes</li>
+                                                    <li>Expand reach of programme across organisation</li>
+                                                    <li>Position as thought leader and brand as innovator</li>
+                                                    <li>Startup showcase or demo day type event</li>
+                                                
+                                                </ul>
+                                            </div>
                                         </div>
                                 </div>
                             </div>
@@ -321,18 +327,18 @@
                         </div>
                     </div>
                     <script>
-                        $(".collapse").on('shown.bs.collapse',function(){
-                            // change background when expanded
-                            $(this).parent().addClass("active");		
-                            $(this).parent().find(".toggle-expand-button").text("-");		
+                        // $(".collapse").on('shown.bs.collapse',function(){
+                        //     // change background when expanded
+                        //     $(this).parent().addClass("active");		
+                        //     $(this).parent().find(".toggle-expand-button").text("-");		
             
-                        });
-                        $(".collapse").on('hidden.bs.collapse',function(){
-                            // change background when hide
-                            $(this).parent().removeClass("active");
-                            $(this).parent().find(".toggle-expand-button").text("+");		
+                        // });
+                        // $(".collapse").on('hidden.bs.collapse',function(){
+                        //     // change background when hide
+                        //     $(this).parent().removeClass("active");
+                        //     $(this).parent().find(".toggle-expand-button").text("+");		
                             
-                        });
+                        // });
                     </script>
                 </div>
             </div>
@@ -382,7 +388,7 @@
             </div>
 
         </section>
-        <section class="contact">
+        <section class="contact" id="forge-contact-form">
             <div class="container">
                 <div class="section-header">
                     <h1>Get in touch</h1>
