@@ -1,0 +1,401 @@
+//Forge Landing Page Styles
+#forge-page{
+    //General Styles
+    $magic-number: 10px;
+    $main-color: #081945;
+
+    
+
+
+    .btn-black-line{
+        white-space: normal;
+        // background-color: transparent !important;
+        color: #081945;
+        font-size: 15px !important;
+        letter-spacing: 2px;
+        border: 2px solid black;
+        width: auto;
+        padding: 10px 48px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        transition: all 200ms ease-in-out;
+        background: #fff;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+        &:hover{
+            color: #fff;
+            border-color:  #081945;
+            background: #081945 !important;
+        }
+    }
+
+    .section-blue{
+        color: white;
+        h1{
+            color: white;
+        }  
+        background: $main-color;
+    }
+
+    section{
+        width: 100%;
+        padding: 60px 0 100px;
+
+        //Blue Section
+        &.concept, &.timeline, &.contact{
+            @extend .section-blue;
+        }
+
+        .section-header{
+            padding: 20px 0;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            h1{
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+        .section-content{
+            margin: 0 auto;
+        }
+
+        //Forge Header Section
+        &.forge-header{
+            padding: 0;
+            height: 100%;
+            min-height: 100%;
+            position: relative;
+            background: url('../img/bg.png') no-repeat;
+            background-size: 60% auto;
+            background-position: 50% 60%;
+
+            //Scrolldown Button
+            a.btn-plz-scrolldown{
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                z-index: 2;
+                display: inline-block;
+                -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                color: #333;
+                transition: opacity .3s;
+            }
+            a.btn-plz-scrolldown {
+                padding-top: 80px;
+            }
+            a.btn-plz-scrolldown span {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 24px;
+                height: 24px;
+                margin-left: -12px;
+                border-left: 1px solid #333;
+                border-bottom: 1px solid #333;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                -webkit-animation: sdb07 2s infinite;
+                animation: sdb07 2s infinite;
+                opacity: 0;
+                box-sizing: border-box;
+            }
+            a.btn-plz-scrolldown span:nth-of-type(1) {
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+            }
+            a.btn-plz-scrolldown span:nth-of-type(2) {
+                top: 16px;
+                -webkit-animation-delay: .15s;
+                animation-delay: .15s;
+            }
+            a.btn-plz-scrolldown span:nth-of-type(3) {
+                top: 32px;
+                -webkit-animation-delay: .3s;
+                animation-delay: .3s;
+                }
+            @-webkit-keyframes sdb07 {
+                0% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+            @keyframes sdb07 {
+                0% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            .container{
+                height: 100%;
+
+                .forge-header-content{
+                    margin: 0 auto;
+                    margin-top: 120px;
+                    text-align: center;
+                    
+                    .forge-logo{
+                        display: block;
+                        img{
+                            width: 480px;
+                            max-width: 80%;
+                        }
+                    }
+
+                    .partners{
+                        margin-top: 40px;
+                        height: 48px;
+
+                        display: block;
+                        a {
+                            display: inline-block;
+                            vertical-align: bottom;
+                            padding: $magic-number;
+                            img{
+                                height: 60%;
+                            }
+                        }
+
+                        .partner-pwc{
+                            img{
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        &.concept{
+            .section-content{
+                max-width: 800px;
+                margin:0 auto;
+            }
+            p{
+                text-align: center;
+                margin: 0 auto $magic-number *3;
+            }
+            .forge-card{
+                text-align: center;
+                margin: 0 auto;
+                padding: 20px;
+                .forge-card-img{
+                    border-radius: 50%;
+                    width: 128px;
+                    height: 128px;
+                    display: block;
+                    background: white;
+                    margin: 0 auto $magic-number*2;
+                    img{
+                        margin-top: 32px;
+                        max-height: 64px;
+                    }
+                }
+
+                .forge-card-text{
+
+                }
+            }
+        }
+
+        &.focus{
+            .section-content{
+                max-width: 800px;
+                margin: 0 auto;
+                .forge-focus{
+                    text-align: center;
+                    margin-bottom: $magic-number*6;
+
+                    img{
+                        max-height: 80px;
+                        margin-bottom: $magic-number;
+                    }
+                    div{
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        &.benefits{
+            .section-content{
+                .forge-benefit{
+                    margin-bottom: $magic-number*4;
+                    $var: $magic-number*5;
+                    padding-left: $var;
+                    padding-top: $var;
+                    min-height: 150px;
+
+                    &-1{ background: url('../img/counts/1.png');}                    
+                    &-2{ background: url('../img/counts/2.png');}
+                    &-3{ background: url('../img/counts/3.png');}
+                    &-4{ background: url('../img/counts/4.png');}
+                    &-5{ background: url('../img/counts/5.png');}
+                    &-6{ background: url('../img/counts/6.png');}
+                    &-1, &-2, &-3, &-4, &-5, &-6{
+                        background-repeat: no-repeat;   
+                        background-size: 70px; 
+                    }
+                }
+
+            
+            }
+        }
+
+        &.coordinators{
+            .forge-coordinator{
+                padding: $magic-number*2;
+                .header{
+                    h2{
+                        font-size: 18px;
+                        text-align: center;
+                        font-weight: 600;
+                        border-bottom: 1px solid #ececec;
+                        padding-bottom: $magic-number*2;
+                    }
+                }
+                .content{
+                    a.partner-logo{
+                        text-align: center;
+                        width: 100%;
+                        height: 128px;
+                        display: flex; flex-direction: column; justify-content: center; align-items: center;
+                        img{
+                            max-height: 64px;
+                            margin: $magic-number;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &.contact{
+            
+            .section-content{
+                position: relative;
+                z-index: 10;
+                max-width: 640px;
+                
+                .forge-contactform{
+                    background: white;
+                    border-radius: 4px;
+                    padding: $magic-number*6 $magic-number*2;
+                    @media screen and (min-width: 480px){
+                        padding:  $magic-number*8 $magic-number*6;
+                        
+                    }
+                }
+            }
+        }
+
+        &.timeline, &.contact{
+            position: relative;
+            &:before{
+                content:" ";
+                display: block;
+                position: absolute;
+                top:0;
+                width: 100%;
+                height: 100%;
+                background: url("../img/bg.png") no-repeat;
+                background-position: 50% 90%;
+                background-size: 100% auto;
+            }
+        }
+
+        &.timeline{
+            .forge-timeline{
+                margin: 0 auto;
+                .timeline-block{
+                    height: auto;
+                    max-width: 640px;
+                    margin: 0 auto;
+                    .left{
+                        float: left;
+                        padding-right: 10px;
+                        padding-top: 10px;
+                        width: 120px;
+                        text-align: right;
+                        display: block;
+                        font-style: italic;
+                        position: relative;
+                    }
+                    .right{
+                        border-left: 2px solid rgba(255, 255, 255, 0.5);
+                        padding-left: 20px;
+                        float: left;
+                        height: auto;
+                        display: block;
+                        padding-bottom: $magic-number*3;
+                        
+                        
+                        .right-content{ 
+                            max-width: 420px;
+                            transition: all ease-in-out 200ms;
+                            cursor: pointer;
+                            &:hover{
+                                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+                                transform: translateX(-10px);
+                            }
+                            .header{
+                                display: block;
+                                background: #fff;
+                                color: $main-color;
+                                padding: $magic-number $magic-number*4;
+                                font-family: "Montserrat";
+                                font-weight: 600;
+                                font-size: 18px;
+                                text-transform: uppercase;
+                                position: relative;
+                                
+                                &:after{
+                                    right: 100%;
+                                    top: 50%;
+                                    border: solid transparent;
+                                    content: " ";
+                                    height: 0;
+                                    width: 0;
+                                    position: absolute;
+                                    pointer-events: none;
+                                    border-color: rgba(255, 255, 255, 0);
+                                    border-right-color: #fff;
+                                    border-width: 10px;
+                                    margin-top: -10px;
+                                }
+                            }
+                            .content{
+                                padding-top: 10px;
+                                color: #333;
+                                p{
+                                    font-weight: 600;
+                                    margin-left: $magic-number*2;;
+                                    margin-top: $magic-number*2;
+                                }
+                            }
+                           
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+       
+};
