@@ -1,4 +1,21 @@
-#forge-page .btn-black-line {
+#anchor-page .anchor-card {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px; }
+  #anchor-page .anchor-card .anchor-card-img {
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    display: block;
+    background: white;
+    margin: 0 auto 20px; }
+    #anchor-page .anchor-card .anchor-card-img img {
+      margin-top: 32px;
+      max-height: 64px; }
+  #anchor-page .anchor-card .anchor-card-text {
+    font-size: 20px; }
+
+#anchor-page .btn-black-line {
   white-space: normal;
   color: #081945;
   font-size: 15px !important;
@@ -12,176 +29,120 @@
   transition: all 200ms ease-in-out;
   background: #fff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); }
-  #forge-page .btn-black-line:hover {
+  #anchor-page .btn-black-line:hover {
     color: #fff;
-    border-color: #081945;
-    background: #081945 !important; }
+    border-color: #0b5394;
+    background: #0b5394 !important; }
 
-#forge-page .section-blue, #forge-page section.concept, #forge-page section.timeline, #forge-page section.contact {
+#anchor-page .section-blue, #anchor-page section.applynow, #anchor-page section.industries, #anchor-page section.hightlights {
   color: white;
-  background: #081945; }
-  #forge-page .section-blue h1, #forge-page section.concept h1, #forge-page section.timeline h1, #forge-page section.contact h1 {
-    color: white; }
+  background: #0b5394; }
+  #anchor-page .section-blue h1, #anchor-page section.applynow h1, #anchor-page section.industries h1, #anchor-page section.hightlights h1 {
+    color: white;
+    font-weight: 700; }
 
-#forge-page section {
+#anchor-page section {
   width: 100%;
   padding: 60px 0 100px; }
-  #forge-page section .section-header {
+  #anchor-page section .section-header {
     padding: 20px 0;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 40px; }
-    #forge-page section .section-header h1 {
+    #anchor-page section .section-header h1 {
       font-weight: 600;
       text-align: center; }
-  #forge-page section .section-content {
+  #anchor-page section .section-content {
     margin: 0 auto; }
-  #forge-page section.forge-header {
+  #anchor-page section.anchor-header {
     padding: 0;
-    height: 100%;
-    min-height: 100%;
-    position: relative;
-    background: url("../img/bg.png") no-repeat;
-    background-size: 60% auto;
-    background-position: 50% 60%; }
-    #forge-page section.forge-header a.btn-plz-scrolldown {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      z-index: 2;
-      display: inline-block;
-      -webkit-transform: translate(0, -50%);
-      transform: translate(0, -50%);
-      color: #333;
-      transition: opacity .3s; }
-    #forge-page section.forge-header a.btn-plz-scrolldown {
-      padding-top: 80px; }
-    #forge-page section.forge-header a.btn-plz-scrolldown span {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 24px;
-      height: 24px;
-      margin-left: -12px;
-      border-left: 1px solid #333;
-      border-bottom: 1px solid #333;
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      -webkit-animation: sdb07 2s infinite;
-      animation: sdb07 2s infinite;
-      opacity: 0;
-      box-sizing: border-box; }
-    #forge-page section.forge-header a.btn-plz-scrolldown span:nth-of-type(1) {
-      -webkit-animation-delay: 0s;
-      animation-delay: 0s; }
-    #forge-page section.forge-header a.btn-plz-scrolldown span:nth-of-type(2) {
-      top: 16px;
-      -webkit-animation-delay: .15s;
-      animation-delay: .15s; }
-    #forge-page section.forge-header a.btn-plz-scrolldown span:nth-of-type(3) {
-      top: 32px;
-      -webkit-animation-delay: .3s;
-      animation-delay: .3s; }
-
-@-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes sdb07 {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-    #forge-page section.forge-header .container {
-      height: 100%; }
-      #forge-page section.forge-header .container .forge-header-content {
-        margin: 0 auto;
-        margin-top: 120px;
-        text-align: center; }
-        #forge-page section.forge-header .container .forge-header-content .forge-logo {
-          display: block; }
-          #forge-page section.forge-header .container .forge-header-content .forge-logo img {
-            width: 480px;
-            max-width: 80%; }
-        #forge-page section.forge-header .container .forge-header-content .partners {
-          margin-top: 40px;
-          height: 48px;
-          display: block; }
-          #forge-page section.forge-header .container .forge-header-content .partners a {
-            display: inline-block;
-            vertical-align: bottom;
-            padding: 10px; }
-            #forge-page section.forge-header .container .forge-header-content .partners a img {
-              height: 60%; }
-          #forge-page section.forge-header .container .forge-header-content .partners .partner-pwc img {
-            height: 100%; }
-  #forge-page section.concept .section-content {
+    height: auto;
+    min-height: 360px;
+    background: #222;
+    background-size: cover; }
+    #anchor-page section.anchor-header h1 {
+      color: white;
+      font-weight: 500;
+      line-height: 1.3;
+      font-size: 3em; }
+    #anchor-page section.anchor-header h2 {
+      color: white;
+      font-size: 1em;
+      line-height: 1.5;
+      margin-bottom: 40px; }
+    #anchor-page section.anchor-header .container .anchor-header-content {
+      margin: 120px auto;
+      text-align: center; }
+      #anchor-page section.anchor-header .container .anchor-header-content .forge-logo {
+        display: block; }
+        #anchor-page section.anchor-header .container .anchor-header-content .forge-logo img {
+          width: 480px;
+          max-width: 80%; }
+      #anchor-page section.anchor-header .container .anchor-header-content .partners {
+        margin-top: 40px;
+        height: 48px;
+        display: block; }
+        #anchor-page section.anchor-header .container .anchor-header-content .partners a {
+          display: inline-block;
+          vertical-align: bottom;
+          padding: 10px; }
+          #anchor-page section.anchor-header .container .anchor-header-content .partners a img {
+            height: 60%; }
+        #anchor-page section.anchor-header .container .anchor-header-content .partners .partner-pwc img {
+          height: 100%; }
+    #anchor-page section.anchor-header .container .anchor-nav {
+      background: #0b5394; }
+  #anchor-page section.intro .section-content {
     max-width: 800px;
     margin: 0 auto; }
-  #forge-page section.concept p {
+  #anchor-page section.intro p {
     text-align: center;
     margin: 0 auto 30px; }
-  #forge-page section.concept .forge-card {
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px; }
-    #forge-page section.concept .forge-card .forge-card-img {
-      border-radius: 50%;
-      width: 128px;
-      height: 128px;
-      display: block;
-      background: white;
-      margin: 0 auto 20px; }
-      #forge-page section.concept .forge-card .forge-card-img img {
-        margin-top: 32px;
-        max-height: 64px; }
-  #forge-page section.focus .section-content {
+  #anchor-page section.partners .section-content {
     max-width: 800px;
     margin: 0 auto; }
-    #forge-page section.focus .section-content .forge-focus {
+    #anchor-page section.partners .section-content h3 {
       text-align: center;
-      margin-bottom: 60px; }
-      #forge-page section.focus .section-content .forge-focus img {
-        max-height: 80px;
+      font-weight: 600; }
+    #anchor-page section.partners .section-content .anchor-partners {
+      text-align: center;
+      margin-bottom: 60px;
+      display: block; }
+      #anchor-page section.partners .section-content .anchor-partners img {
+        height: 96px;
         margin-bottom: 10px; }
-      #forge-page section.focus .section-content .forge-focus div {
+      #anchor-page section.partners .section-content .anchor-partners div {
         font-weight: 600;
         font-size: 14px; }
-  #forge-page section.benefits .section-content .forge-benefit {
+  #anchor-page section.benefits .section-content .forge-benefit {
     margin-bottom: 40px;
     padding-left: 50px;
     padding-top: 50px;
     min-height: 150px; }
-    #forge-page section.benefits .section-content .forge-benefit-1 {
+    #anchor-page section.benefits .section-content .forge-benefit-1 {
       background: url("../img/counts/1.png"); }
-    #forge-page section.benefits .section-content .forge-benefit-2 {
+    #anchor-page section.benefits .section-content .forge-benefit-2 {
       background: url("../img/counts/2.png"); }
-    #forge-page section.benefits .section-content .forge-benefit-3 {
+    #anchor-page section.benefits .section-content .forge-benefit-3 {
       background: url("../img/counts/3.png"); }
-    #forge-page section.benefits .section-content .forge-benefit-4 {
+    #anchor-page section.benefits .section-content .forge-benefit-4 {
       background: url("../img/counts/4.png"); }
-    #forge-page section.benefits .section-content .forge-benefit-5 {
+    #anchor-page section.benefits .section-content .forge-benefit-5 {
       background: url("../img/counts/5.png"); }
-    #forge-page section.benefits .section-content .forge-benefit-6 {
+    #anchor-page section.benefits .section-content .forge-benefit-6 {
       background: url("../img/counts/6.png"); }
-    #forge-page section.benefits .section-content .forge-benefit-1, #forge-page section.benefits .section-content .forge-benefit-2, #forge-page section.benefits .section-content .forge-benefit-3, #forge-page section.benefits .section-content .forge-benefit-4, #forge-page section.benefits .section-content .forge-benefit-5, #forge-page section.benefits .section-content .forge-benefit-6 {
+    #anchor-page section.benefits .section-content .forge-benefit-1, #anchor-page section.benefits .section-content .forge-benefit-2, #anchor-page section.benefits .section-content .forge-benefit-3, #anchor-page section.benefits .section-content .forge-benefit-4, #anchor-page section.benefits .section-content .forge-benefit-5, #anchor-page section.benefits .section-content .forge-benefit-6 {
       background-repeat: no-repeat;
       background-size: 70px; }
-  #forge-page section.coordinators .forge-coordinator {
+  #anchor-page section.coordinators .forge-coordinator {
     padding: 20px; }
-    #forge-page section.coordinators .forge-coordinator .header h2 {
+    #anchor-page section.coordinators .forge-coordinator .header h2 {
       font-size: 18px;
       text-align: center;
       font-weight: 600;
       border-bottom: 1px solid #ececec;
       padding-bottom: 20px; }
-    #forge-page section.coordinators .forge-coordinator .content a.partner-logo {
+    #anchor-page section.coordinators .forge-coordinator .content a.partner-logo {
       text-align: center;
       width: 100%;
       height: 128px;
@@ -189,23 +150,26 @@
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      #forge-page section.coordinators .forge-coordinator .content a.partner-logo img {
+      #anchor-page section.coordinators .forge-coordinator .content a.partner-logo img {
         max-height: 64px;
         margin: 10px; }
-  #forge-page section.contact .section-content {
+  #anchor-page section.applynow .section-content {
     position: relative;
     z-index: 10;
     max-width: 640px; }
-    #forge-page section.contact .section-content .forge-contactform {
+    #anchor-page section.applynow .section-content .anchor-applynow {
       background: white;
       border-radius: 4px;
       padding: 60px 20px; }
       @media screen and (min-width: 480px) {
-        #forge-page section.contact .section-content .forge-contactform {
+        #anchor-page section.applynow .section-content .anchor-applynow {
           padding: 80px 60px; } }
-  #forge-page section.timeline, #forge-page section.contact {
+      #anchor-page section.applynow .section-content .anchor-applynow h1 {
+        color: #0b5394;
+        text-align: center; }
+  #anchor-page section.applynow {
     position: relative; }
-    #forge-page section.timeline:before, #forge-page section.contact:before {
+    #anchor-page section.applynow:before {
       content: " ";
       display: block;
       position: absolute;
@@ -215,62 +179,3 @@
       background: url("../img/bg.png") no-repeat;
       background-position: 50% 90%;
       background-size: 100% auto; }
-  #forge-page section.timeline .forge-timeline {
-    margin: 0 auto; }
-    #forge-page section.timeline .forge-timeline .timeline-block {
-      height: auto;
-      max-width: 640px;
-      margin: 0 auto; }
-      #forge-page section.timeline .forge-timeline .timeline-block .left {
-        float: left;
-        padding-right: 10px;
-        padding-top: 10px;
-        width: 120px;
-        text-align: right;
-        display: block;
-        font-style: italic;
-        position: relative; }
-      #forge-page section.timeline .forge-timeline .timeline-block .right {
-        border-left: 2px solid rgba(255, 255, 255, 0.5);
-        padding-left: 20px;
-        float: left;
-        height: auto;
-        display: block;
-        padding-bottom: 30px; }
-        #forge-page section.timeline .forge-timeline .timeline-block .right .right-content {
-          max-width: 420px;
-          transition: all ease-in-out 200ms;
-          cursor: pointer; }
-          #forge-page section.timeline .forge-timeline .timeline-block .right .right-content:hover {
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-            transform: translateX(-10px); }
-          #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .header {
-            display: block;
-            background: #fff;
-            color: #081945;
-            padding: 10px 40px;
-            font-family: "Montserrat";
-            font-weight: 600;
-            font-size: 18px;
-            text-transform: uppercase;
-            position: relative; }
-            #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .header:after {
-              right: 100%;
-              top: 50%;
-              border: solid transparent;
-              content: " ";
-              height: 0;
-              width: 0;
-              position: absolute;
-              pointer-events: none;
-              border-color: rgba(255, 255, 255, 0);
-              border-right-color: #fff;
-              border-width: 10px;
-              margin-top: -10px; }
-          #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .content {
-            padding-top: 10px;
-            color: #333; }
-            #forge-page section.timeline .forge-timeline .timeline-block .right .right-content .content p {
-              font-weight: 600;
-              margin-left: 20px;
-              margin-top: 20px; }
