@@ -1,3 +1,24 @@
+#anchor-page div.anchor-nav-container {
+  background: #0b5394;
+  color: white;
+  border-radius: 0;
+  border: none; }
+  #anchor-page div.anchor-nav-container .anchor-nav {
+    text-align: center; }
+  #anchor-page div.anchor-nav-container .navbar-center {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    float: none; }
+    #anchor-page div.anchor-nav-container .navbar-center a {
+      color: white;
+      font-family: "Montserrat";
+      text-transform: uppercase;
+      font-weight: 600; }
+      #anchor-page div.anchor-nav-container .navbar-center a:hover, #anchor-page div.anchor-nav-container .navbar-center a.active {
+        color: #0b5394;
+        background: white; }
+
 #anchor-page .anchor-card {
   text-align: center;
   margin: 0 auto;
@@ -14,6 +35,37 @@
       max-height: 64px; }
   #anchor-page .anchor-card .anchor-card-text {
     font-size: 20px; }
+
+#anchor-page .highlights-card {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  background: #fff;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  margin-top: 0;
+  min-height: 369px;
+  height: auto;
+  border-radius: 4px; }
+  #anchor-page .highlights-card img {
+    height: 180px;
+    background-position: 50% 50% !important;
+    background-size: cover !important; }
+  #anchor-page .highlights-card .image-cover {
+    height: 180px;
+    background-size: cover !important;
+    background-position: 50% 50% !important; }
+  #anchor-page .highlights-card h3, #anchor-page .highlights-card p {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    color: #333; }
+  #anchor-page .highlights-card h3 {
+    font-weight: 600; }
 
 #anchor-page .btn-black-line {
   white-space: normal;
@@ -54,6 +106,8 @@
       text-align: center; }
   #anchor-page section .section-content {
     margin: 0 auto; }
+    #anchor-page section .section-content a.btn {
+      margin-top: 40px; }
   #anchor-page section.anchor-header {
     padding: 0;
     height: auto;
@@ -153,20 +207,22 @@
       #anchor-page section.coordinators .forge-coordinator .content a.partner-logo img {
         max-height: 64px;
         margin: 10px; }
-  #anchor-page section.applynow .section-content {
-    position: relative;
-    z-index: 10;
-    max-width: 640px; }
-    #anchor-page section.applynow .section-content .anchor-applynow {
-      background: white;
-      border-radius: 4px;
-      padding: 60px 20px; }
-      @media screen and (min-width: 480px) {
-        #anchor-page section.applynow .section-content .anchor-applynow {
-          padding: 80px 60px; } }
-      #anchor-page section.applynow .section-content .anchor-applynow h1 {
-        color: #0b5394;
-        text-align: center; }
+  #anchor-page section.applynow {
+    padding-top: 100px; }
+    #anchor-page section.applynow .section-content {
+      position: relative;
+      z-index: 10;
+      max-width: 640px; }
+      #anchor-page section.applynow .section-content .anchor-applynow {
+        background: white;
+        border-radius: 4px;
+        padding: 60px 20px; }
+        @media screen and (min-width: 480px) {
+          #anchor-page section.applynow .section-content .anchor-applynow {
+            padding: 80px 60px; } }
+        #anchor-page section.applynow .section-content .anchor-applynow h1 {
+          color: #0b5394;
+          text-align: center; }
   #anchor-page section.applynow {
     position: relative; }
     #anchor-page section.applynow:before {
@@ -176,6 +232,5 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background: url("../img/bg.png") no-repeat;
       background-position: 50% 90%;
       background-size: 100% auto; }
