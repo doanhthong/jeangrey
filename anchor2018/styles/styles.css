@@ -268,3 +268,24 @@
       text-align: center;
       margin: 0 auto;
       margin-top: 20px; }
+  #anchor-page section.sponsors .media, #anchor-page section.sponsors .other-partners {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; }
+  #anchor-page section.sponsors .media {
+    margin-bottom: 40px;
+    max-width: 1000px; }
+    #anchor-page section.sponsors .media img {
+      max-width: 128px;
+      max-height: 128px; }
+    #anchor-page section.sponsors .media .media-body {
+      padding-left: 20px; }
+      #anchor-page section.sponsors .media .media-body h4 {
+        font-weight: bold;
+        font-size: 1.5em; }
+  #anchor-page section.sponsors .other-partners {
+    display: block;
+    text-align: center;
+    margin-top: 120px; }
+    #anchor-page section.sponsors .other-partners h3 {
+      font-weight: bold; }

@@ -394,7 +394,38 @@
             }
         }
 
-        
+        &.sponsors{
+            .media, .other-partners{
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .media{
+                // margin:0 auto;
+                
+                margin-bottom: 40px;
+                max-width: 1000px;
+                img{
+                    max-width: 128px;
+                    max-height: 128px;
+                }
+                .media-body{
+                    h4{
+                        font-weight: bold;
+                        font-size: 1.5em;
+                    }
+                    padding-left: 20px;
+                }
+            }
+            .other-partners{
+                display: block;
+                text-align: center;
+                margin-top: 120px;
+                h3{
+                    font-weight: bold;
+                }
+            }
+        }
     }
        
 };
