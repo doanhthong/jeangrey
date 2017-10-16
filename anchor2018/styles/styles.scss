@@ -41,14 +41,16 @@
         padding: 20px;
         .anchor-card-img{
             border-radius: 50%;
-            width: 128px;
-            height: 128px;
+            width: 160px;
+            height: 160px;
             display: block;
-            background: white;
+            background: rgba(255, 255, 255, 0.8);
+            border: 3px solid #fff;
             margin: 0 auto $magic-number*2;
             img{
-                margin-top: 32px;
+                margin-top: 48px;
                 max-height: 64px;
+                vertical-align: middle;
             }
             
         }
@@ -379,9 +381,26 @@
                 display: block;
                 margin: 0 auto 80px;
                 text-align: center;
-                img{
-                    max-width: 128px
+                .prize-container{
+                    display: inline-block;
+                    background: rgba(255, 255, 255, 0.699);
+                    border: 3px solid #fff;
+                    height: 180px;
+                    width: 180px;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin: 0 auto 10px;
+                    
+                    img{
+                        // max-width: 128px
+                        max-height: 100px;
+                        max-width: 100px;
+                        margin-top: 40px;
+                        height: 100%;
+                        vertical-align: middle;
+                    }
                 }
+                
                 p{
                     font-size: 16px;
                     max-width: 280px;

@@ -25,14 +25,16 @@
   padding: 20px; }
   #anchor-page .anchor-card .anchor-card-img {
     border-radius: 50%;
-    width: 128px;
-    height: 128px;
+    width: 160px;
+    height: 160px;
     display: block;
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    border: 3px solid #fff;
     margin: 0 auto 20px; }
     #anchor-page .anchor-card .anchor-card-img img {
-      margin-top: 32px;
-      max-height: 64px; }
+      margin-top: 48px;
+      max-height: 64px;
+      vertical-align: middle; }
   #anchor-page .anchor-card .anchor-card-text {
     font-size: 20px; }
 
@@ -260,8 +262,21 @@
     display: block;
     margin: 0 auto 80px;
     text-align: center; }
-    #anchor-page section.prizes .anchor-prizes img {
-      max-width: 128px; }
+    #anchor-page section.prizes .anchor-prizes .prize-container {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.699);
+      border: 3px solid #fff;
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+      text-align: center;
+      margin: 0 auto 10px; }
+      #anchor-page section.prizes .anchor-prizes .prize-container img {
+        max-height: 100px;
+        max-width: 100px;
+        margin-top: 40px;
+        height: 100%;
+        vertical-align: middle; }
     #anchor-page section.prizes .anchor-prizes p {
       font-size: 16px;
       max-width: 280px;
