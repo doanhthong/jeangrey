@@ -4,6 +4,7 @@
     $magic-number: 10px;
     $main-color: #0b5394 ;
     $main-foreground: #fff;
+    font-size: 16px;
 
     div.anchor-nav-container{
         background: $main-color;
@@ -65,8 +66,8 @@
         margin: 20px auto;
         background: #fff;
         overflow: hidden;
-        margin-left: 10px;
-        margin-right: 10px;
+        // margin-left: 10px;
+        // margin-right: 10px;
         position: relative;
         -webkit-transition: all .3s ease-out;
         -moz-transition: all .3s ease-out;
@@ -99,6 +100,10 @@
         h3{
             font-weight: 600;
 
+        }
+
+        p{
+            font-size: 14px;
         }
     }
 
@@ -248,11 +253,11 @@
 
         &.intro{
             .section-content{
-                max-width: 800px;
+                // max-width: 800px;
                 margin:0 auto;
             }
             p{
-                text-align: center;
+                text-align: justify;
                 margin: 0 auto $magic-number *3;
             }
            
