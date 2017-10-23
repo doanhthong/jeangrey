@@ -1,5 +1,5 @@
 #anchor-page {
-  font-size: 16px; }
+  font-size: 15px; }
   #anchor-page div.anchor-nav-container {
     background: #0b5394;
     color: white;
@@ -172,6 +172,8 @@
     #anchor-page section.intro p {
       text-align: justify;
       margin: 0 auto 30px; }
+    #anchor-page section.intro .intro-series {
+      margin-top: 20px; }
     #anchor-page section.partners .section-content {
       max-width: 800px;
       margin: 0 auto; }

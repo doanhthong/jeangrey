@@ -4,7 +4,7 @@
     $magic-number: 10px;
     $main-color: #0b5394 ;
     $main-foreground: #fff;
-    font-size: 16px;
+    font-size: 15px;
 
     div.anchor-nav-container{
         background: $main-color;
@@ -259,6 +259,10 @@
             p{
                 text-align: justify;
                 margin: 0 auto $magic-number *3;
+            }
+            .intro-series{
+                margin-top: 20px;
+
             }
            
         }
