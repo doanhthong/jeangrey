@@ -176,36 +176,35 @@
       text-align: center;
       margin: 0 auto 30px; }
     #anchor-page section.intro .intro-series {
-      margin-top: 20px;
       align-content: center;
       text-align: center; }
       #anchor-page section.intro .intro-series img {
         max-height: 128px; }
       #anchor-page section.intro .intro-series p {
         padding-right: 24px; }
-    #anchor-page section.partners .section-content {
+    #anchor-page section.partners .section-content, #anchor-page section.intro .section-content {
       margin: 0 auto; }
-      #anchor-page section.partners .section-content h3 {
-        text-align: center;
-        font-weight: 600; }
-      #anchor-page section.partners .section-content .anchor-partners {
-        text-align: center;
-        margin-bottom: 20px;
-        display: flex;
-        padding: 6px;
-        border-radius: 3px;
-        background: white;
-        height: 140px;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); }
-        #anchor-page section.partners .section-content .anchor-partners h3 {
-          margin-top: 40px;
-          margin-bottom: 20px; }
-        #anchor-page section.partners .section-content .anchor-partners img {
-          max-height: 96px;
-          margin: auto; }
-        #anchor-page section.partners .section-content .anchor-partners div {
-          font-weight: 600;
-          font-size: 14px; }
+    #anchor-page section.partners h3, #anchor-page section.partners .h3-partner, #anchor-page section.intro h3, #anchor-page section.intro .h3-partner {
+      text-align: center;
+      font-weight: 600; }
+    #anchor-page section.partners .anchor-partners, #anchor-page section.intro .anchor-partners {
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      padding: 6px;
+      border-radius: 3px;
+      background: white;
+      height: 140px;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); }
+      #anchor-page section.partners .anchor-partners h3, #anchor-page section.intro .anchor-partners h3 {
+        margin-top: 40px;
+        margin-bottom: 20px; }
+      #anchor-page section.partners .anchor-partners img, #anchor-page section.intro .anchor-partners img {
+        max-height: 96px;
+        margin: auto; }
+      #anchor-page section.partners .anchor-partners div, #anchor-page section.intro .anchor-partners div {
+        font-weight: 600;
+        font-size: 14px; }
     #anchor-page section.benefits .section-content .forge-benefit {
       margin-bottom: 40px;
       padding-left: 50px;
@@ -301,17 +300,27 @@
       max-width: 1000px;
       margin-left: auto;
       margin-right: auto; }
-    #anchor-page section.sponsors .media {
-      margin-bottom: 40px;
+    #anchor-page section.sponsors .blurb {
+      margin-top: 10px;
+      margin-bottom: 10px;
       max-width: 1000px; }
-      #anchor-page section.sponsors .media img {
-        max-width: 128px;
-        max-height: 128px; }
-      #anchor-page section.sponsors .media .media-body {
-        padding-left: 20px; }
-        #anchor-page section.sponsors .media .media-body h4 {
-          font-weight: bold;
-          font-size: 1.5em; }
+      #anchor-page section.sponsors .blurb a {
+        background: white;
+        border-radius: 3px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 160px;
+        text-align: center;
+        display: flex;
+        margin-bottom: 20px; }
+        #anchor-page section.sponsors .blurb a img {
+          margin: auto;
+          max-width: 128px;
+          max-height: 128px; }
+      #anchor-page section.sponsors .blurb h4 {
+        font-weight: bold; }
+      #anchor-page section.sponsors .blurb h4, #anchor-page section.sponsors .blurb p {
+        padding-left: 10px; }
     #anchor-page section.sponsors .other-partners {
       display: block;
       text-align: center;
