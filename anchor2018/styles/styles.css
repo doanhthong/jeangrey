@@ -176,6 +176,8 @@
       margin-top: 20px; }
       #anchor-page section.intro .intro-series img {
         max-height: 128px; }
+      #anchor-page section.intro .intro-series p {
+        padding-right: 24px; }
     #anchor-page section.partners .section-content {
       margin: 0 auto; }
       #anchor-page section.partners .section-content h3 {
