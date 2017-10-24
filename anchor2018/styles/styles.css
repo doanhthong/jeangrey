@@ -327,3 +327,79 @@
       margin-top: 120px; }
       #anchor-page section.sponsors .other-partners h3 {
         font-weight: bold; }
+  #anchor-page section.timeline, #anchor-page section.contact {
+    position: relative; }
+    #anchor-page section.timeline:before, #anchor-page section.contact:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-position: 50% 90%;
+      background-size: 100% auto; }
+  #anchor-page section.timeline .forge-timeline {
+    margin: 0 auto; }
+    #anchor-page section.timeline .forge-timeline .timeline-block {
+      height: auto;
+      max-width: 500px;
+      margin: 0 auto; }
+      #anchor-page section.timeline .forge-timeline .timeline-block .left {
+        float: left;
+        padding-right: 10px;
+        padding-top: 10px;
+        width: 120px;
+        text-align: right;
+        display: block;
+        font-style: italic;
+        position: relative; }
+      #anchor-page section.timeline .forge-timeline .timeline-block .right {
+        border-left: 2px solid #0b5394;
+        padding-left: 20px;
+        float: left;
+        height: auto;
+        display: block;
+        padding-bottom: 30px; }
+        #anchor-page section.timeline .forge-timeline .timeline-block .right .visible-xs {
+          font-weight: bold;
+          font-style: italic; }
+        #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content {
+          max-width: 420px;
+          transition: all ease-in-out 200ms;
+          border: none;
+          border-bottom: #0b5394 2px solid;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+          cursor: pointer; }
+          #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content:hover {
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+            transform: translateX(-10px); }
+          #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content .header {
+            display: block;
+            background: #fff;
+            color: #0b5394;
+            padding: 10px 40px;
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
+            position: relative; }
+            #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content .header:after {
+              right: 100%;
+              top: 50%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: rgba(255, 255, 255, 0);
+              border-right-color: #fff;
+              border-width: 10px;
+              margin-top: -10px; }
+          #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content .content {
+            padding-top: 10px;
+            color: #333; }
+            #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content .content p {
+              font-weight: 600;
+              margin-left: 20px;
+              margin-top: 20px; }
