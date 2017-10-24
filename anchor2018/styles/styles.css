@@ -96,6 +96,8 @@
   #anchor-page section {
     width: 100%;
     padding: 60px 0 100px; }
+    #anchor-page section.industries2 .section-content, #anchor-page section.prizes .section-content {
+      max-width: 840px; }
     #anchor-page section .section-header {
       padding: 20px 0;
       text-align: center;
@@ -168,12 +170,15 @@
       #anchor-page section.anchor-header .container .anchor-nav {
         background: #0b5394; }
     #anchor-page section.intro .section-content {
+      max-width: 840px;
       margin: 0 auto; }
     #anchor-page section.intro p {
-      text-align: justify;
+      text-align: center;
       margin: 0 auto 30px; }
     #anchor-page section.intro .intro-series {
-      margin-top: 20px; }
+      margin-top: 20px;
+      align-content: center;
+      text-align: center; }
       #anchor-page section.intro .intro-series img {
         max-height: 128px; }
       #anchor-page section.intro .intro-series p {
@@ -247,14 +252,14 @@
         z-index: 10;
         max-width: 640px; }
         #anchor-page section.applynow .section-content .anchor-applynow {
-          background: white;
+          background: transparent;
           border-radius: 4px;
           padding: 60px 20px; }
           @media screen and (min-width: 480px) {
             #anchor-page section.applynow .section-content .anchor-applynow {
               padding: 80px 60px; } }
           #anchor-page section.applynow .section-content .anchor-applynow h1 {
-            color: #0b5394;
+            color: white;
             text-align: center; }
     #anchor-page section.applynow {
       position: relative; }

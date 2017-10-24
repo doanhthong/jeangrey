@@ -149,6 +149,12 @@
             @extend .section-blue;
         }
 
+        &.industries2, &.prizes{
+            .section-content{
+                max-width: 840px;
+            }
+        }
+
         .section-header{
             padding: 20px 0;
             text-align: center;
@@ -253,15 +259,17 @@
 
         &.intro{
             .section-content{
-                // max-width: 800px;
+                max-width: 840px;
                 margin:0 auto;
             }
             p{
-                text-align: justify;
+                text-align: center;
                 margin: 0 auto $magic-number *3;
             }
             .intro-series{
                 margin-top: 20px;
+                align-content: center;
+                text-align: center;
 
                 img{
                     max-height: 128px;
@@ -372,7 +380,7 @@
                 max-width: 640px;
                 
                 .anchor-applynow{
-                    background: white;
+                    background: transparent;
                     border-radius: 4px;
                     padding: $magic-number*6 $magic-number*2;
                     @media screen and (min-width: 480px){
@@ -380,7 +388,7 @@
                         
                     }
                     h1{
-                        color: $main-color;
+                        color: white;
                         text-align: center;
                     }
                 }
