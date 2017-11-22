@@ -1,0 +1,405 @@
+#anchor-page {
+  font-size: 15px; }
+  #anchor-page div.anchor-nav-container {
+    background: #0b5394;
+    color: white;
+    border-radius: 0;
+    border: none; }
+    #anchor-page div.anchor-nav-container .anchor-nav {
+      text-align: center; }
+    #anchor-page div.anchor-nav-container .navbar-center {
+      margin: 0 auto;
+      text-align: center;
+      display: inline-block;
+      float: none; }
+      #anchor-page div.anchor-nav-container .navbar-center a {
+        color: white;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-weight: 600; }
+        #anchor-page div.anchor-nav-container .navbar-center a:hover, #anchor-page div.anchor-nav-container .navbar-center a.active {
+          color: #0b5394;
+          background: white; }
+  #anchor-page .anchor-card {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px; }
+    #anchor-page .anchor-card .anchor-card-img {
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      display: block;
+      background: rgba(255, 255, 255, 0.8);
+      border: 3px solid #fff;
+      margin: 0 auto 20px; }
+      #anchor-page .anchor-card .anchor-card-img img {
+        margin-top: 48px;
+        max-height: 64px;
+        vertical-align: middle; }
+    #anchor-page .anchor-card .anchor-card-text {
+      font-size: 20px; }
+  #anchor-page .highlights-card {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    margin-top: 0;
+    min-height: 369px;
+    height: auto;
+    border-radius: 4px; }
+    #anchor-page .highlights-card img {
+      height: 180px;
+      background-position: 50% 50% !important;
+      background-size: cover !important; }
+    #anchor-page .highlights-card .image-cover {
+      height: 180px;
+      background-size: cover !important;
+      background-position: 50% 50% !important; }
+    #anchor-page .highlights-card h3, #anchor-page .highlights-card p {
+      margin-left: 30px;
+      margin-right: 30px;
+      text-align: center;
+      color: #333; }
+    #anchor-page .highlights-card h3 {
+      font-weight: 600; }
+    #anchor-page .highlights-card p {
+      font-size: 14px; }
+  #anchor-page .btn-black-line {
+    white-space: normal;
+    color: #081945;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    border: 2px solid black;
+    width: auto;
+    padding: 10px 48px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    background: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); }
+    #anchor-page .btn-black-line:hover {
+      color: #fff;
+      border-color: #0b5394;
+      background: #0b5394 !important; }
+  #anchor-page .section-blue, #anchor-page section.applynow, #anchor-page section.industries, #anchor-page section.hightlights, #anchor-page section.prizes {
+    color: white;
+    background: #0b5394;
+    background: url("../img/ocean-bg.svg?v=1"); }
+    #anchor-page .section-blue h1, #anchor-page section.applynow h1, #anchor-page section.industries h1, #anchor-page section.hightlights h1, #anchor-page section.prizes h1 {
+      color: white;
+      font-weight: 700; }
+  #anchor-page section {
+    width: 100%;
+    padding: 60px 0 100px; }
+    #anchor-page section.industries2 .section-content, #anchor-page section.prizes .section-content {
+      max-width: 840px; }
+    #anchor-page section .section-header {
+      padding: 20px 0;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 40px; }
+      #anchor-page section .section-header h1 {
+        font-weight: 600;
+        text-align: center; }
+    #anchor-page section .section-content {
+      margin: 0 auto; }
+      #anchor-page section .section-content a.btn {
+        margin-top: 40px; }
+    #anchor-page section.anchor-header {
+      padding: 0;
+      height: auto;
+      min-height: 360px;
+      background: #222;
+      background: url("../img/taiwan-bg.jpg") no-repeat;
+      background-size: cover;
+      background-position: 50% 60%;
+      position: relative; }
+      #anchor-page section.anchor-header .anchor-overlay {
+        background: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.2+100 */
+        background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
+        /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#33000000',GradientType=1 );
+        /* IE6-9 fallback on horizontal gradient */ }
+      #anchor-page section.anchor-header h1 {
+        color: white;
+        font-weight: 500;
+        line-height: 1.3;
+        font-size: 3.5em; }
+      #anchor-page section.anchor-header h2 {
+        color: white;
+        font-size: 1em;
+        line-height: 1.5;
+        margin-bottom: 40px; }
+      #anchor-page section.anchor-header .container .anchor-header-content {
+        margin: 120px auto;
+        text-align: center;
+        position: relative;
+        z-index: 10; }
+        #anchor-page section.anchor-header .container .anchor-header-content .forge-logo {
+          display: block; }
+          #anchor-page section.anchor-header .container .anchor-header-content .forge-logo img {
+            width: 480px;
+            max-width: 80%; }
+        #anchor-page section.anchor-header .container .anchor-header-content .partners {
+          margin-top: 40px;
+          height: 48px;
+          display: block; }
+          #anchor-page section.anchor-header .container .anchor-header-content .partners a {
+            display: inline-block;
+            vertical-align: bottom;
+            padding: 10px; }
+            #anchor-page section.anchor-header .container .anchor-header-content .partners a img {
+              height: 60%; }
+          #anchor-page section.anchor-header .container .anchor-header-content .partners .partner-pwc img {
+            height: 100%; }
+      #anchor-page section.anchor-header .container .anchor-nav {
+        background: #0b5394; }
+    #anchor-page section.intro .section-content {
+      max-width: 840px;
+      margin: 0 auto; }
+    #anchor-page section.intro p {
+      text-align: center;
+      margin: 0 auto 30px; }
+    #anchor-page section.intro .intro-series {
+      align-content: center;
+      text-align: center; }
+      #anchor-page section.intro .intro-series img {
+        max-height: 128px; }
+      #anchor-page section.intro .intro-series p {
+        padding-right: 24px; }
+    #anchor-page section.partners .section-content, #anchor-page section.intro .section-content, #anchor-page section .partners .section-content {
+      margin: 0 auto; }
+    #anchor-page section.partners h3, #anchor-page section.partners .h3-partner, #anchor-page section.intro h3, #anchor-page section.intro .h3-partner, #anchor-page section .partners h3, #anchor-page section .partners .h3-partner {
+      text-align: center;
+      font-weight: 600; }
+    #anchor-page section.partners .anchor-partners, #anchor-page section.intro .anchor-partners, #anchor-page section .partners .anchor-partners {
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      padding: 6px;
+      border-radius: 3px;
+      background: white;
+      height: 140px;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); }
+      #anchor-page section.partners .anchor-partners h3, #anchor-page section.intro .anchor-partners h3, #anchor-page section .partners .anchor-partners h3 {
+        margin-top: 40px;
+        margin-bottom: 20px; }
+      #anchor-page section.partners .anchor-partners img, #anchor-page section.intro .anchor-partners img, #anchor-page section .partners .anchor-partners img {
+        max-height: 96px;
+        margin: auto; }
+      #anchor-page section.partners .anchor-partners div, #anchor-page section.intro .anchor-partners div, #anchor-page section .partners .anchor-partners div {
+        font-weight: 600;
+        font-size: 14px; }
+    #anchor-page section.benefits .section-content .forge-benefit {
+      margin-bottom: 40px;
+      padding-left: 50px;
+      padding-top: 50px;
+      min-height: 150px; }
+      #anchor-page section.benefits .section-content .forge-benefit-1 {
+        background: url("../img/counts/1.png"); }
+      #anchor-page section.benefits .section-content .forge-benefit-2 {
+        background: url("../img/counts/2.png"); }
+      #anchor-page section.benefits .section-content .forge-benefit-3 {
+        background: url("../img/counts/3.png"); }
+      #anchor-page section.benefits .section-content .forge-benefit-4 {
+        background: url("../img/counts/4.png"); }
+      #anchor-page section.benefits .section-content .forge-benefit-5 {
+        background: url("../img/counts/5.png"); }
+      #anchor-page section.benefits .section-content .forge-benefit-6 {
+        background: url("../img/counts/6.png"); }
+      #anchor-page section.benefits .section-content .forge-benefit-1, #anchor-page section.benefits .section-content .forge-benefit-2, #anchor-page section.benefits .section-content .forge-benefit-3, #anchor-page section.benefits .section-content .forge-benefit-4, #anchor-page section.benefits .section-content .forge-benefit-5, #anchor-page section.benefits .section-content .forge-benefit-6 {
+        background-repeat: no-repeat;
+        background-size: 70px; }
+    #anchor-page section.coordinators .forge-coordinator {
+      padding: 20px; }
+      #anchor-page section.coordinators .forge-coordinator .header h2 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 600;
+        border-bottom: 1px solid #ececec;
+        padding-bottom: 20px; }
+      #anchor-page section.coordinators .forge-coordinator .content a.partner-logo {
+        text-align: center;
+        width: 100%;
+        height: 128px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #anchor-page section.coordinators .forge-coordinator .content a.partner-logo img {
+          max-height: 64px;
+          margin: 10px; }
+    #anchor-page section.applynow {
+      padding-top: 100px; }
+      #anchor-page section.applynow .section-content {
+        position: relative;
+        z-index: 10;
+        max-width: 640px; }
+        #anchor-page section.applynow .section-content .anchor-applynow {
+          background: transparent;
+          border-radius: 4px;
+          padding: 60px 20px; }
+          @media screen and (min-width: 480px) {
+            #anchor-page section.applynow .section-content .anchor-applynow {
+              padding: 80px 60px; } }
+          #anchor-page section.applynow .section-content .anchor-applynow h1 {
+            color: white;
+            text-align: center; }
+    #anchor-page section.applynow {
+      position: relative; }
+      #anchor-page section.applynow:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-position: 50% 90%;
+        background-size: 100% auto; }
+    #anchor-page section.prizes .anchor-prizes {
+      display: block;
+      margin: 0 auto 80px;
+      text-align: center; }
+      #anchor-page section.prizes .anchor-prizes .prize-container {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.699);
+        border: 3px solid #fff;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto 10px; }
+        #anchor-page section.prizes .anchor-prizes .prize-container img {
+          max-height: 100px;
+          max-width: 100px;
+          margin-top: 40px;
+          height: 100%;
+          vertical-align: middle; }
+      #anchor-page section.prizes .anchor-prizes p {
+        font-size: 16px;
+        max-width: 280px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px; }
+    #anchor-page section.sponsors .media, #anchor-page section.sponsors .other-partners {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto; }
+    #anchor-page section.sponsors .blurb {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      max-width: 1000px; }
+      #anchor-page section.sponsors .blurb a {
+        background: white;
+        border-radius: 3px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 160px;
+        text-align: center;
+        display: flex;
+        margin-bottom: 20px; }
+        #anchor-page section.sponsors .blurb a img {
+          margin: auto;
+          max-width: 128px;
+          max-height: 128px; }
+      #anchor-page section.sponsors .blurb h4 {
+        font-weight: bold; }
+      #anchor-page section.sponsors .blurb h4, #anchor-page section.sponsors .blurb p {
+        padding-left: 10px; }
+    #anchor-page section.sponsors .other-partners {
+      display: block;
+      text-align: center;
+      margin-top: 120px; }
+      #anchor-page section.sponsors .other-partners h3 {
+        font-weight: bold; }
+  #anchor-page section.timeline, #anchor-page section.contact {
+    position: relative; }
+    #anchor-page section.timeline:before, #anchor-page section.contact:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-position: 50% 90%;
+      background-size: 100% auto; }
+  #anchor-page section.timeline .forge-timeline {
+    margin: 0 auto; }
+    #anchor-page section.timeline .forge-timeline .timeline-block {
+      height: auto;
+      max-width: 500px;
+      margin: 0 auto; }
+      #anchor-page section.timeline .forge-timeline .timeline-block .left {
+        float: left;
+        padding-right: 10px;
+        padding-top: 10px;
+        width: 120px;
+        text-align: right;
+        display: block;
+        font-style: italic;
+        position: relative; }
+      #anchor-page section.timeline .forge-timeline .timeline-block .right {
+        border-left: 2px solid #0b5394;
+        padding-left: 20px;
+        float: left;
+        height: auto;
+        display: block;
+        padding-bottom: 30px; }
+        #anchor-page section.timeline .forge-timeline .timeline-block .right .visible-xs {
+          font-weight: bold;
+          font-style: italic; }
+        #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content {
+          max-width: 420px;
+          transition: all ease-in-out 200ms;
+          border: none;
+          border-bottom: #0b5394 2px solid;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+          cursor: pointer; }
+          #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content:hover {
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+            transform: translateX(-10px); }
+          #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content .header {
+            display: block;
+            background: #fff;
+            color: #0b5394;
+            padding: 10px 40px;
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
+            position: relative; }
+            #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content .header:after {
+              right: 100%;
+              top: 50%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: rgba(255, 255, 255, 0);
+              border-right-color: #fff;
+              border-width: 10px;
+              margin-top: -10px; }
+          #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content .content {
+            padding-top: 10px;
+            color: #333; }
+            #anchor-page section.timeline .forge-timeline .timeline-block .right .right-content .content p {
+              font-weight: 600;
+              margin-left: 20px;
+              margin-top: 20px; }
