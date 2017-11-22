@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../css/fonts/Montserrat-Medium.ttf");
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../css/fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../css/fonts/Montserrat-Light.ttf");
+  font-weight: lighter; }
+
+body {
+  font-family: "Montserrat"; }
+
 #anchor-page {
   font-size: 15px; }
   #anchor-page div.anchor-nav-container {
@@ -120,21 +138,18 @@
       background-position: 50% 60%;
       position: relative; }
       #anchor-page section.anchor-header .anchor-overlay {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(3, 53, 86, 0.95);
         width: 100%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.2+100 */
-        background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
-        /* FF3.6-15 */
-        background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#33000000',GradientType=1 );
-        /* IE6-9 fallback on horizontal gradient */ }
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.2+100 */ }
+        #anchor-page section.anchor-header .anchor-overlay .breaknews {
+          background-color: #004989;
+          color: #1abc9c;
+          text-align: center;
+          padding: 5px; }
       #anchor-page section.anchor-header h1 {
         color: white;
         font-weight: 500;
@@ -146,7 +161,7 @@
         line-height: 1.5;
         margin-bottom: 40px; }
       #anchor-page section.anchor-header .container .anchor-header-content {
-        margin: 120px auto;
+        margin: 100px auto;
         text-align: center;
         position: relative;
         z-index: 10; }
@@ -155,6 +170,37 @@
           #anchor-page section.anchor-header .container .anchor-header-content .forge-logo img {
             width: 480px;
             max-width: 80%; }
+        #anchor-page section.anchor-header .container .anchor-header-content .countdown {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #anchor-page section.anchor-header .container .anchor-header-content .countdown .countdown-title {
+            display: inline-block;
+            text-align: right;
+            font-size: 1.5em;
+            color: #1abc9c; }
+          #anchor-page section.anchor-header .container .anchor-header-content .countdown #time-countdown {
+            display: inline-block;
+            color: #1abc9c; }
+            #anchor-page section.anchor-header .container .anchor-header-content .countdown #time-countdown .timebox {
+              display: inline-block;
+              margin-left: 15px; }
+              #anchor-page section.anchor-header .container .anchor-header-content .countdown #time-countdown .timebox span {
+                display: inline-block;
+                background-color: #004989;
+                padding: 5px 0px;
+                width: 50px;
+                font-size: 1.5em;
+                border: 1px dashed #1abc9c; }
+        #anchor-page section.anchor-header .container .anchor-header-content .btn-apply {
+          background-color: transparent;
+          border: 2px solid white;
+          color: white;
+          padding: 10px 50px;
+          text-transform: uppercase;
+          display: inline-block;
+          margin-top: 50px;
+          margin-left: 40%; }
         #anchor-page section.anchor-header .container .anchor-header-content .partners {
           margin-top: 40px;
           height: 48px;

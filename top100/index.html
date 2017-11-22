@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://e27.co/favicon.png" />
     <link href="https://e27.co/dist/css/app-b8fb0b6309.css" rel="stylesheet" type="text/css" />
     <link href="https://e27.co/dist/css/about-style.css?v=1.2" rel="stylesheet">
-    <link href="https://e27.co/dist/css/jeangrey-styles.css?v=1501608987" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://e27.co/dist/css/jeangrey-styles.css?v=1501608987" rel="stylesheet" type="text/css" /> -->
     <link href="https://e27.co/dist/css/jeangrey-header.css?v=1501608987" rel="stylesheet" type="text/css" />
     <link href="https://e27.co/dist/css/jeangrey-overide.css?v=1501608987" rel="stylesheet" type="text/css" />
     
@@ -18,10 +18,10 @@
 	<link href="https://e27.co/dist/css/advertise.css" rel="stylesheet" type="text/css" />
 	<link href="https://e27.co/dist/css/animate.css" rel="stylesheet" type="text/css" />
 	<link href="https://e27.co/dist/css/loading-animation.css" rel="stylesheet" type="text/css" />
-	<link href="https://e27.co/dist/css/font.css" rel="stylesheet" type="text/css" />
+	<!-- <link href="https://e27.co/dist/css/font.css" rel="stylesheet" type="text/css" /> -->
 	<link href="https://e27.co/dist/css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
 	
-	<link href="https://e27.co/dist/css/echelon-webfont.css" rel="stylesheet" type="text/css" />
+	<!-- <link href="https://e27.co/dist/css/echelon-webfont.css" rel="stylesheet" type="text/css" /> -->
 	<link href="https://e27.co/dist/css/jeangrey-bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="https://e27.co/dist/css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
 	<link href="https://e27.co/dist/css/uniform.default.css" rel="stylesheet" type="text/css" />
@@ -49,15 +49,12 @@
 	<link href="https://e27.co/dist/css/echelon-style.css" rel="stylesheet" type="text/css" />
 	<link href="https://e27.co/dist/css/medium-editor.min.css" rel="stylesheet" type="text/css" />
 	<link href="https://e27.co/dist/css/medium-editor-default.css" rel="stylesheet" type="text/css" />
-	<link href="https://e27.co/dist/css/jeangrey-styles.css" rel="stylesheet" type="text/css" /> <!-- required -->
+	<!-- <link href="https://e27.co/dist/css/jeangrey-styles.css" rel="stylesheet" type="text/css" /> -->
 	<link href="https://e27.co/dist/css/jeangrey-header.css" rel="stylesheet" type="text/css" />
 	<link href="https://e27.co/dist/css/jeangrey-overide.css" rel="stylesheet" type="text/css" /> <!-- required -->
     
     <link rel="stylesheet" href="styles/styles.css">
     <title>ANCHORUP SOUTHBOUND SUMMIT 2018: SEA STARTUP PITCH</title>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -65,21 +62,19 @@
         <section class="anchor-header">
             <div class="container">
                 <div class="anchor-overlay">
-
+                    <div class="breaknews"><strong>TOP100 2018</strong> Year Round | <strong>Asia Summit 2018</strong> June | <strong>Partner Events</strong> July to Dec</div>
                 </div>
                 <div class="anchor-header-content">
-                    <!-- <a href="#" class="forge-logo">
+                    <a href="#" class="forge-logo">
                         <img src="img/logo.png" alt="">
-                    </a> -->
-                    <h1>
-                        ANCHORUP SOUTHBOUND SUMMIT 2018:
-                        <br> SEA STARTUP PITCH
-                    </h1>
-                    <h2>
-                        POWERED BY SME Administration, Taiwan Ministry of Economic Affairs, PRESENTED BY e27
-                        <br> MARCH 2018 | TAINAN, TAIWAN
-                    </h2>
-                    <a type="button" class="btn btn-default btn-black-line" href="apply.html">Apply Now</a>
+                    </a>
+                    <div class="countdown">
+                        <div class="countdown-title">
+                            Applications<br/>close in
+                        </div>
+                        <div id="time-countdown"></div>
+                    </div>
+                    <a type="button" class="btn-apply" href="apply.html">Apply Now</a>
                     <!-- <div class="partners">
                         <a href="https://e27.co" target="_blank" class="partner-pwc">
                             <img src="img/pwc.png" alt="">
@@ -536,14 +531,20 @@
 
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/scripts.js"></script>
 
     <script>
-        $(function () {
-            $('a[href*=#]').on('click', function (e) {
-                e.preventDefault();
-                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
-            });
-        });
+        // $(function () {
+        //     $('a[href*=#]').on('click', function (e) {
+        //         e.preventDefault();
+        //         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+        //     });
+        // });
     </script>
 </body>
 
