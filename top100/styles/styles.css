@@ -148,8 +148,8 @@ body {
         top: 0;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.2+100 */ }
         #anchor-page section.anchor-header .anchor-overlay .breaknews {
-          background-color: #004989;
-          color: #1abc9c;
+          background-color: #0B5394;
+          color: #73C7B7;
           text-align: center;
           padding: 5px; }
       #anchor-page section.anchor-header h1 {
@@ -181,20 +181,20 @@ body {
             display: inline-block;
             text-align: right;
             font-size: 1.5em;
-            color: #1abc9c; }
+            color: #73C7B7; }
           #anchor-page section.anchor-header .container .anchor-header-content .countdown #time-countdown {
             display: inline-block;
-            color: #1abc9c; }
+            color: #73C7B7; }
             #anchor-page section.anchor-header .container .anchor-header-content .countdown #time-countdown .timebox {
               display: inline-block;
               margin-left: 15px; }
               #anchor-page section.anchor-header .container .anchor-header-content .countdown #time-countdown .timebox span {
                 display: inline-block;
-                background-color: #004989;
+                background-color: #0B5394;
                 padding: 5px 0px;
                 width: 50px;
                 font-size: 1.5em;
-                border: 1px dashed #1abc9c; }
+                border: 1px dashed #73C7B7; }
         #anchor-page section.anchor-header .container .anchor-header-content .btn-apply {
           background-color: transparent;
           border: 2px solid white;
@@ -227,7 +227,7 @@ body {
       #anchor-page section.intro p {
         margin: 0 auto 30px; }
       #anchor-page section.intro .intro-detail {
-        color: #004989;
+        color: #0B5394;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -240,7 +240,7 @@ body {
           text-align: right;
           font-size: 0.8em;
           font-weight: bold;
-          border-bottom: 3px solid #004989;
+          border-bottom: 3px solid #0B5394;
           display: inline-block;
           height: 55px;
           width: 90px; }
@@ -277,6 +277,69 @@ body {
       #anchor-page section.partners .anchor-partners div, #anchor-page section.intro .anchor-partners div, #anchor-page section .partners .anchor-partners div {
         font-weight: 600;
         font-size: 14px; }
+    #anchor-page section.city-qualifiers .section-header {
+      color: #73C7B7; }
+    #anchor-page section.city-qualifiers .section-content {
+      font-size: 1.3em; }
+    #anchor-page section.city-qualifiers .qualifier-grid {
+      position: relative;
+      margin-top: 50px; }
+      #anchor-page section.city-qualifiers .qualifier-grid > .row {
+        font-size: 0.9em; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row > div {
+          padding-right: 0; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(odd) {
+          background-color: #73C7B7; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(odd) .loc-triangle {
+            border-color: transparent transparent #EFEFEF transparent; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(even) {
+          background-color: #EFEFEF; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(even) .loc-triangle {
+            border-color: transparent transparent #73C7B7 transparent; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(odd) {
+          background-color: #EFEFEF; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(odd) .loc-triangle {
+            border-color: transparent transparent #73C7B7 transparent; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(even) {
+          background-color: #73C7B7; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(even) .loc-triangle {
+            border-color: transparent transparent #EFEFEF transparent; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row .location {
+          padding: 10px;
+          padding-bottom: 40px;
+          color: #0B5394;
+          text-transform: uppercase;
+          position: relative; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row .location .loc-triangle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 30px 30px;
+            position: absolute;
+            bottom: 5px;
+            right: 5px; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row .location:hover {
+            cursor: pointer; }
+      #anchor-page section.city-qualifiers .qualifier-grid .location-detail {
+        display: none;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-color: rgba(115, 199, 183, 0.8); }
+        #anchor-page section.city-qualifiers .qualifier-grid .location-detail .location-container {
+          padding: 10px; }
+          #anchor-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-address {
+            color: #0B5394;
+            margin-bottom: 20px; }
+          #anchor-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img img {
+            width: 100%; }
+          #anchor-page section.city-qualifiers .qualifier-grid .location-detail .location-container .header h4 {
+            margin: 0;
+            color: white;
+            text-transform: uppercase;
+            border-bottom: 1px solid white;
+            padding-left: 10px;
+            padding-bottom: 10px; }
     #anchor-page section.benefits .section-content .forge-benefit {
       margin-bottom: 40px;
       padding-left: 50px;

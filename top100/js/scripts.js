@@ -31,4 +31,19 @@ jQuery(document).ready(function() {
         html += '<div>' + text + '</div>';
         return '<div class="timebox">' + html + '</div>';
     }
+
+    var viz = false;
+
+    $(document).click(function(e) {
+        if (viz) {
+            if (!$(event.target).closest('.location-detail').length) {
+                $('.location-detail').fadeOut(500);
+                viz = false;
+            }
+        }
+    });
+
+    $('.location').click(function(e) {
+        $('.location-detail').fadeIn(500, function() { viz = true; });
+    })
 });
