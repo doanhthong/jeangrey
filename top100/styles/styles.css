@@ -10,12 +10,11 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../css/fonts/Montserrat-Light.ttf");
+  src: url("../../css/fonts/Montserrat-ExtraLight.ttf");
   font-weight: lighter; }
 
 body {
-  font-family: "Montserrat";
-  color: rgba(0, 0, 0, 0.7); }
+  font-family: "Montserrat"; }
 
 #anchor-page {
   font-size: 15px; }
@@ -105,11 +104,11 @@ body {
       color: #fff;
       border-color: #0b5394;
       background: #0b5394 !important; }
-  #anchor-page .section-blue, #anchor-page section.applynow, #anchor-page section.industries, #anchor-page section.hightlights, #anchor-page section.prizes {
+  #anchor-page .section-blue, #anchor-page section.applynow, #anchor-page section.industries, #anchor-page section.enjoys, #anchor-page section.prizes {
     color: white;
     background: #0b5394;
     background: url("../img/ocean-bg.svg?v=1"); }
-    #anchor-page .section-blue h1, #anchor-page section.applynow h1, #anchor-page section.industries h1, #anchor-page section.hightlights h1, #anchor-page section.prizes h1 {
+    #anchor-page .section-blue h1, #anchor-page section.applynow h1, #anchor-page section.industries h1, #anchor-page section.enjoys h1, #anchor-page section.prizes h1 {
       color: white;
       font-weight: 700; }
   #anchor-page section {
@@ -117,8 +116,10 @@ body {
     padding: 60px 0 100px; }
     #anchor-page section.industries2 .section-content, #anchor-page section.prizes .section-content {
       max-width: 840px; }
+    #anchor-page section .container {
+      width: 80%;
+      margin: 0 auto; }
     #anchor-page section .section-header {
-      padding: 20px 0;
       text-align: center;
       margin: 0 auto;
       margin-bottom: 40px; }
@@ -222,9 +223,7 @@ body {
       background-size: contain; }
       #anchor-page section.intro .section-content {
         font-size: 1.3em;
-        text-align: left;
-        width: 80%;
-        margin: 0 auto; }
+        text-align: left; }
       #anchor-page section.intro p {
         margin: 0 auto 30px; }
       #anchor-page section.intro .intro-detail {
@@ -250,6 +249,11 @@ body {
         #anchor-page section.intro .intro-detail .intro-detail-content .intro-detail-number {
           font-size: 2em;
           margin-bottom: 0; }
+    #anchor-page section.enjoys .section-content {
+      font-size: 1.3em;
+      text-align: left; }
+    #anchor-page section.enjoys .enjoy-including {
+      margin-top: 20px; }
     #anchor-page section.partners .section-content, #anchor-page section.intro .section-content, #anchor-page section .partners .section-content {
       margin: 0 auto; }
     #anchor-page section.partners h3, #anchor-page section.partners .h3-partner, #anchor-page section.intro h3, #anchor-page section.intro .h3-partner, #anchor-page section .partners h3, #anchor-page section .partners .h3-partner {
