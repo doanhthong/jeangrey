@@ -340,6 +340,16 @@ body {
             border-bottom: 1px solid white;
             padding-left: 10px;
             padding-bottom: 10px; }
+    #anchor-page section.blognews .section-header {
+      color: #0B5394; }
+    #anchor-page section.blognews .section-content .row {
+      margin-bottom: 10px; }
+    #anchor-page section.blognews .section-content .news-thumbnail img {
+      width: 100%; }
+    #anchor-page section.blognews .section-content .news-content h3 {
+      margin: 0; }
+    #anchor-page section.blognews .section-content .news-content a {
+      color: #0B5394; }
     #anchor-page section.benefits .section-content .forge-benefit {
       margin-bottom: 40px;
       padding-left: 50px;

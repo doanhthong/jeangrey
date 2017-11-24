@@ -518,6 +518,22 @@ body {
             }
         }
 
+        &.blognews{
+            .section-header{
+                color: $background;
+            }
+            .section-content{
+                .row{ margin-bottom: 10px; }
+                .news-thumbnail{
+                    img{ width: 100% }
+                }
+                .news-content{
+                    h3{ margin:0 }
+                    a{ color: $background }
+                }
+            }
+        }
+
         &.benefits{
             .section-content{
                 .forge-benefit{
