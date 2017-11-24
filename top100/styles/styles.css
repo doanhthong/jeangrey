@@ -14,7 +14,8 @@
   font-weight: lighter; }
 
 body {
-  font-family: "Montserrat"; }
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.7); }
 
 #anchor-page {
   font-size: 15px; }
@@ -165,11 +166,12 @@ body {
         text-align: center;
         position: relative;
         z-index: 10; }
-        #anchor-page section.anchor-header .container .anchor-header-content .forge-logo {
+        #anchor-page section.anchor-header .container .anchor-header-content .main-logo {
           display: block; }
-          #anchor-page section.anchor-header .container .anchor-header-content .forge-logo img {
+          #anchor-page section.anchor-header .container .anchor-header-content .main-logo img {
             width: 480px;
-            max-width: 80%; }
+            max-width: 80%;
+            margin-bottom: 100px; }
         #anchor-page section.anchor-header .container .anchor-header-content .countdown {
           display: flex;
           justify-content: center;
@@ -215,19 +217,39 @@ body {
             height: 100%; }
       #anchor-page section.anchor-header .container .anchor-nav {
         background: #0b5394; }
-    #anchor-page section.intro .section-content {
-      max-width: 840px;
-      margin: 0 auto; }
-    #anchor-page section.intro p {
-      text-align: center;
-      margin: 0 auto 30px; }
-    #anchor-page section.intro .intro-series {
-      align-content: center;
-      text-align: center; }
-      #anchor-page section.intro .intro-series img {
-        max-height: 128px; }
-      #anchor-page section.intro .intro-series p {
-        padding-right: 24px; }
+    #anchor-page section.intro {
+      background: url("../img/asia_map.png") no-repeat;
+      background-size: contain; }
+      #anchor-page section.intro .section-content {
+        font-size: 1.3em;
+        text-align: left;
+        width: 80%;
+        margin: 0 auto; }
+      #anchor-page section.intro p {
+        margin: 0 auto 30px; }
+      #anchor-page section.intro .intro-detail {
+        color: #004989;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; }
+        #anchor-page section.intro .intro-detail > div {
+          width: 150px;
+          text-align: center; }
+        #anchor-page section.intro .intro-detail .intro-detail-eg {
+          text-transform: uppercase;
+          text-align: right;
+          font-size: 0.8em;
+          font-weight: bold;
+          border-bottom: 3px solid #004989;
+          display: inline-block;
+          height: 55px;
+          width: 90px; }
+        #anchor-page section.intro .intro-detail .intro-detail-content .intro-detail-header {
+          margin-bottom: 0; }
+        #anchor-page section.intro .intro-detail .intro-detail-content .intro-detail-number {
+          font-size: 2em;
+          margin-bottom: 0; }
     #anchor-page section.partners .section-content, #anchor-page section.intro .section-content, #anchor-page section .partners .section-content {
       margin: 0 auto; }
     #anchor-page section.partners h3, #anchor-page section.partners .h3-partner, #anchor-page section.intro h3, #anchor-page section.intro .h3-partner, #anchor-page section .partners h3, #anchor-page section .partners .h3-partner {

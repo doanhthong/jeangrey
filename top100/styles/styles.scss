@@ -21,6 +21,7 @@ $foreground: #1abc9c;
 
 body {
     font-family: "Montserrat";
+    color: rgba(0,0,0,0.7);
 }
 
 //Forge Landing Page Styles
@@ -252,11 +253,12 @@ body {
                     position: relative;
                     z-index: 10;
                     
-                    .forge-logo{
+                    .main-logo{
                         display: block;
                         img{
                             width: 480px;
                             max-width: 80%;
+                            margin-bottom: 100px;
                         }
                     }
 
@@ -330,29 +332,48 @@ body {
         }
 
         &.intro{
+            background: url('../img/asia_map.png') no-repeat;
+            background-size: contain;
+
             .section-content{
-                max-width: 840px;
-                margin:0 auto;
+                font-size: 1.3em;
+                text-align: left;
+                width: 80%;
+                margin: 0 auto;
             }
-            p{
-                text-align: center;
+            p {
                 margin: 0 auto $magic-number *3;
             }
-            .intro-series{
-                // margin-top: 10px;
-                align-content: center;
-                text-align: center;
-
-                img{
-                    max-height: 128px;
+            .intro-detail{
+                color: $background;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                & > div {
+                    width: 150px;
+                    text-align: center;
                 }
-
-                p{
-                    padding-right: 24px;
+                .intro-detail-eg{
+                    text-transform: uppercase;
+                    text-align: right;
+                    font-size: 0.8em;
+                    font-weight: bold;
+                    border-bottom: 3px solid $background;
+                    display: inline-block;
+                    height: 55px;
+                    width: 90px;
                 }
-
+                .intro-detail-content{
+                    .intro-detail-header{
+                        margin-bottom: 0;
+                    }
+                    .intro-detail-number{
+                        font-size: 2em;
+                        margin-bottom: 0;
+                    }
+                }
             }
-           
         }
 
         &.partners, &.intro, .partners{
