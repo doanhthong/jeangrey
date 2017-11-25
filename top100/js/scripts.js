@@ -32,6 +32,8 @@ jQuery(document).ready(function() {
         return '<div class="timebox">' + html + '</div>';
     }
 
+    $('.carousel-testimonial').bxSlider({ pager: false });
+
     var viz = false;
 
     $(document).click(function(e) {
@@ -45,5 +47,5 @@ jQuery(document).ready(function() {
 
     $('.location').click(function(e) {
         $('.location-detail').fadeIn(500, function() { viz = true; });
-    })
+    });
 });

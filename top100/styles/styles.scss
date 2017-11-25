@@ -171,7 +171,7 @@ body {
         padding: 60px 0 100px;
 
         //Blue Section
-        &.applynow, &.industries, &.enjoys, &.prizes{
+        &.applynow, &.industries, &.enjoys, &.prizes, &.testimonials{
             @extend .section-blue;
         }
 
@@ -346,6 +346,17 @@ body {
             p {
                 margin: 0 auto $magic-number *3;
             }
+            .intro-detail-eg{
+                color: $background;
+                text-transform: uppercase;
+                text-align: right;
+                font-size: 0.8em;
+                font-weight: bold;
+                border-bottom: 3px solid $background;
+                display: inline-block;
+                height: 55px;
+                width: 90px;
+            }
             .intro-detail{
                 color: $background;
                 display: flex;
@@ -355,16 +366,6 @@ body {
                 & > div {
                     width: 150px;
                     text-align: center;
-                }
-                .intro-detail-eg{
-                    text-transform: uppercase;
-                    text-align: right;
-                    font-size: 0.8em;
-                    font-weight: bold;
-                    border-bottom: 3px solid $background;
-                    display: inline-block;
-                    height: 55px;
-                    width: 90px;
                 }
                 .intro-detail-content{
                     .intro-detail-header{
@@ -530,6 +531,70 @@ body {
                 .news-content{
                     h3{ margin:0 }
                     a{ color: $background }
+                }
+            }
+        }
+
+        &.testimonials{
+            .section-content{
+                position: relative;
+
+                .testimonial-quote{
+                    font-size: 3em;
+                    color: #73C7B7;
+                    position: absolute;
+                    top: -25px;
+                    left: 66px;
+                    z-index: 999;
+                }
+                .carousel-testimonial{
+                    li{
+                        padding: 25px 100px;
+                        color: $background;
+                        position: relative;
+                    }
+                }
+            }
+        }
+
+        &.alumni{
+            .section-header{
+                color: $background;
+            }
+            .section-content{
+                .list-alumni{
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        &.how-to-apply{
+            background-color: $background;
+
+            .section-header{
+                color: white;
+            }
+            .section-content{
+                color: white;
+                .list-alumni{
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        &.participate{
+            .section-header{
+                color: $foreground;
+            }
+            .section-content{
+                .list-investors{
+                    img{
+                        width: 200px;
+                    }
                 }
             }
         }

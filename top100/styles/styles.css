@@ -104,11 +104,11 @@ body {
       color: #fff;
       border-color: #0b5394;
       background: #0b5394 !important; }
-  #anchor-page .section-blue, #anchor-page section.applynow, #anchor-page section.industries, #anchor-page section.enjoys, #anchor-page section.prizes {
+  #anchor-page .section-blue, #anchor-page section.applynow, #anchor-page section.industries, #anchor-page section.enjoys, #anchor-page section.prizes, #anchor-page section.testimonials {
     color: white;
     background: #0b5394;
     background: url("../img/ocean-bg.svg?v=1"); }
-    #anchor-page .section-blue h1, #anchor-page section.applynow h1, #anchor-page section.industries h1, #anchor-page section.enjoys h1, #anchor-page section.prizes h1 {
+    #anchor-page .section-blue h1, #anchor-page section.applynow h1, #anchor-page section.industries h1, #anchor-page section.enjoys h1, #anchor-page section.prizes h1, #anchor-page section.testimonials h1 {
       color: white;
       font-weight: 700; }
   #anchor-page section {
@@ -226,6 +226,16 @@ body {
         text-align: left; }
       #anchor-page section.intro p {
         margin: 0 auto 30px; }
+      #anchor-page section.intro .intro-detail-eg {
+        color: #0B5394;
+        text-transform: uppercase;
+        text-align: right;
+        font-size: 0.8em;
+        font-weight: bold;
+        border-bottom: 3px solid #0B5394;
+        display: inline-block;
+        height: 55px;
+        width: 90px; }
       #anchor-page section.intro .intro-detail {
         color: #0B5394;
         display: flex;
@@ -235,15 +245,6 @@ body {
         #anchor-page section.intro .intro-detail > div {
           width: 150px;
           text-align: center; }
-        #anchor-page section.intro .intro-detail .intro-detail-eg {
-          text-transform: uppercase;
-          text-align: right;
-          font-size: 0.8em;
-          font-weight: bold;
-          border-bottom: 3px solid #0B5394;
-          display: inline-block;
-          height: 55px;
-          width: 90px; }
         #anchor-page section.intro .intro-detail .intro-detail-content .intro-detail-header {
           margin-bottom: 0; }
         #anchor-page section.intro .intro-detail .intro-detail-content .intro-detail-number {
@@ -350,6 +351,35 @@ body {
       margin: 0; }
     #anchor-page section.blognews .section-content .news-content a {
       color: #0B5394; }
+    #anchor-page section.testimonials .section-content {
+      position: relative; }
+      #anchor-page section.testimonials .section-content .testimonial-quote {
+        font-size: 3em;
+        color: #73C7B7;
+        position: absolute;
+        top: -25px;
+        left: 66px;
+        z-index: 999; }
+      #anchor-page section.testimonials .section-content .carousel-testimonial li {
+        padding: 25px 100px;
+        color: #0B5394;
+        position: relative; }
+    #anchor-page section.alumni .section-header {
+      color: #0B5394; }
+    #anchor-page section.alumni .section-content .list-alumni img {
+      width: 100px; }
+    #anchor-page section.how-to-apply {
+      background-color: #0B5394; }
+      #anchor-page section.how-to-apply .section-header {
+        color: white; }
+      #anchor-page section.how-to-apply .section-content {
+        color: white; }
+        #anchor-page section.how-to-apply .section-content .list-alumni img {
+          width: 100px; }
+    #anchor-page section.participate .section-header {
+      color: #73C7B7; }
+    #anchor-page section.participate .section-content .list-investors img {
+      width: 200px; }
     #anchor-page section.benefits .section-content .forge-benefit {
       margin-bottom: 40px;
       padding-left: 50px;
