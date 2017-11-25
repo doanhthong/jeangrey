@@ -1,3 +1,29 @@
+$background: #0B5394;
+$foreground: #73C7B7;
+$grey: #EFEFEF;
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../../css/fonts/Montserrat-Medium.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../../css/fonts/Montserrat-SemiBold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../../css/fonts/Montserrat-ExtraLight.ttf');
+    font-weight: lighter;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
 //Forge Landing Page Styles
 #anchor-page{
     //General Styles
@@ -145,7 +171,7 @@
         padding: 60px 0 100px;
 
         //Blue Section
-        &.applynow, &.industries, &.hightlights, &.prizes{
+        &.applynow, &.industries, &.enjoys, &.prizes, &.testimonials{
             @extend .section-blue;
         }
 
@@ -154,9 +180,13 @@
                 max-width: 840px;
             }
         }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
 
         .section-header{
-            padding: 20px 0;
             text-align: center;
             margin: 0 auto;
             margin-bottom: 40px;
@@ -180,23 +210,29 @@
             min-height: 360px;
             // position: relative;
             background: #222;
-             background: url('../img/taiwan-bg.jpg') no-repeat;
+            background: url('../img/taiwan-bg.jpg') no-repeat;
             background-size: cover;
             background-position: 50% 60%;
             position: relative;
 
             .anchor-overlay{
-                background: rgba(0, 0, 0, 0.6);
+                background: rgba(3, 53, 86, 0.95);
                 width: 100%; height: 100%;
                 position: absolute;
                 left: 0; top: 0;
                // opacity: 50%;
                 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.2+100 */
-                background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6-15 */
-                background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
-                background: radial-gradient(ellipse at center, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#33000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                // background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6-15 */
+                // background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+                // background: radial-gradient(ellipse at center, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#33000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+                .breaknews {
+                    background-color: $background;
+                    color: $foreground;
+                    text-align: center;
+                    padding: 5px;
+                }
             }
 
             h1{
@@ -215,18 +251,60 @@
             .container{
                 // height: 100%;
 
-                .anchor-header-content{
-                    margin: 120px auto;
+                .anchor-header-content {
+                    margin: 100px auto;
                     text-align: center;
                     position: relative;
                     z-index: 10;
                     
-                    .forge-logo{
+                    .main-logo{
                         display: block;
                         img{
                             width: 480px;
                             max-width: 80%;
+                            margin-bottom: 100px;
                         }
+                    }
+
+                    .countdown {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .countdown-title {
+                            display: inline-block;
+                            text-align: right;
+                            font-size: 1.5em;
+                            color: $foreground;
+                        }
+                        #time-countdown {
+                            display: inline-block;
+                            color: $foreground;
+
+                            .timebox {
+                                display: inline-block;
+                                margin-left: 15px;
+                                span {
+                                    display: inline-block;
+                                    background-color: $background;
+                                    padding: 5px 0px;
+                                    width: 50px;
+                                    font-size: 1.5em;
+                                    border: 1px dashed $foreground
+                                }
+                            }
+                        }
+                    }
+
+                    .btn-apply {
+                        background-color: transparent;
+                        border: 2px solid white;
+                        color: white;
+                        padding: 10px 50px;
+                        text-transform: uppercase;
+                        display: inline-block;
+                        margin-top: 50px;
+                        margin-left: 40%;
                     }
 
                     .partners{
@@ -258,29 +336,57 @@
         }
 
         &.intro{
+            background: url('../img/asia_map.png') no-repeat;
+            background-size: contain;
+
             .section-content{
-                max-width: 840px;
-                margin:0 auto;
+                font-size: 1.3em;
+                text-align: left;
             }
-            p{
-                text-align: center;
+            p {
                 margin: 0 auto $magic-number *3;
             }
-            .intro-series{
-                // margin-top: 10px;
-                align-content: center;
-                text-align: center;
-
-                img{
-                    max-height: 128px;
-                }
-
-                p{
-                    padding-right: 24px;
-                }
-
+            .intro-detail-eg{
+                color: $background;
+                text-transform: uppercase;
+                text-align: right;
+                font-size: 0.8em;
+                font-weight: bold;
+                border-bottom: 3px solid $background;
+                display: inline-block;
+                height: 55px;
+                width: 90px;
             }
-           
+            .intro-detail{
+                color: $background;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                & > div {
+                    width: 150px;
+                    text-align: center;
+                }
+                .intro-detail-content{
+                    .intro-detail-header{
+                        margin-bottom: 0;
+                    }
+                    .intro-detail-number{
+                        font-size: 2em;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &.enjoys {
+            .section-content{
+                font-size: 1.3em;
+                text-align: left;
+            }
+            .enjoy-including {
+                margin-top: 20px;
+            }
         }
 
         &.partners, &.intro, .partners{
@@ -314,6 +420,181 @@
                 div {
                     font-weight: 600;
                     font-size: 14px;
+                }
+            }
+        }
+
+        &.city-qualifiers{
+            .section-header{
+                color: $foreground;
+            }
+            .section-content{
+                font-size: 1.3em;
+            }
+            .qualifier-grid{
+                position: relative;
+                margin-top: 50px;
+
+                & > .row {
+                    font-size: 0.9em;
+                    & > div {
+                        padding-right: 0;
+                    }
+                    &:nth-child(odd) {
+                        & > div {
+                            &:nth-child(odd) {
+                                background-color: $foreground;
+                                .loc-triangle { border-color: transparent transparent $grey transparent; }
+                            }
+                            &:nth-child(even) {
+                                background-color: $grey;
+                                .loc-triangle { border-color: transparent transparent $foreground transparent; }
+                            }
+                        }
+                    }
+                    &:nth-child(even) {
+                        & > div {
+                            &:nth-child(odd) {
+                                background-color: $grey;
+                                .loc-triangle { border-color: transparent transparent $foreground transparent; }
+                            }
+                            &:nth-child(even) {
+                                background-color: $foreground;
+                                .loc-triangle { border-color: transparent transparent $grey transparent; }
+                            }
+                        }
+                    }
+
+                    .location {
+                        padding: 10px;
+                        padding-bottom: 40px;
+                        color: $background;
+                        text-transform: uppercase;
+                        position: relative;
+
+                        .loc-triangle {
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 0 30px 30px;
+                            position: absolute;
+                            bottom: 5px;
+                            right: 5px;                        
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .location-detail{
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    background-color: rgba(115,199,183,0.8);
+
+                    .location-container {
+                        padding: 10px;
+
+                        .location-address{
+                            color: $background;
+                            margin-bottom: 20px;
+                        }
+                        .location-img{
+                            img{ width: 100%; }
+                        }
+                        .header{
+                            h4{
+                                margin: 0;
+                                color: white;
+                                text-transform: uppercase;
+                                border-bottom: 1px solid white;
+                                padding-left: 10px;
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.blognews{
+            .section-header{
+                color: $background;
+            }
+            .section-content{
+                .row{ margin-bottom: 10px; }
+                .news-thumbnail{
+                    img{ width: 100% }
+                }
+                .news-content{
+                    h3{ margin:0 }
+                    a{ color: $background }
+                }
+            }
+        }
+
+        &.testimonials{
+            .section-content{
+                position: relative;
+
+                .testimonial-quote{
+                    font-size: 3em;
+                    color: #73C7B7;
+                    position: absolute;
+                    top: -25px;
+                    left: 66px;
+                    z-index: 999;
+                }
+                .carousel-testimonial{
+                    li{
+                        padding: 25px 100px;
+                        color: $background;
+                        position: relative;
+                    }
+                }
+            }
+        }
+
+        &.alumni{
+            .section-header{
+                color: $background;
+            }
+            .section-content{
+                .list-alumni{
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        &.how-to-apply{
+            background-color: $background;
+
+            .section-header{
+                color: white;
+            }
+            .section-content{
+                color: white;
+                .list-alumni{
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        &.participate{
+            .section-header{
+                color: $foreground;
+            }
+            .section-content{
+                .list-investors{
+                    img{
+                        width: 200px;
+                    }
                 }
             }
         }

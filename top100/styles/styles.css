@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../css/fonts/Montserrat-Medium.ttf");
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../css/fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../css/fonts/Montserrat-ExtraLight.ttf");
+  font-weight: lighter; }
+
+body {
+  font-family: "Montserrat"; }
+
 #anchor-page {
   font-size: 15px; }
   #anchor-page div.anchor-nav-container {
@@ -86,11 +104,11 @@
       color: #fff;
       border-color: #0b5394;
       background: #0b5394 !important; }
-  #anchor-page .section-blue, #anchor-page section.applynow, #anchor-page section.industries, #anchor-page section.hightlights, #anchor-page section.prizes {
+  #anchor-page .section-blue, #anchor-page section.applynow, #anchor-page section.industries, #anchor-page section.enjoys, #anchor-page section.prizes, #anchor-page section.testimonials {
     color: white;
     background: #0b5394;
     background: url("../img/ocean-bg.svg?v=1"); }
-    #anchor-page .section-blue h1, #anchor-page section.applynow h1, #anchor-page section.industries h1, #anchor-page section.hightlights h1, #anchor-page section.prizes h1 {
+    #anchor-page .section-blue h1, #anchor-page section.applynow h1, #anchor-page section.industries h1, #anchor-page section.enjoys h1, #anchor-page section.prizes h1, #anchor-page section.testimonials h1 {
       color: white;
       font-weight: 700; }
   #anchor-page section {
@@ -98,8 +116,10 @@
     padding: 60px 0 100px; }
     #anchor-page section.industries2 .section-content, #anchor-page section.prizes .section-content {
       max-width: 840px; }
+    #anchor-page section .container {
+      width: 80%;
+      margin: 0 auto; }
     #anchor-page section .section-header {
-      padding: 20px 0;
       text-align: center;
       margin: 0 auto;
       margin-bottom: 40px; }
@@ -120,21 +140,18 @@
       background-position: 50% 60%;
       position: relative; }
       #anchor-page section.anchor-header .anchor-overlay {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(3, 53, 86, 0.95);
         width: 100%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.2+100 */
-        background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
-        /* FF3.6-15 */
-        background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#33000000',GradientType=1 );
-        /* IE6-9 fallback on horizontal gradient */ }
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.2+100 */ }
+        #anchor-page section.anchor-header .anchor-overlay .breaknews {
+          background-color: #0B5394;
+          color: #73C7B7;
+          text-align: center;
+          padding: 5px; }
       #anchor-page section.anchor-header h1 {
         color: white;
         font-weight: 500;
@@ -146,15 +163,47 @@
         line-height: 1.5;
         margin-bottom: 40px; }
       #anchor-page section.anchor-header .container .anchor-header-content {
-        margin: 120px auto;
+        margin: 100px auto;
         text-align: center;
         position: relative;
         z-index: 10; }
-        #anchor-page section.anchor-header .container .anchor-header-content .forge-logo {
+        #anchor-page section.anchor-header .container .anchor-header-content .main-logo {
           display: block; }
-          #anchor-page section.anchor-header .container .anchor-header-content .forge-logo img {
+          #anchor-page section.anchor-header .container .anchor-header-content .main-logo img {
             width: 480px;
-            max-width: 80%; }
+            max-width: 80%;
+            margin-bottom: 100px; }
+        #anchor-page section.anchor-header .container .anchor-header-content .countdown {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #anchor-page section.anchor-header .container .anchor-header-content .countdown .countdown-title {
+            display: inline-block;
+            text-align: right;
+            font-size: 1.5em;
+            color: #73C7B7; }
+          #anchor-page section.anchor-header .container .anchor-header-content .countdown #time-countdown {
+            display: inline-block;
+            color: #73C7B7; }
+            #anchor-page section.anchor-header .container .anchor-header-content .countdown #time-countdown .timebox {
+              display: inline-block;
+              margin-left: 15px; }
+              #anchor-page section.anchor-header .container .anchor-header-content .countdown #time-countdown .timebox span {
+                display: inline-block;
+                background-color: #0B5394;
+                padding: 5px 0px;
+                width: 50px;
+                font-size: 1.5em;
+                border: 1px dashed #73C7B7; }
+        #anchor-page section.anchor-header .container .anchor-header-content .btn-apply {
+          background-color: transparent;
+          border: 2px solid white;
+          color: white;
+          padding: 10px 50px;
+          text-transform: uppercase;
+          display: inline-block;
+          margin-top: 50px;
+          margin-left: 40%; }
         #anchor-page section.anchor-header .container .anchor-header-content .partners {
           margin-top: 40px;
           height: 48px;
@@ -169,19 +218,43 @@
             height: 100%; }
       #anchor-page section.anchor-header .container .anchor-nav {
         background: #0b5394; }
-    #anchor-page section.intro .section-content {
-      max-width: 840px;
-      margin: 0 auto; }
-    #anchor-page section.intro p {
-      text-align: center;
-      margin: 0 auto 30px; }
-    #anchor-page section.intro .intro-series {
-      align-content: center;
-      text-align: center; }
-      #anchor-page section.intro .intro-series img {
-        max-height: 128px; }
-      #anchor-page section.intro .intro-series p {
-        padding-right: 24px; }
+    #anchor-page section.intro {
+      background: url("../img/asia_map.png") no-repeat;
+      background-size: contain; }
+      #anchor-page section.intro .section-content {
+        font-size: 1.3em;
+        text-align: left; }
+      #anchor-page section.intro p {
+        margin: 0 auto 30px; }
+      #anchor-page section.intro .intro-detail-eg {
+        color: #0B5394;
+        text-transform: uppercase;
+        text-align: right;
+        font-size: 0.8em;
+        font-weight: bold;
+        border-bottom: 3px solid #0B5394;
+        display: inline-block;
+        height: 55px;
+        width: 90px; }
+      #anchor-page section.intro .intro-detail {
+        color: #0B5394;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; }
+        #anchor-page section.intro .intro-detail > div {
+          width: 150px;
+          text-align: center; }
+        #anchor-page section.intro .intro-detail .intro-detail-content .intro-detail-header {
+          margin-bottom: 0; }
+        #anchor-page section.intro .intro-detail .intro-detail-content .intro-detail-number {
+          font-size: 2em;
+          margin-bottom: 0; }
+    #anchor-page section.enjoys .section-content {
+      font-size: 1.3em;
+      text-align: left; }
+    #anchor-page section.enjoys .enjoy-including {
+      margin-top: 20px; }
     #anchor-page section.partners .section-content, #anchor-page section.intro .section-content, #anchor-page section .partners .section-content {
       margin: 0 auto; }
     #anchor-page section.partners h3, #anchor-page section.partners .h3-partner, #anchor-page section.intro h3, #anchor-page section.intro .h3-partner, #anchor-page section .partners h3, #anchor-page section .partners .h3-partner {
@@ -205,6 +278,108 @@
       #anchor-page section.partners .anchor-partners div, #anchor-page section.intro .anchor-partners div, #anchor-page section .partners .anchor-partners div {
         font-weight: 600;
         font-size: 14px; }
+    #anchor-page section.city-qualifiers .section-header {
+      color: #73C7B7; }
+    #anchor-page section.city-qualifiers .section-content {
+      font-size: 1.3em; }
+    #anchor-page section.city-qualifiers .qualifier-grid {
+      position: relative;
+      margin-top: 50px; }
+      #anchor-page section.city-qualifiers .qualifier-grid > .row {
+        font-size: 0.9em; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row > div {
+          padding-right: 0; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(odd) {
+          background-color: #73C7B7; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(odd) .loc-triangle {
+            border-color: transparent transparent #EFEFEF transparent; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(even) {
+          background-color: #EFEFEF; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(even) .loc-triangle {
+            border-color: transparent transparent #73C7B7 transparent; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(odd) {
+          background-color: #EFEFEF; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(odd) .loc-triangle {
+            border-color: transparent transparent #73C7B7 transparent; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(even) {
+          background-color: #73C7B7; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(even) .loc-triangle {
+            border-color: transparent transparent #EFEFEF transparent; }
+        #anchor-page section.city-qualifiers .qualifier-grid > .row .location {
+          padding: 10px;
+          padding-bottom: 40px;
+          color: #0B5394;
+          text-transform: uppercase;
+          position: relative; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row .location .loc-triangle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 30px 30px;
+            position: absolute;
+            bottom: 5px;
+            right: 5px; }
+          #anchor-page section.city-qualifiers .qualifier-grid > .row .location:hover {
+            cursor: pointer; }
+      #anchor-page section.city-qualifiers .qualifier-grid .location-detail {
+        display: none;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background-color: rgba(115, 199, 183, 0.8); }
+        #anchor-page section.city-qualifiers .qualifier-grid .location-detail .location-container {
+          padding: 10px; }
+          #anchor-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-address {
+            color: #0B5394;
+            margin-bottom: 20px; }
+          #anchor-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img img {
+            width: 100%; }
+          #anchor-page section.city-qualifiers .qualifier-grid .location-detail .location-container .header h4 {
+            margin: 0;
+            color: white;
+            text-transform: uppercase;
+            border-bottom: 1px solid white;
+            padding-left: 10px;
+            padding-bottom: 10px; }
+    #anchor-page section.blognews .section-header {
+      color: #0B5394; }
+    #anchor-page section.blognews .section-content .row {
+      margin-bottom: 10px; }
+    #anchor-page section.blognews .section-content .news-thumbnail img {
+      width: 100%; }
+    #anchor-page section.blognews .section-content .news-content h3 {
+      margin: 0; }
+    #anchor-page section.blognews .section-content .news-content a {
+      color: #0B5394; }
+    #anchor-page section.testimonials .section-content {
+      position: relative; }
+      #anchor-page section.testimonials .section-content .testimonial-quote {
+        font-size: 3em;
+        color: #73C7B7;
+        position: absolute;
+        top: -25px;
+        left: 66px;
+        z-index: 999; }
+      #anchor-page section.testimonials .section-content .carousel-testimonial li {
+        padding: 25px 100px;
+        color: #0B5394;
+        position: relative; }
+    #anchor-page section.alumni .section-header {
+      color: #0B5394; }
+    #anchor-page section.alumni .section-content .list-alumni img {
+      width: 100px; }
+    #anchor-page section.how-to-apply {
+      background-color: #0B5394; }
+      #anchor-page section.how-to-apply .section-header {
+        color: white; }
+      #anchor-page section.how-to-apply .section-content {
+        color: white; }
+        #anchor-page section.how-to-apply .section-content .list-alumni img {
+          width: 100px; }
+    #anchor-page section.participate .section-header {
+      color: #73C7B7; }
+    #anchor-page section.participate .section-content .list-investors img {
+      width: 200px; }
     #anchor-page section.benefits .section-content .forge-benefit {
       margin-bottom: 40px;
       padding-left: 50px;
