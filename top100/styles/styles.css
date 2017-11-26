@@ -428,6 +428,13 @@ body {
         object-fit: contain;
         display: block;
         margin: 0 auto; }
+    #anchor-page section.faq .section-header {
+      color: #0B5394; }
+    #anchor-page section.faq .section-content .faq-content {
+      padding: 15px;
+      background-color: #0B5394;
+      color: white;
+      margin-bottom: 5px; }
       background-color: #0B5394; }
       #top100-page section.how-to-apply .section-header {
         color: white; }

@@ -661,6 +661,20 @@ body {
             }
         }
 
+        &.faq{
+            .section-header{
+                color: $background;
+            }
+            .section-content{
+                .faq-content{
+                    padding: 15px;
+                    background-color: $background;
+                    color: white;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
         &.how-to-apply{
             background-color: $background;
 
