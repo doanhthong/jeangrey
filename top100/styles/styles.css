@@ -411,9 +411,23 @@ body {
           text-align: left; }
     #top100-page section.alumni .section-header {
       color: #0B5394; }
-    #top100-page section.alumni .section-content .list-alumni img {
-      width: 100px; }
-    #top100-page section.how-to-apply {
+    #anchor-page section.alumni .section-content .list-alumni {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      #anchor-page section.alumni .section-content .list-alumni a {
+        margin-right: 15px; }
+        #anchor-page section.alumni .section-content .list-alumni a p {
+          font-size: 0.8em;
+          text-align: center;
+          color: black; }
+      #anchor-page section.alumni .section-content .list-alumni img {
+        width: 10vw;
+        min-width: 90px;
+        height: 15%;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto; }
       background-color: #0B5394; }
       #top100-page section.how-to-apply .section-header {
         color: white; }

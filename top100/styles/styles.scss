@@ -637,8 +637,25 @@ body {
             }
             .section-content{
                 .list-alumni{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    a{
+                        margin-right: 15px;
+                        p{
+                            font-size: 0.8em;
+                            text-align: center;
+                            color: black;
+                        }
+                    }
                     img{
-                        width: 100px;
+                        width: 10vw;
+                        min-width: 90px;
+                        height: 15%;
+                        object-fit: contain;
+                        display: block;
+                        margin: 0 auto;
                     }
                 }
             }
