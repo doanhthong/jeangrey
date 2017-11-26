@@ -413,7 +413,6 @@ body {
                         height: 12vw;
                         object-fit: cover;
                         border-radius: 100%;
-                        margin: 0 auto;
                         display: block;
                         margin-bottom: 15px;
                     }
@@ -421,15 +420,28 @@ body {
                         font-size: 0.8em;
                         padding: 12px;
                     }
+                    &:not(.enjoy-finish) img {
+                        margin: 0 auto;
+                    }
+                }
+
+                .enjoy-finish{
+                    float: right;
+                    // width: 80%;
+                }
+
+                @media screen and (max-width: 1200px){
+                    .enjoy-finish{
+                        display: flex;
+                        img{
+                            margin-right: 15px;
+                        }
+                    }
                 }
 
                 .enjoy-plus{
                     float: left;
                     margin-top: 40vh;
-                }
-                .enjoy-finish{
-                    float: right;
-                    width: 80%;
                 }
             }
         }
@@ -693,11 +705,15 @@ body {
                 color: $background;
             }
             .section-content{
-                .faq-content{
-                    padding: 15px;
-                    background-color: $background;
-                    color: white;
-                    margin-bottom: 5px;
+                #accordion-faq{
+                    .panel-heading{
+                        padding: 15px;
+                        background-color: $background;
+                        color: white;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
         }
