@@ -404,7 +404,7 @@ body {
         left: 66px;
         z-index: 999; }
       #top100-page section.testimonials .section-content .carousel-testimonial li {
-        padding: 25px 100px;
+        padding: 25px 50px;
         color: #0B5394;
         position: relative; }
         #top100-page section.testimonials .section-content .carousel-testimonial li img {
@@ -414,30 +414,37 @@ body {
       #top100-page section.testimonials .section-content .bx-wrapper {
         border-radius: 8px;
         border: none;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-        padding: 32px 0; }
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.699);
+        padding: 12px 0; }
         #top100-page section.testimonials .section-content .bx-wrapper .bx-controls-direction a.bx-next {
           margin-right: -64px; }
         #top100-page section.testimonials .section-content .bx-wrapper .bx-controls-direction a.bx-prev {
           margin-left: -64px; }
     #top100-page section.alumni .section-header {
       color: #0B5394; }
+    #top100-page section.alumni .section-content .text {
+      font-size: 16px; }
     #top100-page section.alumni .section-content .list-alumni {
       display: flex;
       align-items: center;
       flex-wrap: wrap; }
       #top100-page section.alumni .section-content .list-alumni a {
-        margin-right: 15px;
+        margin-right: 12px;
+        margin-bottom: 14px;
         padding: 10px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); }
         #top100-page section.alumni .section-content .list-alumni a p {
           font-size: 0.8em;
           text-align: center;
-          color: black; }
+          color: black;
+          line-height: 1;
+          padding: 0;
+          margin: 6px; }
       #top100-page section.alumni .section-content .list-alumni img {
         width: 8vw;
+        padding: 10px;
         min-width: 90px;
-        height: 15%;
+        height: 48px;
         object-fit: contain;
         display: block;
         margin: 0 auto; }

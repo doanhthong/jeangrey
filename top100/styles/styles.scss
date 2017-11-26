@@ -617,7 +617,7 @@ body {
                 }
                 .carousel-testimonial{
                     li{
-                        padding: 25px 100px;
+                        padding: 25px 50px;
                         color: $background;
                         position: relative;
 
@@ -635,8 +635,8 @@ body {
                 .bx-wrapper {
                     border-radius: 8px;
                     border: none;
-                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-                    padding: 32px 0;
+                    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.699);
+                    padding: 12px 0;
                     .bx-controls-direction a {
                         &.bx-next {
                             margin-right: -64px;
@@ -654,25 +654,30 @@ body {
                 color: $background;
             }
             .section-content{
+                .text {font-size: 16px;}
                 .list-alumni{
                     display: flex;
                     align-items: center;
                     flex-wrap: wrap;
 
                     a{
-                        margin-right: 15px;
+                        margin-right: 12px;
+                        margin-bottom: 14px;
                         padding: 10px;
                         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
                         p{
                             font-size: 0.8em;
                             text-align: center;
                             color: black;
+                            line-height: 1;
+                            padding: 0; margin: 6px;
                         }
                     }
                     img{
                         width: 8vw;
+                        padding: 10px;
                         min-width: 90px;
-                        height: 15%;
+                        height: 48px;
                         object-fit: contain;
                         display: block;
                         margin: 0 auto;
