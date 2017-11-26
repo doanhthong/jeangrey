@@ -425,13 +425,23 @@ body {
                     }
                 }
 
-                .enjoy-plus{
-                    float: left;
-                    margin-top: 40vh;
-                }
                 .enjoy-finish{
                     float: right;
                     // width: 80%;
+                }
+
+                @media screen and (max-width: 1200px){
+                    .enjoy-finish{
+                        display: flex;
+                        img{
+                            margin-right: 15px;
+                        }
+                    }
+                }
+
+                .enjoy-plus{
+                    float: left;
+                    margin-top: 40vh;
                 }
             }
         }
@@ -708,7 +718,6 @@ body {
                             cursor: pointer;
                         }
                     }
-                    
                 }
             }
             .panel-group .panel {
