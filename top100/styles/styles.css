@@ -479,6 +479,10 @@ body {
         height: 100%;
         background-position: 50% 90%;
         background-size: 100% auto; }
+    #top100-page section.milestones .section-content {
+      font-size: 1.3em; }
+      #top100-page section.milestones .section-content .milestones-stage h3 {
+        font-weight: bold; }
     #top100-page section.prizes .top100-prizes {
       display: block;
       margin: 0 auto 80px;
