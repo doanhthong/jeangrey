@@ -152,7 +152,7 @@ body {
         top: 0;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.7+0,0.2+100 */ }
         #top100-page section.top100-header .top100-overlay .breaknews {
-          background-color: #0B5394;
+          background-color: #00507d;
           color: #73C7B7;
           text-align: center;
           padding: 5px; }
@@ -191,7 +191,7 @@ body {
             margin-left: 15px; }
             #top100-page section.top100-header .container .top100-header-content .countdown #time-countdown .timebox span {
               display: inline-block;
-              background-color: #0B5394;
+              background-color: #00507d;
               padding: 5px 0px;
               width: 50px;
               font-size: 1.5em;
@@ -230,17 +230,17 @@ body {
       #top100-page section.intro p {
         margin: 0 auto 30px; }
       #top100-page section.intro .intro-detail-eg {
-        color: #0B5394;
+        color: #00507d;
         text-transform: uppercase;
         text-align: right;
         font-size: 0.8em;
         font-weight: bold;
-        border-bottom: 3px solid #0B5394;
+        border-bottom: 3px solid #00507d;
         display: inline-block;
         height: 55px;
         width: 90px; }
       #top100-page section.intro .intro-detail {
-        color: #0B5394;
+        color: #00507d;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -332,7 +332,7 @@ body {
         #top100-page section.city-qualifiers .qualifier-grid > .row .location {
           padding: 10px;
           padding-bottom: 40px;
-          color: #0B5394;
+          color: #00507d;
           text-transform: uppercase;
           position: relative; }
           #top100-page section.city-qualifiers .qualifier-grid > .row .location .loc-triangle {
@@ -356,7 +356,7 @@ body {
           #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-shortlist {
             margin-bottom: 24px; }
           #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-address {
-            color: #0B5394;
+            color: #00507d;
             margin-bottom: 20px; }
           #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img {
             background: url("../img/venues/spacemob.jpg");
@@ -385,7 +385,7 @@ body {
             padding-bottom: 10px;
             margin-bottom: 10px; }
     #top100-page section.blognews .section-header {
-      color: #0B5394; }
+      color: #00507d; }
     #top100-page section.blognews .section-content .row {
       margin-bottom: 10px; }
     #top100-page section.blognews .section-content .news-thumbnail img {
@@ -393,7 +393,7 @@ body {
     #top100-page section.blognews .section-content .news-content h3 {
       margin: 0; }
     #top100-page section.blognews .section-content .news-content a {
-      color: #0B5394; }
+      color: #00507d; }
     #top100-page section.testimonials .container {
       max-width: 720px; }
     #top100-page section.testimonials .section-content {
@@ -407,7 +407,7 @@ body {
         z-index: 999; }
       #top100-page section.testimonials .section-content .carousel-testimonial li {
         padding: 25px 50px;
-        color: #0B5394;
+        color: #00507d;
         position: relative; }
         #top100-page section.testimonials .section-content .carousel-testimonial li img {
           display: block;
@@ -423,7 +423,7 @@ body {
         #top100-page section.testimonials .section-content .bx-wrapper .bx-controls-direction a.bx-prev {
           margin-left: -64px; }
     #top100-page section.alumni .section-header {
-      color: #0B5394; }
+      color: #00507d; }
     #top100-page section.alumni .section-content .text {
       font-size: 16px; }
     #top100-page section.alumni .section-content .list-alumni {
@@ -451,14 +451,14 @@ body {
         display: block;
         margin: 0 auto; }
     #top100-page section.faq .section-header {
-      color: #0B5394; }
+      color: #00507d; }
     #top100-page section.faq .section-content .faq-content {
       padding: 15px;
-      background-color: #0B5394;
+      background-color: #00507d;
       color: white;
       margin-bottom: 5px; }
     #top100-page section.how-to-apply {
-      background-color: #0B5394; }
+      background-color: #00507d; }
       #top100-page section.how-to-apply .section-header {
         color: white; }
       #top100-page section.how-to-apply .section-content {
