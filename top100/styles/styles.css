@@ -265,18 +265,18 @@ body {
           height: 12vw;
           object-fit: cover;
           border-radius: 100%;
-          margin: 0 auto;
           display: block;
           margin-bottom: 15px; }
         #top100-page section.enjoys .enjoy-including .enjoy-detail p, #top100-page section.enjoys .enjoy-including .enjoy-detail li {
           font-size: 0.8em;
           padding: 12px; }
+        #top100-page section.enjoys .enjoy-including .enjoy-detail:not(.enjoy-finish) img {
+          margin: 0 auto; }
       #top100-page section.enjoys .enjoy-including .enjoy-plus {
         float: left;
         margin-top: 40vh; }
       #top100-page section.enjoys .enjoy-including .enjoy-finish {
-        float: right;
-        width: 80%; }
+        float: right; }
     #top100-page section.partners .section-content, #top100-page section.intro .section-content, #top100-page section .partners .section-content {
       margin: 0 auto; }
     #top100-page section.partners h3, #top100-page section.partners .h3-partner, #top100-page section.intro h3, #top100-page section.intro .h3-partner, #top100-page section .partners h3, #top100-page section .partners .h3-partner {
@@ -452,11 +452,12 @@ body {
         margin: 0 auto; }
     #top100-page section.faq .section-header {
       color: #0B5394; }
-    #top100-page section.faq .section-content .faq-content {
+    #top100-page section.faq .section-content #accordion-faq .panel-heading {
       padding: 15px;
       background-color: #0B5394;
-      color: white;
-      margin-bottom: 5px; }
+      color: white; }
+      #top100-page section.faq .section-content #accordion-faq .panel-heading:hover {
+        cursor: pointer; }
     #top100-page section.how-to-apply {
       background-color: #0B5394; }
       #top100-page section.how-to-apply .section-header {

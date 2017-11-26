@@ -413,13 +413,15 @@ body {
                         height: 12vw;
                         object-fit: cover;
                         border-radius: 100%;
-                        margin: 0 auto;
                         display: block;
                         margin-bottom: 15px;
                     }
                     p, li{
                         font-size: 0.8em;
                         padding: 12px;
+                    }
+                    &:not(.enjoy-finish) img {
+                        margin: 0 auto;
                     }
                 }
 
@@ -429,7 +431,7 @@ body {
                 }
                 .enjoy-finish{
                     float: right;
-                    width: 80%;
+                    // width: 80%;
                 }
             }
         }
@@ -693,11 +695,15 @@ body {
                 color: $background;
             }
             .section-content{
-                .faq-content{
-                    padding: 15px;
-                    background-color: $background;
-                    color: white;
-                    margin-bottom: 5px;
+                #accordion-faq{
+                    .panel-heading{
+                        padding: 15px;
+                        background-color: $background;
+                        color: white;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
         }
