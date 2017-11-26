@@ -149,11 +149,20 @@ body {
         transition: all 200ms ease-in-out;
         background: #fff;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-
+        margin-bottom: 10px;
         &:hover{
             color: #fff;
             border-color:  $main-color;
             background: $main-color !important;
+        }
+       
+    }
+    .btn-white-line {
+        
+    }
+    .echelon-contact {
+        .btn-black-line {
+            font-size: 12px;
         }
     }
 
@@ -516,7 +525,7 @@ body {
                             margin-bottom: 20px;
                         }
                         .location-img{
-                            background: url('../img/marina-bg.jpeg');
+                            background: url('../img/venues/spacemob.jpg');
                             display: block;
                             width: 100%;
                             height: 100%;
@@ -524,6 +533,14 @@ body {
                             background-position: 50% 50%;
                             max-height: 250px;
                             img{ width: 100%; }
+                            
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%);
+                            transition: 0.25s ease-in-out;
+                            &:hover {
+                                -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+                                filter: grayscale(0%)
+                            }
                         }
                         .header{
                             h4{

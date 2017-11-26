@@ -100,11 +100,14 @@ body {
     position: relative;
     transition: all 200ms ease-in-out;
     background: #fff;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); }
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px; }
     #top100-page .btn-black-line:hover {
       color: #fff;
       border-color: #0b5394;
       background: #0b5394 !important; }
+  #top100-page .echelon-contact .btn-black-line {
+    font-size: 12px; }
   #top100-page .section-blue, #top100-page section.applynow, #top100-page section.industries, #top100-page section.enjoys, #top100-page section.prizes, #top100-page section.testimonials {
     color: white;
     background: #0b5394;
@@ -336,15 +339,23 @@ body {
             color: #0B5394;
             margin-bottom: 20px; }
           #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img {
-            background: url("../img/marina-bg.jpeg");
+            background: url("../img/venues/spacemob.jpg");
             display: block;
             width: 100%;
             height: 100%;
             background-size: cover;
             background-position: 50% 50%;
-            max-height: 250px; }
+            max-height: 250px;
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            transition: 0.25s ease-in-out; }
             #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img img {
               width: 100%; }
+            #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img:hover {
+              -webkit-filter: grayscale(0%);
+              /* Safari 6.0 - 9.0 */
+              filter: grayscale(0%); }
           #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .header h4 {
             margin: 0;
             color: white;
