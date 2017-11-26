@@ -406,6 +406,7 @@ body {
                 margin-top: 20px;
                 
                 .enjoy-detail{
+                    margin-bottom: 15px;
                     img{
                         width: 12vw;
                         height: 12vw;
@@ -413,6 +414,7 @@ body {
                         border-radius: 100%;
                         margin: 0 auto;
                         display: block;
+                        margin-bottom: 15px;
                     }
                     p, li{
                         font-size: 0.8em;
@@ -643,6 +645,8 @@ body {
 
                     a{
                         margin-right: 15px;
+                        padding: 10px;
+                        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
                         p{
                             font-size: 0.8em;
                             text-align: center;
@@ -650,7 +654,7 @@ body {
                         }
                     }
                     img{
-                        width: 10vw;
+                        width: 8vw;
                         min-width: 90px;
                         height: 15%;
                         object-fit: contain;

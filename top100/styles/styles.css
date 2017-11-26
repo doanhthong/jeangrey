@@ -257,23 +257,25 @@ body {
       text-align: left; }
     #top100-page section.enjoys .enjoy-including {
       margin-top: 20px; }
-      #top100-page section.partners .section-content, #top100-page section.intro .section-content, #top100-page section .partners .section-content {
-      	margin: 0 auto; }
-      #anchor-page section.enjoys .enjoy-including .enjoy-detail img {
-        width: 12vw;
-        height: 12vw;
-        object-fit: cover;
-        border-radius: 100%;
-        margin: 0 auto;
-        display: block; }
-      #anchor-page section.enjoys .enjoy-including .enjoy-detail p, #anchor-page section.enjoys .enjoy-including .enjoy-detail li {
-        font-size: 0.8em; }
-      #anchor-page section.enjoys .enjoy-including .enjoy-plus {
+      #top100-page section.enjoys .enjoy-including .enjoy-detail {
+        margin-bottom: 15px; }
+        #top100-page section.enjoys .enjoy-including .enjoy-detail img {
+          width: 12vw;
+          height: 12vw;
+          object-fit: cover;
+          border-radius: 100%;
+          margin: 0 auto;
+          display: block;
+          margin-bottom: 15px; }
+        #top100-page section.enjoys .enjoy-including .enjoy-detail p, #top100-page section.enjoys .enjoy-including .enjoy-detail li {
+          font-size: 0.8em; }
+      #top100-page section.enjoys .enjoy-including .enjoy-plus {
         float: left;
         margin-top: 40vh; }
-      #anchor-page section.enjoys .enjoy-including .enjoy-finish {
+      #top100-page section.enjoys .enjoy-including .enjoy-finish {
         float: right;
         width: 80%; }
+    #top100-page section.partners .section-content, #top100-page section.intro .section-content, #top100-page section .partners .section-content {
       margin: 0 auto; }
     #top100-page section.partners h3, #top100-page section.partners .h3-partner, #top100-page section.intro h3, #top100-page section.intro .h3-partner, #top100-page section .partners h3, #top100-page section .partners .h3-partner {
       text-align: center;
@@ -390,7 +392,7 @@ body {
       margin: 0; }
     #top100-page section.blognews .section-content .news-content a {
       color: #0B5394; }
-    #anchor-page section.testimonials .container {
+    #top100-page section.testimonials .container {
       max-width: 720px; }
     #top100-page section.testimonials .section-content {
       position: relative; }
@@ -411,30 +413,33 @@ body {
           text-align: left; }
     #top100-page section.alumni .section-header {
       color: #0B5394; }
-    #anchor-page section.alumni .section-content .list-alumni {
+    #top100-page section.alumni .section-content .list-alumni {
       display: flex;
       align-items: center;
       flex-wrap: wrap; }
-      #anchor-page section.alumni .section-content .list-alumni a {
-        margin-right: 15px; }
-        #anchor-page section.alumni .section-content .list-alumni a p {
+      #top100-page section.alumni .section-content .list-alumni a {
+        margin-right: 15px;
+        padding: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); }
+        #top100-page section.alumni .section-content .list-alumni a p {
           font-size: 0.8em;
           text-align: center;
           color: black; }
-      #anchor-page section.alumni .section-content .list-alumni img {
-        width: 10vw;
+      #top100-page section.alumni .section-content .list-alumni img {
+        width: 8vw;
         min-width: 90px;
         height: 15%;
         object-fit: contain;
         display: block;
         margin: 0 auto; }
-    #anchor-page section.faq .section-header {
+    #top100-page section.faq .section-header {
       color: #0B5394; }
-    #anchor-page section.faq .section-content .faq-content {
+    #top100-page section.faq .section-content .faq-content {
       padding: 15px;
       background-color: #0B5394;
       color: white;
       margin-bottom: 5px; }
+    #top100-page section.how-to-apply {
       background-color: #0B5394; }
       #top100-page section.how-to-apply .section-header {
         color: white; }
