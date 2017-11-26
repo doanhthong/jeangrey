@@ -173,7 +173,8 @@ body {
             font-weight: 700;
         }  
         background: $main-color;
-        background: url('https://e27.co/dist/img/echelon_index/blue-polygon.svg')
+        background: url('https://e27.co/dist/img/echelon_index/blue-polygon.svg');
+        background-size: cover;
     }
 
     section{
@@ -403,7 +404,7 @@ body {
                 text-align: left;
             }
             .enjoy-including {
-                margin-top: 20px;
+                margin-top: 60px;
                 
                 .enjoy-detail{
                     margin-bottom: 15px;
@@ -418,6 +419,7 @@ body {
                     }
                     p, li{
                         font-size: 0.8em;
+                        padding: 12px;
                     }
                 }
 

@@ -111,7 +111,8 @@ body {
   #top100-page .section-blue, #top100-page section.applynow, #top100-page section.industries, #top100-page section.enjoys, #top100-page section.prizes, #top100-page section.testimonials, #top100-page section.how-to-apply {
     color: white;
     background: #0b5394;
-    background: url("https://e27.co/dist/img/echelon_index/blue-polygon.svg"); }
+    background: url("https://e27.co/dist/img/echelon_index/blue-polygon.svg");
+    background-size: cover; }
     #top100-page .section-blue h1, #top100-page section.applynow h1, #top100-page section.industries h1, #top100-page section.enjoys h1, #top100-page section.prizes h1, #top100-page section.testimonials h1, #top100-page section.how-to-apply h1 {
       color: white;
       font-weight: 700; }
@@ -256,7 +257,7 @@ body {
       font-size: 1.3em;
       text-align: left; }
     #top100-page section.enjoys .enjoy-including {
-      margin-top: 20px; }
+      margin-top: 60px; }
       #top100-page section.enjoys .enjoy-including .enjoy-detail {
         margin-bottom: 15px; }
         #top100-page section.enjoys .enjoy-including .enjoy-detail img {
@@ -268,7 +269,8 @@ body {
           display: block;
           margin-bottom: 15px; }
         #top100-page section.enjoys .enjoy-including .enjoy-detail p, #top100-page section.enjoys .enjoy-including .enjoy-detail li {
-          font-size: 0.8em; }
+          font-size: 0.8em;
+          padding: 12px; }
       #top100-page section.enjoys .enjoy-including .enjoy-plus {
         float: left;
         margin-top: 40vh; }
