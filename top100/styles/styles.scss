@@ -474,6 +474,7 @@ body {
         }
 
         &.city-qualifiers{
+            background: #fbfbfb;
             border-bottom: 1px solid #ececec;
             .section-header{
                 color: $foreground;
@@ -697,6 +698,8 @@ body {
             }
             .section-content{
                 #accordion-faq{
+                    max-width: 720px;
+                    margin: 0 auto;
                     .panel-heading{
                         padding: 15px;
                         background-color: $background;
@@ -705,7 +708,20 @@ body {
                             cursor: pointer;
                         }
                     }
+                    
                 }
+            }
+            .panel-group .panel {
+                margin-bottom: 12px;
+                font-size: 16px;
+                overflow: hidden;
+                border-radius: 8px;
+                border:none;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            }
+            .panel .panel-body {
+                font-size: 15px;
+                padding: 12px;
             }
         }
 

@@ -303,6 +303,7 @@ body {
         font-weight: 600;
         font-size: 14px; }
     #top100-page section.city-qualifiers {
+      background: #fbfbfb;
       border-bottom: 1px solid #ececec; }
       #top100-page section.city-qualifiers .section-header {
         color: #73C7B7; }
@@ -454,12 +455,25 @@ body {
         margin: 0 auto; }
     #top100-page section.faq .section-header {
       color: #00507d; }
-    #top100-page section.faq .section-content #accordion-faq .panel-heading {
-      padding: 15px;
-      background-color: #00507d;
-      color: white; }
-      #top100-page section.faq .section-content #accordion-faq .panel-heading:hover {
-        cursor: pointer; }
+    #top100-page section.faq .section-content #accordion-faq {
+      max-width: 720px;
+      margin: 0 auto; }
+      #top100-page section.faq .section-content #accordion-faq .panel-heading {
+        padding: 15px;
+        background-color: #00507d;
+        color: white; }
+        #top100-page section.faq .section-content #accordion-faq .panel-heading:hover {
+          cursor: pointer; }
+    #top100-page section.faq .panel-group .panel {
+      margin-bottom: 12px;
+      font-size: 16px;
+      overflow: hidden;
+      border-radius: 8px;
+      border: none;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
+    #top100-page section.faq .panel .panel-body {
+      font-size: 15px;
+      padding: 12px; }
     #top100-page section.how-to-apply {
       background-color: #00507d; }
       #top100-page section.how-to-apply .section-header {
