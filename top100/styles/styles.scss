@@ -21,7 +21,7 @@ $grey: #EFEFEF;
 }
 
 body {
-    font-family: "Montserrat";
+    font-family: "Open Sans";
 }
 
 //Forge Landing Page Styles
@@ -31,7 +31,8 @@ body {
     $main-color: #0b5394 ;
     $main-foreground: #fff;
     font-size: 15px;
-
+    color: #333;
+    
     div.top100-nav-container{
         background: $main-color;
         color: white;
@@ -71,7 +72,7 @@ body {
             width: 160px;
             height: 160px;
             display: block;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.9);
             border: 3px solid #fff;
             margin: 0 auto $magic-number*2;
             img{
@@ -268,19 +269,22 @@ body {
                     }
 
                     .countdown {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
 
                         .countdown-title {
-                            display: inline-block;
-                            text-align: right;
+                            // display: inline-block;
+                            display: block;
+                            text-align: center;
                             font-size: 1.5em;
                             color: $foreground;
+                            margin-bottom: 12px;
                         }
                         #time-countdown {
-                            display: inline-block;
-                            color: $foreground;
+                            // display: inline-block;
+                            display: block;
+                            color: #fff;
 
                             .timebox {
                                 display: inline-block;
@@ -291,7 +295,8 @@ body {
                                     padding: 5px 0px;
                                     width: 50px;
                                     font-size: 1.5em;
-                                    border: 1px dashed $foreground
+                                    border: 1px dashed $foreground;
+                                    margin-bottom: 6px;
                                 }
                             }
                         }
@@ -302,11 +307,12 @@ body {
                         border: 2px solid white;
                         color: white;
                         // padding: 10px 50px;
-                        padding-left: 32px; padding-right: 32px;
+                        padding: 10px 64px;
                         // text-transform: uppercase;
                         display: inline-block;
                         margin-top: 36px;
-                        margin-left: 40%;
+                        margin-left: auto;
+                        margin-right: auto;
                     }
 
                     .partners{
@@ -338,8 +344,9 @@ body {
         }
 
         &.intro{
-            background: url('../img/asia_map.png') no-repeat;
+            background: url('../img/asia_map_50.png') no-repeat;
             background-size: contain;
+            background-position-x: 0 0;
 
             .section-content{
                 font-size: 1.3em;
@@ -494,26 +501,38 @@ body {
                     position: absolute;
                     top: 0;
                     height: 100%;
-                    background-color: rgba(115,199,183,0.8);
+                    background-color: rgba(115,199,183,0.9);
 
                     .location-container {
-                        padding: 10px;
+                        padding: 24px;
+                        .location-shortlist {
+                            margin-bottom: 24px;
+                        }
 
                         .location-address{
                             color: $background;
                             margin-bottom: 20px;
                         }
                         .location-img{
+                            background: url('../img/marina-bg.jpeg');
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            max-height: 250px;
                             img{ width: 100%; }
                         }
                         .header{
                             h4{
                                 margin: 0;
                                 color: white;
+                                font-weight: bold;
                                 text-transform: uppercase;
                                 border-bottom: 1px solid white;
-                                padding-left: 10px;
+                                // padding-left: 10px;
                                 padding-bottom: 10px;
+                                margin-bottom: 10px;
                             }
                         }
                     }

@@ -14,10 +14,11 @@
   font-weight: lighter; }
 
 body {
-  font-family: "Montserrat"; }
+  font-family: "Open Sans"; }
 
 #top100-page {
-  font-size: 15px; }
+  font-size: 15px;
+  color: #333; }
   #top100-page div.top100-nav-container {
     background: #0b5394;
     color: white;
@@ -47,7 +48,7 @@ body {
       width: 160px;
       height: 160px;
       display: block;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.9);
       border: 3px solid #fff;
       margin: 0 auto 20px; }
       #top100-page .top100-card .top100-card-img img {
@@ -173,37 +174,35 @@ body {
             max-height: 200px;
             max-width: 80%;
             margin-bottom: 32px; }
-        #top100-page section.top100-header .container .top100-header-content .countdown {
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          #top100-page section.top100-header .container .top100-header-content .countdown .countdown-title {
+        #top100-page section.top100-header .container .top100-header-content .countdown .countdown-title {
+          display: block;
+          text-align: center;
+          font-size: 1.5em;
+          color: #73C7B7;
+          margin-bottom: 12px; }
+        #top100-page section.top100-header .container .top100-header-content .countdown #time-countdown {
+          display: block;
+          color: #fff; }
+          #top100-page section.top100-header .container .top100-header-content .countdown #time-countdown .timebox {
             display: inline-block;
-            text-align: right;
-            font-size: 1.5em;
-            color: #73C7B7; }
-          #top100-page section.top100-header .container .top100-header-content .countdown #time-countdown {
-            display: inline-block;
-            color: #73C7B7; }
-            #top100-page section.top100-header .container .top100-header-content .countdown #time-countdown .timebox {
+            margin-left: 15px; }
+            #top100-page section.top100-header .container .top100-header-content .countdown #time-countdown .timebox span {
               display: inline-block;
-              margin-left: 15px; }
-              #top100-page section.top100-header .container .top100-header-content .countdown #time-countdown .timebox span {
-                display: inline-block;
-                background-color: #0B5394;
-                padding: 5px 0px;
-                width: 50px;
-                font-size: 1.5em;
-                border: 1px dashed #73C7B7; }
+              background-color: #0B5394;
+              padding: 5px 0px;
+              width: 50px;
+              font-size: 1.5em;
+              border: 1px dashed #73C7B7;
+              margin-bottom: 6px; }
         #top100-page section.top100-header .container .top100-header-content .btn-apply {
           background-color: transparent;
           border: 2px solid white;
           color: white;
-          padding-left: 32px;
-          padding-right: 32px;
+          padding: 10px 64px;
           display: inline-block;
           margin-top: 36px;
-          margin-left: 40%; }
+          margin-left: auto;
+          margin-right: auto; }
         #top100-page section.top100-header .container .top100-header-content .partners {
           margin-top: 40px;
           height: 48px;
@@ -219,8 +218,9 @@ body {
       #top100-page section.top100-header .container .top100-nav {
         background: #0b5394; }
     #top100-page section.intro {
-      background: url("../img/asia_map.png") no-repeat;
-      background-size: contain; }
+      background: url("../img/asia_map_50.png") no-repeat;
+      background-size: contain;
+      background-position-x: 0 0; }
       #top100-page section.intro .section-content {
         font-size: 1.3em;
         text-align: left; }
@@ -326,21 +326,32 @@ body {
         position: absolute;
         top: 0;
         height: 100%;
-        background-color: rgba(115, 199, 183, 0.8); }
+        background-color: rgba(115, 199, 183, 0.9); }
         #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container {
-          padding: 10px; }
+          padding: 24px; }
+          #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-shortlist {
+            margin-bottom: 24px; }
           #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-address {
             color: #0B5394;
             margin-bottom: 20px; }
-          #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img img {
-            width: 100%; }
+          #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img {
+            background: url("../img/marina-bg.jpeg");
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: 50% 50%;
+            max-height: 250px; }
+            #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img img {
+              width: 100%; }
           #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .header h4 {
             margin: 0;
             color: white;
+            font-weight: bold;
             text-transform: uppercase;
             border-bottom: 1px solid white;
-            padding-left: 10px;
-            padding-bottom: 10px; }
+            padding-bottom: 10px;
+            margin-bottom: 10px; }
     #top100-page section.blognews .section-header {
       color: #0B5394; }
     #top100-page section.blognews .section-content .row {
