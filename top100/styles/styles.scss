@@ -410,6 +410,8 @@ body {
                     margin-bottom: 15px;
                     img{
                         width: 12vw;
+                        max-width: 200px;
+                        max-height: 200px;
                         height: 12vw;
                         object-fit: cover;
                         border-radius: 100%;
