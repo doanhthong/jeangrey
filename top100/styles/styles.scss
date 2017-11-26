@@ -173,7 +173,7 @@ body {
             font-weight: 700;
         }  
         background: $main-color;
-        background: url('../img/ocean-bg.svg?v=1')
+        background: url('https://e27.co/dist/img/echelon_index/blue-polygon.svg')
     }
 
     section{
@@ -181,7 +181,7 @@ body {
         padding: 60px 0 100px;
 
         //Blue Section
-        &.applynow, &.industries, &.enjoys, &.prizes, &.testimonials{
+        &.applynow, &.industries, &.enjoys, &.prizes, &.testimonials, &.how-to-apply{
             @extend .section-blue;
         }
 
@@ -599,6 +599,22 @@ body {
                             // margin-left: auto;
                             // margin-right: auto;
                             text-align: left;
+                        }
+                    }
+                    
+                }
+                //Custom Button
+                .bx-wrapper {
+                    border-radius: 8px;
+                    border: none;
+                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+                    padding: 32px 0;
+                    .bx-controls-direction a {
+                        &.bx-next {
+                            margin-right: -64px;
+                        }
+                        &.bx-prev {
+                            margin-left: -64px;
                         }
                     }
                 }
