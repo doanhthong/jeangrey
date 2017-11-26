@@ -472,6 +472,7 @@ body {
         }
 
         &.city-qualifiers{
+            border-bottom: 1px solid #ececec;
             .section-header{
                 color: $foreground;
             }
@@ -829,6 +830,7 @@ body {
         }
 
         &.milestones {
+            border-bottom: #ececec solid 1px;
             .section-content {
                 font-size: 1.3em;
                 .milestones-stage {

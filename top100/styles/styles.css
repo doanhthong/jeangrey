@@ -302,88 +302,90 @@ body {
       #top100-page section.partners .top100-partners div, #top100-page section.intro .top100-partners div, #top100-page section .partners .top100-partners div {
         font-weight: 600;
         font-size: 14px; }
-    #top100-page section.city-qualifiers .section-header {
-      color: #73C7B7; }
-    #top100-page section.city-qualifiers .section-content {
-      font-size: 1.3em; }
-    #top100-page section.city-qualifiers .qualifier-grid {
-      position: relative;
-      margin-top: 50px; }
-      #top100-page section.city-qualifiers .qualifier-grid > .row {
-        font-size: 0.9em; }
-        #top100-page section.city-qualifiers .qualifier-grid > .row > div {
-          padding-right: 0; }
-        #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(odd) {
-          background-color: #73C7B7; }
-          #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(odd) .loc-triangle {
-            border-color: transparent transparent #EFEFEF transparent; }
-        #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(even) {
-          background-color: #EFEFEF; }
-          #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(even) .loc-triangle {
-            border-color: transparent transparent #73C7B7 transparent; }
-        #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(odd) {
-          background-color: #EFEFEF; }
-          #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(odd) .loc-triangle {
-            border-color: transparent transparent #73C7B7 transparent; }
-        #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(even) {
-          background-color: #73C7B7; }
-          #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(even) .loc-triangle {
-            border-color: transparent transparent #EFEFEF transparent; }
-        #top100-page section.city-qualifiers .qualifier-grid > .row .location {
-          padding: 10px;
-          padding-bottom: 40px;
-          color: #00507d;
-          text-transform: uppercase;
-          position: relative; }
-          #top100-page section.city-qualifiers .qualifier-grid > .row .location .loc-triangle {
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 0 30px 30px;
-            position: absolute;
-            bottom: 5px;
-            right: 5px; }
-          #top100-page section.city-qualifiers .qualifier-grid > .row .location:hover {
-            cursor: pointer; }
-      #top100-page section.city-qualifiers .qualifier-grid .location-detail {
-        display: none;
-        position: absolute;
-        top: 0;
-        height: 100%;
-        background-color: rgba(115, 199, 183, 0.9); }
-        #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container {
-          padding: 24px; }
-          #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-shortlist {
-            margin-bottom: 24px; }
-          #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-address {
+    #top100-page section.city-qualifiers {
+      border-bottom: 1px solid #ececec; }
+      #top100-page section.city-qualifiers .section-header {
+        color: #73C7B7; }
+      #top100-page section.city-qualifiers .section-content {
+        font-size: 1.3em; }
+      #top100-page section.city-qualifiers .qualifier-grid {
+        position: relative;
+        margin-top: 50px; }
+        #top100-page section.city-qualifiers .qualifier-grid > .row {
+          font-size: 0.9em; }
+          #top100-page section.city-qualifiers .qualifier-grid > .row > div {
+            padding-right: 0; }
+          #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(odd) {
+            background-color: #73C7B7; }
+            #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(odd) .loc-triangle {
+              border-color: transparent transparent #EFEFEF transparent; }
+          #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(even) {
+            background-color: #EFEFEF; }
+            #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(odd) > div:nth-child(even) .loc-triangle {
+              border-color: transparent transparent #73C7B7 transparent; }
+          #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(odd) {
+            background-color: #EFEFEF; }
+            #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(odd) .loc-triangle {
+              border-color: transparent transparent #73C7B7 transparent; }
+          #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(even) {
+            background-color: #73C7B7; }
+            #top100-page section.city-qualifiers .qualifier-grid > .row:nth-child(even) > div:nth-child(even) .loc-triangle {
+              border-color: transparent transparent #EFEFEF transparent; }
+          #top100-page section.city-qualifiers .qualifier-grid > .row .location {
+            padding: 10px;
+            padding-bottom: 40px;
             color: #00507d;
-            margin-bottom: 20px; }
-          #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img {
-            background: url("../img/venues/spacemob.jpg");
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: 50% 50%;
-            max-height: 250px;
-            -webkit-filter: grayscale(100%);
-            /* Safari 6.0 - 9.0 */
-            filter: grayscale(100%);
-            transition: 0.25s ease-in-out; }
-            #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img img {
-              width: 100%; }
-            #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img:hover {
-              -webkit-filter: grayscale(0%);
-              /* Safari 6.0 - 9.0 */
-              filter: grayscale(0%); }
-          #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .header h4 {
-            margin: 0;
-            color: white;
-            font-weight: bold;
             text-transform: uppercase;
-            border-bottom: 1px solid white;
-            padding-bottom: 10px;
-            margin-bottom: 10px; }
+            position: relative; }
+            #top100-page section.city-qualifiers .qualifier-grid > .row .location .loc-triangle {
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0 0 30px 30px;
+              position: absolute;
+              bottom: 5px;
+              right: 5px; }
+            #top100-page section.city-qualifiers .qualifier-grid > .row .location:hover {
+              cursor: pointer; }
+        #top100-page section.city-qualifiers .qualifier-grid .location-detail {
+          display: none;
+          position: absolute;
+          top: 0;
+          height: 100%;
+          background-color: rgba(115, 199, 183, 0.9); }
+          #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container {
+            padding: 24px; }
+            #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-shortlist {
+              margin-bottom: 24px; }
+            #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-address {
+              color: #00507d;
+              margin-bottom: 20px; }
+            #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img {
+              background: url("../img/venues/spacemob.jpg");
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-size: cover;
+              background-position: 50% 50%;
+              max-height: 250px;
+              -webkit-filter: grayscale(100%);
+              /* Safari 6.0 - 9.0 */
+              filter: grayscale(100%);
+              transition: 0.25s ease-in-out; }
+              #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img img {
+                width: 100%; }
+              #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .location-img:hover {
+                -webkit-filter: grayscale(0%);
+                /* Safari 6.0 - 9.0 */
+                filter: grayscale(0%); }
+            #top100-page section.city-qualifiers .qualifier-grid .location-detail .location-container .header h4 {
+              margin: 0;
+              color: white;
+              font-weight: bold;
+              text-transform: uppercase;
+              border-bottom: 1px solid white;
+              padding-bottom: 10px;
+              margin-bottom: 10px; }
     #top100-page section.blognews .section-header {
       color: #00507d; }
     #top100-page section.blognews .section-content .row {
@@ -541,10 +543,12 @@ body {
         height: 100%;
         background-position: 50% 90%;
         background-size: 100% auto; }
-    #top100-page section.milestones .section-content {
-      font-size: 1.3em; }
-      #top100-page section.milestones .section-content .milestones-stage h3 {
-        font-weight: bold; }
+    #top100-page section.milestones {
+      border-bottom: #ececec solid 1px; }
+      #top100-page section.milestones .section-content {
+        font-size: 1.3em; }
+        #top100-page section.milestones .section-content .milestones-stage h3 {
+          font-weight: bold; }
     #top100-page section.prizes .top100-prizes {
       display: block;
       margin: 0 auto 80px;
