@@ -25,20 +25,20 @@ body {
 }
 
 //Forge Landing Page Styles
-#anchor-page{
+#top100-page{
     //General Styles
     $magic-number: 10px;
     $main-color: #0b5394 ;
     $main-foreground: #fff;
     font-size: 15px;
 
-    div.anchor-nav-container{
+    div.top100-nav-container{
         background: $main-color;
         color: white;
         border-radius: 0;
         border: none;
 
-        .anchor-nav{
+        .top100-nav{
             text-align: center;
         }
 
@@ -62,11 +62,11 @@ body {
         }
     }
 
-    .anchor-card{
+    .top100-card{
         text-align: center;
         margin: 0 auto;
         padding: 20px;
-        .anchor-card-img{
+        .top100-card-img{
             border-radius: 50%;
             width: 160px;
             height: 160px;
@@ -82,7 +82,7 @@ body {
             
         }
 
-        .anchor-card-text{
+        .top100-card-text{
             font-size: 20px;
         }
     }
@@ -204,7 +204,7 @@ body {
         }
 
         //Forge Header Section
-        &.anchor-header{
+        &.top100-header{
             padding: 0;
             height: auto;
             min-height: 360px;
@@ -215,7 +215,7 @@ body {
             background-position: 50% 60%;
             position: relative;
 
-            .anchor-overlay{
+            .top100-overlay{
                 background: rgba(3, 53, 86, 0.95);
                 width: 100%; height: 100%;
                 position: absolute;
@@ -251,7 +251,7 @@ body {
             .container{
                 // height: 100%;
 
-                .anchor-header-content {
+                .top100-header-content {
                     margin: 100px auto;
                     text-align: center;
                     position: relative;
@@ -260,9 +260,10 @@ body {
                     .main-logo{
                         display: block;
                         img{
-                            width: 480px;
+                            // width: 480px;
+                            max-height: 200px;
                             max-width: 80%;
-                            margin-bottom: 100px;
+                            margin-bottom: 32px;
                         }
                     }
 
@@ -300,10 +301,11 @@ body {
                         background-color: transparent;
                         border: 2px solid white;
                         color: white;
-                        padding: 10px 50px;
-                        text-transform: uppercase;
+                        // padding: 10px 50px;
+                        padding-left: 32px; padding-right: 32px;
+                        // text-transform: uppercase;
                         display: inline-block;
-                        margin-top: 50px;
+                        margin-top: 36px;
                         margin-left: 40%;
                     }
 
@@ -328,7 +330,7 @@ body {
                         }
                     }
                 }
-                .anchor-nav{
+                .top100-nav{
                     background: $main-color;
                 }
                 
@@ -399,7 +401,7 @@ body {
                 font-weight: 600;  
             }
 
-            .anchor-partners{
+            .top100-partners{
                 text-align: center;
                 margin-bottom: $magic-number*2;
                 display: flex;
@@ -659,7 +661,7 @@ body {
                 z-index: 10;
                 max-width: 640px;
                 
-                .anchor-applynow{
+                .top100-applynow{
                     background: transparent;
                     border-radius: 4px;
                     padding: $magic-number*6 $magic-number*2;
@@ -691,7 +693,7 @@ body {
         }
 
         &.prizes{
-            .anchor-prizes{
+            .top100-prizes{
                 display: block;
                 margin: 0 auto 80px;
                 text-align: center;
