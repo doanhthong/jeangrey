@@ -257,6 +257,24 @@ body {
       text-align: left; }
     #top100-page section.enjoys .enjoy-including {
       margin-top: 20px; }
+      #top100-page section.enjoys .enjoy-including .enjoy-detail {
+        margin-bottom: 15px; }
+        #top100-page section.enjoys .enjoy-including .enjoy-detail img {
+          width: 12vw;
+          height: 12vw;
+          object-fit: cover;
+          border-radius: 100%;
+          margin: 0 auto;
+          display: block;
+          margin-bottom: 15px; }
+        #top100-page section.enjoys .enjoy-including .enjoy-detail p, #top100-page section.enjoys .enjoy-including .enjoy-detail li {
+          font-size: 0.8em; }
+      #top100-page section.enjoys .enjoy-including .enjoy-plus {
+        float: left;
+        margin-top: 40vh; }
+      #top100-page section.enjoys .enjoy-including .enjoy-finish {
+        float: right;
+        width: 80%; }
     #top100-page section.partners .section-content, #top100-page section.intro .section-content, #top100-page section .partners .section-content {
       margin: 0 auto; }
     #top100-page section.partners h3, #top100-page section.partners .h3-partner, #top100-page section.intro h3, #top100-page section.intro .h3-partner, #top100-page section .partners h3, #top100-page section .partners .h3-partner {
@@ -374,6 +392,8 @@ body {
       margin: 0; }
     #top100-page section.blognews .section-content .news-content a {
       color: #0B5394; }
+    #top100-page section.testimonials .container {
+      max-width: 720px; }
     #top100-page section.testimonials .section-content {
       position: relative; }
       #top100-page section.testimonials .section-content .testimonial-quote {
@@ -402,8 +422,32 @@ body {
           margin-left: -64px; }
     #top100-page section.alumni .section-header {
       color: #0B5394; }
-    #top100-page section.alumni .section-content .list-alumni img {
-      width: 100px; }
+    #top100-page section.alumni .section-content .list-alumni {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      #top100-page section.alumni .section-content .list-alumni a {
+        margin-right: 15px;
+        padding: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); }
+        #top100-page section.alumni .section-content .list-alumni a p {
+          font-size: 0.8em;
+          text-align: center;
+          color: black; }
+      #top100-page section.alumni .section-content .list-alumni img {
+        width: 8vw;
+        min-width: 90px;
+        height: 15%;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto; }
+    #top100-page section.faq .section-header {
+      color: #0B5394; }
+    #top100-page section.faq .section-content .faq-content {
+      padding: 15px;
+      background-color: #0B5394;
+      color: white;
+      margin-bottom: 5px; }
     #top100-page section.how-to-apply {
       background-color: #0B5394; }
       #top100-page section.how-to-apply .section-header {
