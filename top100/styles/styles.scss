@@ -416,6 +416,7 @@ body {
                 border-radius: 3px;
                 background: white;
                 height: 140px;
+                padding: 24px;
                 box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
                 h3{
                     margin-top: $magic-number*4;
@@ -425,6 +426,7 @@ body {
                     max-height: 96px;
                     // margin-bottom: $magic-number;
                     margin: auto;
+                    max-width: 100%;
                 }
                 div {
                     font-weight: 600;

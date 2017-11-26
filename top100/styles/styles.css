@@ -268,13 +268,15 @@ body {
       border-radius: 3px;
       background: white;
       height: 140px;
+      padding: 24px;
       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); }
       #top100-page section.partners .top100-partners h3, #top100-page section.intro .top100-partners h3, #top100-page section .partners .top100-partners h3 {
         margin-top: 40px;
         margin-bottom: 20px; }
       #top100-page section.partners .top100-partners img, #top100-page section.intro .top100-partners img, #top100-page section .partners .top100-partners img {
         max-height: 96px;
-        margin: auto; }
+        margin: auto;
+        max-width: 100%; }
       #top100-page section.partners .top100-partners div, #top100-page section.intro .top100-partners div, #top100-page section .partners .top100-partners div {
         font-weight: 600;
         font-size: 14px; }
