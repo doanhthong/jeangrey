@@ -375,6 +375,10 @@ body {
         padding: 25px 100px;
         color: #0B5394;
         position: relative; }
+        #top100-page section.testimonials .section-content .carousel-testimonial li img {
+          display: block;
+          max-height: 24px;
+          text-align: left; }
     #top100-page section.alumni .section-header {
       color: #0B5394; }
     #top100-page section.alumni .section-content .list-alumni img {
@@ -384,7 +388,13 @@ body {
       #top100-page section.how-to-apply .section-header {
         color: white; }
       #top100-page section.how-to-apply .section-content {
-        color: white; }
+        max-width: 640px;
+        padding: 40px;
+        border: solid white 2px;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        line-height: 1.8; }
         #top100-page section.how-to-apply .section-content .list-alumni img {
           width: 100px; }
     #top100-page section.participate .section-header {
