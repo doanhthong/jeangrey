@@ -257,7 +257,23 @@ body {
       text-align: left; }
     #top100-page section.enjoys .enjoy-including {
       margin-top: 20px; }
-    #top100-page section.partners .section-content, #top100-page section.intro .section-content, #top100-page section .partners .section-content {
+      #top100-page section.partners .section-content, #top100-page section.intro .section-content, #top100-page section .partners .section-content {
+      	margin: 0 auto; }
+      #anchor-page section.enjoys .enjoy-including .enjoy-detail img {
+        width: 12vw;
+        height: 12vw;
+        object-fit: cover;
+        border-radius: 100%;
+        margin: 0 auto;
+        display: block; }
+      #anchor-page section.enjoys .enjoy-including .enjoy-detail p, #anchor-page section.enjoys .enjoy-including .enjoy-detail li {
+        font-size: 0.8em; }
+      #anchor-page section.enjoys .enjoy-including .enjoy-plus {
+        float: left;
+        margin-top: 40vh; }
+      #anchor-page section.enjoys .enjoy-including .enjoy-finish {
+        float: right;
+        width: 80%; }
       margin: 0 auto; }
     #top100-page section.partners h3, #top100-page section.partners .h3-partner, #top100-page section.intro h3, #top100-page section.intro .h3-partner, #top100-page section .partners h3, #top100-page section .partners .h3-partner {
       text-align: center;
@@ -374,6 +390,8 @@ body {
       margin: 0; }
     #top100-page section.blognews .section-content .news-content a {
       color: #0B5394; }
+    #anchor-page section.testimonials .container {
+      max-width: 720px; }
     #top100-page section.testimonials .section-content {
       position: relative; }
       #top100-page section.testimonials .section-content .testimonial-quote {

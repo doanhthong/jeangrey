@@ -404,6 +404,29 @@ body {
             }
             .enjoy-including {
                 margin-top: 20px;
+                
+                .enjoy-detail{
+                    img{
+                        width: 12vw;
+                        height: 12vw;
+                        object-fit: cover;
+                        border-radius: 100%;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                    p, li{
+                        font-size: 0.8em;
+                    }
+                }
+
+                .enjoy-plus{
+                    float: left;
+                    margin-top: 40vh;
+                }
+                .enjoy-finish{
+                    float: right;
+                    width: 80%;
+                }
             }
         }
 
@@ -576,6 +599,9 @@ body {
         }
 
         &.testimonials{
+            .container{
+                max-width: 720px;
+            }
             .section-content{
                 position: relative;
 
