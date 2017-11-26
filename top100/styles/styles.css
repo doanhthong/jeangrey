@@ -272,13 +272,6 @@ body {
           padding: 12px; }
         #top100-page section.enjoys .enjoy-including .enjoy-detail:not(.enjoy-finish) img {
           margin: 0 auto; }
-<<<<<<< HEAD
-      #top100-page section.enjoys .enjoy-including .enjoy-plus {
-        float: left;
-        margin-top: 40vh; }
-      #top100-page section.enjoys .enjoy-including .enjoy-finish {
-        float: right; }
-=======
       #top100-page section.enjoys .enjoy-including .enjoy-finish {
         float: right; }
       @media screen and (max-width: 1200px) {
@@ -289,7 +282,6 @@ body {
       #top100-page section.enjoys .enjoy-including .enjoy-plus {
         float: left;
         margin-top: 40vh; }
->>>>>>> 4e94335abd06ccedc438816bea5690125ed26726
     #top100-page section.partners .section-content, #top100-page section.intro .section-content, #top100-page section .partners .section-content {
       margin: 0 auto; }
     #top100-page section.partners h3, #top100-page section.partners .h3-partner, #top100-page section.intro h3, #top100-page section.intro .h3-partner, #top100-page section .partners h3, #top100-page section .partners .h3-partner {
@@ -467,7 +459,6 @@ body {
         display: block;
         margin: 0 auto; }
     #top100-page section.faq .section-header {
-<<<<<<< HEAD
       color: #00507d; }
     #top100-page section.faq .section-content #accordion-faq {
       max-width: 720px;
@@ -488,15 +479,6 @@ body {
     #top100-page section.faq .panel .panel-body {
       font-size: 15px;
       padding: 12px; }
-=======
-      color: #0B5394; }
-    #top100-page section.faq .section-content #accordion-faq .panel-heading {
-      padding: 15px;
-      background-color: #0B5394;
-      color: white; }
-      #top100-page section.faq .section-content #accordion-faq .panel-heading:hover {
-        cursor: pointer; }
->>>>>>> 4e94335abd06ccedc438816bea5690125ed26726
     #top100-page section.how-to-apply {
       background-color: #00507d; }
       #top100-page section.how-to-apply .section-header {
