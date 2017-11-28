@@ -1066,5 +1066,56 @@ body {
             }
         }
     }
+    
        
 };
+
+.btn-white-line {
+    white-space: normal;
+    background-color: transparent !important;
+    color: #fff;
+    font-family: "Montserrat" !important;
+    font-weight: 500;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    width: auto;
+    padding: 14px 48px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 !important;
+    /*Fill Animation*/
+    position: relative;
+    transition: all 200ms ease-in-out; }
+  
+  .btn-white-line:hover {
+    color: #fff;
+    border: 1px solid #ff8537;
+    background: #ff8537 !important; }
+  
+  .btn-black-line {
+    white-space: normal;
+    background-color: transparent !important;
+    color: #000;
+    font-family: "Montserrat" !important;
+    font-weight: 500;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    border: 1px solid black;
+    width: auto;
+    padding: 14px 48px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 !important;
+    /*Fill Animation*/
+    position: relative;
+    transition: all 200ms ease-in-out; }
+  
+  .btn-black-line:hover {
+    color: #fff;
+    border: 1px solid #ff8537;
+    background: #ff8537 !important; }
