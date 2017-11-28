@@ -866,6 +866,14 @@ body {
             border-bottom: #ececec solid 1px;
             .section-content {
                 font-size: 1.3em;
+                .milestones-container {
+                    max-width: 720px;
+                    margin: 0 auto;
+                    border: solid #ececec 2px;
+                    border-radius: 8px;
+                    padding: 18px;
+                    margin-top: 20px;
+                }
                 .milestones-stage {
                     h3 {
                         font-weight: bold;

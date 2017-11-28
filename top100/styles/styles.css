@@ -569,6 +569,13 @@ body {
       border-bottom: #ececec solid 1px; }
       #top100-page section.milestones .section-content {
         font-size: 1.3em; }
+        #top100-page section.milestones .section-content .milestones-container {
+          max-width: 720px;
+          margin: 0 auto;
+          border: solid #ececec 2px;
+          border-radius: 8px;
+          padding: 18px;
+          margin-top: 20px; }
         #top100-page section.milestones .section-content .milestones-stage h3 {
           font-weight: bold; }
     #top100-page section.prizes .top100-prizes {
