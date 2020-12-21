@@ -1829,3 +1829,50 @@ nav.navbar-fixed-top .secNav .container .navbar-nav a span {
     display: none;
   }
 }
+#login-page {
+  border-radius: 0;
+}
+#login-page .modal-body {
+  padding: 0;
+}
+#login-page button.close {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+#login-page img.logo {
+  height: 580px;
+  object-fit: cover;
+}
+#login-page .panel-right {
+  text-align: justify;
+  margin: 50px;
+  margin-left: 30px;
+}
+#login-page .form-group-login-button {
+  margin-bottom: 10px;
+}
+#login-page .form-group-login-button .login-btn {
+  background-color: #222;
+  border-color: #222;
+}
+#login-page .facebook-btn {
+  background: #3b5999;
+  border: #3b5999;
+}
+#login-page .linkedin-btn {
+  background: #0077B5;
+  border: #0077B5;
+}
+#login-page .signup-btn {
+  color: #7db924;
+  font-size: 1em;
+}
+#login-page p {
+  font-weight: bold;
+  text-align: center;
+}
+#login-page .close {
+  font-size: 3em;
+  opacity: 1;
+  font-weight: 100;
+}

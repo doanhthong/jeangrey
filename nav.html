@@ -162,11 +162,11 @@
 					</li>
 
 					<!-- Smartphone Only: Login Button - FOR GUEST visible-xs/hidden -->
-					<!-- *** FOR GUEST
-					<li class="visible-xs dropdown navbar-search-mobile">
-						<a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-lock" aria-hidden="true"></i></a>
+					 <!--*** FOR GUEST-->
+					<li class="dropdown navbar-search-mobile">
+						<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-lock" aria-hidden="true"></i></a>
 					</li>
-					-->
+					
 					
 
 					<!-- Smartphone only: Menu-->
@@ -298,3 +298,46 @@
 
 	</div>
 </nav>
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+		<div id="login-page" class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close hidden-xs" data-dismiss="modal">&times;</button>
+				<div class="row">
+					<div class="col-xs-12 col-sm-7">
+						<img class="hidden-xs logo" src="./img/login.jpg"/>
+						<img class="visible-xs" src="./img/login.jpg"/>
+					</div>
+					<div class="col-xs-12 col-sm-5">
+						<div class="panel-right">
+							<h2><b>LOGIN TO E27</b></h2>
+							<span>Orem ipsum dolor sit amet, id nusquarm incorrupte pri. Cu eum virtute partiendo.</span>
+							<br/>
+							<br/>
+							<div class="form-group">
+								<input type="text" class="form-control" id="" placeholder="User Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="" placeholder="Password">
+							</div>
+							<div class="form-group form-group-login-button">
+								<button type="button" class="btn btn-primary btn-block login-btn">LOGIN</button>
+							</div>
+							<p class="label-control">or</p>
+							<div class="form-group">
+								<button type="button" class="btn btn-primary btn-block facebook-btn">LOGIN WITH FACEBOOK</button>
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn btn-primary btn-block linkedin-btn">LOGINWITH LINKEDIN</button>
+							</div>
+							<div class="form-group">
+								<button type="button" class="signup-btn btn-link form-control">Dont have account, signup here</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

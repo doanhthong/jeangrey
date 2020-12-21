@@ -1710,8 +1710,6 @@ nav.navbar-fixed-top{
       .company-img{
         float: left;
       }
-      .form-group{
-      }
     }
   }
 
@@ -2045,4 +2043,59 @@ nav.navbar-fixed-top{
   .secNav{
     display: none;
   }
+}
+
+#login-page {
+  .modal-body{
+    padding: 0;
+  }
+  border-radius: 0;
+
+  button.close{
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  img.logo {
+    height: 580px;
+    object-fit: cover;
+  }
+  .panel-right {
+    text-align: justify;
+    margin: @magic-number*5;
+    margin-left: @magic-number*5-20px;
+
+  }
+  .form-group-login-button {
+    margin-bottom: @magic-number;
+    .login-btn {
+      background-color: @main-color;
+      border-color: @main-color;
+    }
+  }
+
+  .facebook-btn {
+    background: #3b5999;
+    border: #3b5999;
+  }
+	.linkedin-btn {
+    background:#0077B5;
+    border: #0077B5;
+  }
+
+  .signup-btn {
+    color: @sub-color;
+    font-size: 1em;
+  }
+
+  p {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .close {
+    font-size: 3em;
+    opacity: 1;
+    font-weight: 100;
+  }
+  
 }
